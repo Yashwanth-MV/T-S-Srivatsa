@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — T. S. Srivatsa, MLA Krishnaraja</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Kannada&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+<style>
+/* ══════════════════════════════════════════════
+   DESIGN TOKENS
+══════════════════════════════════════════════ */
+:root {
+  --saffron:      #FF6200;
+  --saffron-mid:  #E85500;
+  --saffron-deep: #C24400;
+  --saffron-pale: #FFF4ED;
+  --saffron-soft: #FFE8D6;
+  --green:        #0C7A07;
+  --green-light:  #128C0D;
+  --navy:         #0F1525;
+  --navy-mid:     #1A2540;
+  --white:        #FFFFFF;
+  --offwhite:     #F8F5F1;
+  --stone:        #EDE6DC;
+  --ink:          #1A1A1A;
+  --ink-mid:      #3D3D3D;
+  --muted:        #6B7280;
+  --muted-light:  #9CA3AF;
+  --gold:         #C9922A;
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--white);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+/* ══════════════════════════════════════════════
+   LANGUAGE SYSTEM
+══════════════════════════════════════════════ */
+[data-kn]          { display: none !important; }
+body.kn [data-en]  { display: none !important; }
+body.kn [data-kn]  { display: block !important; }
+span[data-kn], a[data-kn]  { display: none; }
+span[data-en], a[data-en]  { display: inline; }
+body.kn span[data-en], body.kn a[data-en]  { display: none; }
+body.kn span[data-kn], body.kn a[data-kn]  { display: inline; font-family: 'Tiro Kannada', serif; }
+.kn-font { font-family: 'Tiro Kannada', serif; }
+
+/* ══════════════════════════════════════════════
+   NAVIGATION
+══════════════════════════════════════════════ */
+nav {
+  position: sticky;
+  top: 0; z-index: 300;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--stone);
+  transition: box-shadow .3s;
+}
+nav.scrolled { box-shadow: 0 4px 28px rgba(0,0,0,0.08); }
+
+.nav-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-brand {
+  display: flex; align-items: center; gap: 12px;
+  text-decoration: none;
+}
+.brand-lotus {
+  width: 40px; height: 40px;
+  background: var(--saffron);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(255,98,0,0.28);
+}
+.brand-name {
+  font-size: 18px; font-weight: 700;
+  color: var(--navy); line-height: 1.1;
+}
+.brand-role {
+  font-size: 10px; font-weight: 600;
+  color: var(--saffron); letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.nav-right {
+  display: flex; align-items: center; gap: 6px;
+}
+.nav-links {
+  list-style: none;
+  display: flex; align-items: center; gap: 4px;
+}
+.nav-links li a {
+  text-decoration: none;
+  font-size: 13.5px; font-weight: 500;
+  color: var(--ink-mid);
+  padding: 6px 13px; border-radius: 6px;
+  transition: all .2s;
+  font-family: 'Poppins', sans-serif;
+}
+.nav-links li a:hover { background: var(--saffron-pale); color: var(--saffron); }
+.nav-links li a.current { color: var(--saffron); font-weight: 600; }
+.nav-cta-link {
+  background: var(--saffron) !important;
+  color: white !important; font-weight: 600 !important;
+  box-shadow: 0 3px 12px rgba(255,98,0,0.25);
+}
+.nav-cta-link:hover { background: var(--saffron-mid) !important; transform: translateY(-1px); }
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer;
+  padding: 8px;
+}
+.hamburger span {
+  display: block; width: 24px; height: 2px;
+  background: var(--navy); border-radius: 2px;
+  transition: all .3s;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+  position: fixed; top: 68px; left: 0; right: 0;
+  background: white;
+  border-bottom: 1px solid var(--stone);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  z-index: 299;
+  padding: 16px 20px 24px;
+}
+.mobile-menu.open { display: block; }
+.mobile-menu ul { list-style: none; }
+.mobile-menu ul li { border-bottom: 1px solid var(--stone); }
+.mobile-menu ul li:last-child { border-bottom: none; }
+.mobile-menu ul li a {
+  display: block; padding: 12px 4px;
+  font-size: 15px; font-weight: 500; color: var(--ink-mid);
+  text-decoration: none;
+}
+.mobile-menu ul li a.current,
+.mobile-menu ul li a:hover { color: var(--saffron); }
+.mobile-menu .mobile-cta {
+  margin-top: 14px;
+  display: block;
+  background: var(--saffron); color: white;
+  text-align: center; padding: 13px;
+  border-radius: 8px; font-weight: 700;
+  text-decoration: none; font-size: 14px;
+}
+
+/* Lang toggle in nav */
+.lang-toggle {
+  display: flex; align-items: center; gap: 3px;
+  background: var(--offwhite);
+  border: 1px solid var(--stone);
+  border-radius: 30px; padding: 3px;
+  margin-left: 12px;
+}
+.lang-btn {
+  border: none; background: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px; font-weight: 600;
+  color: var(--muted);
+  padding: 4px 13px; border-radius: 20px;
+  cursor: pointer; transition: all .22s;
+}
+.lang-btn.active { background: var(--saffron); color: white; }
+.lang-btn:hover:not(.active) { color: var(--saffron); }
+
+/* ══════════════════════════════════════════════
+   SECTION UTILITIES
+══════════════════════════════════════════════ */
+.section { padding: 90px 48px; }
+.section-sm { padding: 70px 48px; }
+.container { max-width: 1280px; margin: 0 auto; }
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  margin-bottom: 14px;
+}
+.eyebrow-bar { width: 28px; height: 3px; background: var(--saffron); border-radius: 2px; }
+.eyebrow-text {
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--saffron);
+}
+.section-title {
+  font-size: clamp(26px, 3.2vw, 42px);
+  font-weight: 800; color: var(--navy);
+  line-height: 1.15; margin-bottom: 16px;
+  letter-spacing: -0.3px;
+}
+.section-title em { font-style: italic; font-weight: 700; color: var(--saffron); }
+.section-body {
+  font-size: 15px; font-weight: 300;
+  color: #505060; line-height: 1.9;
+  margin-bottom: 18px;
+}
+.section-body strong { color: var(--ink); font-weight: 600; }
+.pull-quote {
+  border-left: 3px solid var(--saffron);
+  padding: 14px 0 14px 24px;
+  margin: 28px 0;
+  font-size: 17px; font-style: italic; font-weight: 300;
+  color: var(--navy-mid); line-height: 1.6;
+}
+
+/* ══════════════════════════════════════════════
+   BIOGRAPHY SECTION
+══════════════════════════════════════════════ */
+.bio-section { background: var(--white); }
+.bio-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px; align-items: start;
+}
+
+/* Fact chips */
+.fact-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 36px;
+}
+.fact-chip {
+  background: var(--offwhite);
+  border: 1px solid var(--stone);
+  border-radius: 12px; padding: 16px;
+  transition: all .25s; position: relative;
+  overflow: hidden;
+}
+.fact-chip::before {
+  content: '';
+  position: absolute; top:0; left:0; right:0;
+  height: 3px; background: var(--saffron);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .3s;
+}
+.fact-chip:hover { border-color: var(--saffron); background: var(--saffron-pale); transform: translateY(-2px); }
+.fact-chip:hover::before { transform: scaleX(1); }
+.fact-chip-lbl {
+  font-size: 9.5px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--saffron); margin-bottom: 6px;
+}
+.fact-chip-val {
+  font-size: 13px; font-weight: 700;
+  color: var(--navy); line-height: 1.3;
+}
+
+/* Leader image — clean, no overlays */
+.leader-image-col {
+  position: sticky;
+  top: 88px;
+}
+.leader-img-frame {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: none;
+  border: 0px;
+}
+.leader-img-frame img {
+  width: 100%; display: block;
+  object-fit: cover;
+}
+
+/* ══════════════════════════════════════════════
+   SIDE-IMAGE SECTION LAYOUT
+   Used for: What Drives Him, Education, Political,
+             Constituency, Vision
+══════════════════════════════════════════════ */
+.side-img-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  align-items: stretch;
+  min-height: 560px;
+}
+.side-img-section.reverse { direction: rtl; }
+.side-img-section.reverse > * { direction: ltr; }
+
+.side-img-panel {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+}
+.side-img-panel img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+.side-img-panel::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to right, transparent 60%, rgba(15,21,37,0.35) 100%);
+  pointer-events: none;
+}
+.side-img-section.reverse .side-img-panel::after {
+  background: linear-gradient(to left, transparent 60%, rgba(15,21,37,0.35) 100%);
+}
+
+/* Dark panel variant */
+.side-img-panel.dark-overlay::after {
+  background: linear-gradient(160deg, rgba(15,21,37,0.55) 0%, rgba(15,21,37,0.2) 100%);
+}
+
+/* 50% height constrained image panel — image sits centred, doesn't stretch full section */
+.side-img-panel.half-height {
+  align-self: center;
+  max-height: 50%;
+  min-height: unset;
+}
+.side-img-panel.half-height img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.side-content-panel {
+  padding: 64px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ══════════════════════════════════════════════
+   WHAT DRIVES HIM
+══════════════════════════════════════════════ */
+.drives-section-wrap {
+  position: relative;
+  overflow: hidden;
+  background: var(--navy);
+}
+.drives-section-wrap::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: url('https://raw.githubusercontent.com/Yashwanth-MV/T-S-Srivatsa/refs/heads/main/What%20Drives%20Him.png');
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.40;
+  z-index: 0;
+}
+.drives-section-wrap > * { position: relative; z-index: 1; }
+
+.drives-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.drives-pill {
+  background: white;
+  border: 1px solid var(--stone);
+  border-radius: 14px; padding: 24px 22px;
+  transition: all .3s; position: relative; overflow: hidden;
+}
+.drives-pill::after {
+  content: '';
+  position: absolute; top:0; left:0; right:0;
+  height: 4px; background: var(--saffron);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .35s;
+}
+.drives-pill:hover { transform: translateY(-4px); box-shadow: 0 14px 40px rgba(0,0,0,.08); border-color: transparent; }
+.drives-pill:hover::after { transform: scaleX(1); }
+.drives-pill-icon { font-size: 26px; margin-bottom: 12px; display: block; }
+.drives-pill-title {
+  font-size: 14px; font-weight: 700;
+  color: var(--navy); margin-bottom: 8px; line-height: 1.3;
+}
+.drives-pill-desc {
+  font-size: 12.5px; font-weight: 300;
+  color: var(--muted); line-height: 1.65;
+}
+
+.drives-quote-strip {
+  background: var(--navy);
+  padding: 48px 60px;
+  position: relative; overflow: hidden;
+}
+.drives-quote-strip::before {
+  content: '"';
+  position: absolute; top: -20px; left: 24px;
+  font-size: 130px; font-weight: 900;
+  color: rgba(255,98,0,0.1); line-height: 1; font-style: italic;
+  pointer-events: none;
+}
+.drives-quote-strip-text {
+  font-size: 17px; font-style: italic; font-weight: 300;
+  color: rgba(255,255,255,.85); line-height: 1.8;
+  max-width: 780px; margin: 0 auto 16px;
+  position: relative; z-index: 1; text-align: center;
+}
+.drives-quote-strip-attr {
+  font-size: 11px; font-weight: 700;
+  color: var(--saffron); letter-spacing: 1.5px;
+  text-transform: uppercase; text-align: center;
+  position: relative; z-index: 1;
+}
+
+/* ══════════════════════════════════════════════
+   TIMELINE SECTION
+══════════════════════════════════════════════ */
+.timeline-section { background: var(--offwhite); }
+
+.tl-heading-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px; align-items: end;
+  margin-bottom: 60px;
+}
+.tl-intro {
+  font-size: 15px; font-weight: 300;
+  color: var(--muted); line-height: 1.8;
+  padding-top: 12px;
+}
+
+.tl-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  position: relative;
+  align-items: start;
+}
+.tl-cards::before {
+  content: '';
+  position: absolute;
+  top: 28px; left: 10%; right: 10%;
+  height: 2px;
+  background: linear-gradient(to right, var(--saffron), var(--green));
+  z-index: 0;
+}
+.tl-card {
+  position: relative; z-index: 1;
+  padding: 0 12px; text-align: center;
+}
+.tl-card-dot-wrap {
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px; position: relative;
+}
+.tl-card-dot {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: white;
+  border: 3px solid var(--saffron);
+  box-shadow: 0 0 0 4px rgba(255,98,0,.12), 0 4px 14px rgba(255,98,0,.2);
+  transition: all .3s; cursor: default;
+  z-index: 2; position: relative;
+}
+.tl-card:hover .tl-card-dot {
+  background: var(--saffron);
+  box-shadow: 0 0 0 6px rgba(255,98,0,.15), 0 6px 20px rgba(255,98,0,.35);
+  transform: scale(1.2);
+}
+.tl-card-dot.green { border-color: var(--green); box-shadow: 0 0 0 4px rgba(12,122,7,.12), 0 4px 14px rgba(12,122,7,.2); }
+.tl-card:hover .tl-card-dot.green { background: var(--green); box-shadow: 0 0 0 6px rgba(12,122,7,.15); }
+
+.tl-card-body {
+  background: white;
+  border: 1px solid var(--stone);
+  border-radius: 14px; padding: 20px 18px;
+  transition: all .3s; min-height: 180px;
+  display: flex; flex-direction: column;
+}
+.tl-card:hover .tl-card-body {
+  border-color: var(--saffron);
+  box-shadow: 0 8px 30px rgba(255,98,0,.1);
+  transform: translateY(-4px);
+}
+.tl-card-year {
+  font-size: 11px; font-weight: 800;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--saffron); margin-bottom: 8px;
+}
+.tl-card-title {
+  font-size: 13px; font-weight: 700;
+  color: var(--navy); margin-bottom: 8px; line-height: 1.35;
+}
+.tl-card-desc {
+  font-size: 11.5px; font-weight: 300;
+  color: var(--muted); line-height: 1.6;
+}
+
+/* ══════════════════════════════════════════════
+   EDUCATION SECTION — side image layout
+══════════════════════════════════════════════ */
+.edu-section-wrap {
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+.edu-section-wrap::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: url('https://raw.githubusercontent.com/Yashwanth-MV/T-S-Srivatsa/refs/heads/main/Education%20and%20Credentials_BG%20.png');
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.60;
+  z-index: 0;
+}
+.edu-section-wrap > * { position: relative; z-index: 1; }
+
+.edu-card-dark {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  border-radius: 18px; padding: 36px;
+  position: relative; overflow: hidden;
+  margin-bottom: 20px;
+}
+.edu-card-dark::before {
+  content: '';
+  position: absolute; top: -40px; right: -40px;
+  width: 200px; height: 200px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,98,0,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.edu-card-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,98,0,0.15);
+  border: 1px solid rgba(255,98,0,0.3);
+  padding: 5px 14px; border-radius: 20px;
+  margin-bottom: 20px;
+}
+.edu-card-badge-text {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: rgba(255,170,110,.9);
+}
+.edu-card-title { font-size: 24px; font-weight: 800; color: white; line-height: 1.2; margin-bottom: 6px; }
+.edu-card-sub { font-size: 13px; color: rgba(255,255,255,.5); margin-bottom: 24px; }
+
+.edu-detail-row { display: flex; gap: 14px; margin-bottom: 14px; }
+.edu-detail-icon {
+  width: 38px; height: 38px; flex-shrink: 0;
+  background: rgba(255,98,0,0.12);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+}
+.edu-detail-label {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  color: rgba(255,98,0,.8); margin-bottom: 3px;
+}
+.edu-detail-val { font-size: 13.5px; font-weight: 600; color: white; line-height: 1.35; }
+.edu-detail-sub { font-size: 12px; color: rgba(255,255,255,.45); margin-top: 2px; }
+.edu-divider { height: 1px; background: rgba(255,255,255,.08); margin: 22px 0; }
+.edu-note {
+  background: rgba(255,98,0,0.1); border: 1px solid rgba(255,98,0,0.2);
+  border-radius: 10px; padding: 14px 16px;
+}
+.edu-note-label {
+  font-size: 10px; font-weight: 700;
+  color: rgba(255,170,110,.8); letter-spacing: 1.5px;
+  text-transform: uppercase; margin-bottom: 6px;
+}
+.edu-note-text {
+  font-size: 12.5px; font-weight: 300;
+  color: rgba(255,255,255,.65); line-height: 1.7;
+}
+
+/* ══════════════════════════════════════════════
+   POLITICAL CAREER SECTION — side image layout
+══════════════════════════════════════════════ */
+.political-section-wrap { background: var(--offwhite); }
+
+.milestones { margin-top: 8px; }
+.milestone-item {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--stone);
+  transition: all .2s;
+}
+.milestone-item:last-child { border-bottom: none; }
+.milestone-item:hover { padding-left: 5px; }
+.milestone-year-badge {
+  min-width: 62px; height: 30px;
+  background: var(--saffron-pale);
+  border: 1px solid rgba(255,98,0,.25);
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 800;
+  color: var(--saffron); letter-spacing: 0.5px;
+  flex-shrink: 0; margin-top: 2px;
+}
+.milestone-year-badge.green {
+  background: rgba(12,122,7,0.08);
+  border-color: rgba(12,122,7,0.2);
+  color: var(--green);
+}
+.milestone-title { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.milestone-desc { font-size: 12.5px; font-weight: 300; color: var(--muted); line-height: 1.6; }
+
+/* ══════════════════════════════════════════════
+   CONSTITUENCY SECTION — side image layout
+══════════════════════════════════════════════ */
+.constituency-section-wrap {
+  position: relative;
+  overflow: hidden;
+  background: var(--white);
+}
+.constituency-section-wrap::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: url('/Users/yashwanthmv/Downloads/mysore-india-november-04-2022-260nw-2579413825-removebg-preview.png');
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.40;
+  z-index: 0;
+}
+.constituency-section-wrap > * { position: relative; z-index: 1; }
+
+.const-stats-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 12px; margin-top: 24px;
+}
+.const-stat {
+  background: var(--offwhite);
+  border: 1px solid var(--stone);
+  border-radius: 12px; padding: 18px;
+  text-align: center; transition: all .25s;
+  position: relative; overflow: hidden;
+}
+.const-stat::after {
+  content: '';
+  position: absolute; bottom:0; left:0; right:0;
+  height: 3px; background: var(--saffron);
+  transform: scaleX(0); transform-origin: center;
+  transition: transform .3s;
+}
+.const-stat:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,.07); background: white; }
+.const-stat:hover::after { transform: scaleX(1); }
+.const-stat-num { font-size: 30px; font-weight: 800; color: var(--saffron); line-height: 1; margin-bottom: 4px; }
+.const-stat-lbl { font-size: 11px; font-weight: 500; color: var(--muted); line-height: 1.3; }
+
+.areas-heading { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 14px; margin-top: 24px; }
+.areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.area-tile {
+  background: var(--offwhite); border: 1px solid var(--stone);
+  border-radius: 8px; padding: 12px 14px;
+  cursor: default; transition: all .25s;
+}
+.area-tile:hover {
+  background: var(--saffron); border-color: var(--saffron);
+  transform: translateY(-2px); box-shadow: 0 8px 20px rgba(255,98,0,.18);
+}
+.area-tile-name { font-size: 12.5px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+.area-tile:hover .area-tile-name { color: white; }
+.area-tile-sub { font-size: 10.5px; font-weight: 300; color: var(--muted); }
+.area-tile:hover .area-tile-sub { color: rgba(255,255,255,.75); }
+
+.result-highlight {
+  background: var(--navy); border-radius: 14px; padding: 28px;
+  margin-top: 20px; position: relative; overflow: hidden;
+}
+.result-highlight::before {
+  content: '';
+  position: absolute; top:-60px; right:-60px;
+  width: 200px; height: 200px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,98,0,0.12) 0%, transparent 70%);
+}
+.result-highlight-title {
+  font-size: 11px; font-weight: 700;
+  color: rgba(255,255,255,.45);
+  letter-spacing: 1.5px; text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.result-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.result-row:last-of-type { margin-bottom: 0; }
+.result-candidate-name { font-size: 13px; font-weight: 600; color: white; }
+.result-party { font-size: 11px; color: rgba(255,255,255,.4); margin-top: 2px; }
+.result-votes-num { font-size: 19px; font-weight: 800; text-align: right; }
+.result-bar-track { height: 5px; background: rgba(255,255,255,.08); border-radius: 3px; overflow: hidden; margin: 6px 0 12px; }
+.result-bar-fill { height: 100%; border-radius: 3px; }
+.result-margin-tag {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(255,98,0,.12); border: 1px solid rgba(255,98,0,.25);
+  border-radius: 8px; padding: 10px 16px; margin-top: 14px;
+}
+.margin-num { font-size: 26px; font-weight: 800; color: var(--saffron); }
+.margin-desc { font-size: 12px; color: rgba(255,255,255,.5); line-height: 1.5; }
+
+/* ══════════════════════════════════════════════
+   CONVICTIONS & CHARACTER SECTION
+══════════════════════════════════════════════ */
+.character-section {
+  background: var(--navy);
+  padding: 90px 48px;
+  position: relative; overflow: hidden;
+}
+.character-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 80% 30%, rgba(255,98,0,0.09) 0%, transparent 50%),
+    radial-gradient(circle at 10% 70%, rgba(12,122,7,0.06) 0%, transparent 45%);
+  pointer-events: none;
+}
+.character-inner { max-width: 1280px; margin: 0 auto; position: relative; z-index: 1; }
+.character-header { text-align: center; max-width: 640px; margin: 0 auto 60px; }
+.character-header .section-title { color: white; }
+.character-header .section-body { color: rgba(255,255,255,.6); }
+.character-header .eyebrow-text { color: rgba(255,170,110,.8); }
+
+.quotes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.quote-card {
+  background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px; padding: 30px 28px;
+  transition: all .3s; position: relative; overflow: hidden;
+}
+.quote-card::before {
+  content: '"';
+  position: absolute; top: -10px; left: 18px;
+  font-size: 80px; font-weight: 900;
+  color: rgba(255,98,0,0.12); line-height: 1; font-style: italic;
+}
+.quote-card:hover { background: rgba(255,98,0,.07); border-color: rgba(255,98,0,.25); transform: translateY(-4px); }
+.quote-text { font-size: 14.5px; font-style: italic; font-weight: 300; color: rgba(255,255,255,.8); line-height: 1.75; margin-bottom: 20px; position: relative; z-index: 1; }
+.quote-theme {
+  font-size: 10px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--saffron);
+  display: flex; align-items: center; gap: 8px;
+}
+.quote-theme::before { content: ''; width: 20px; height: 2px; background: var(--saffron); display: block; }
+
+/* ══════════════════════════════════════════════
+   VISION SECTION — side image layout
+══════════════════════════════════════════════ */
+.vision-section-wrap { background: var(--offwhite); }
+
+.vision-grid {
+  display: grid; grid-template-columns: 1fr; gap: 16px;
+}
+.vision-card {
+  border: 1px solid var(--stone); border-radius: 14px;
+  padding: 26px 24px; transition: all .3s; position: relative;
+  overflow: hidden; background: white;
+  display: flex; gap: 22px; align-items: flex-start;
+}
+.vision-card::after {
+  content: '';
+  position: absolute; left:0; top:0; bottom:0;
+  width: 4px; background: var(--saffron);
+  transform: scaleY(0); transform-origin: top;
+  transition: transform .35s;
+}
+.vision-card:hover { transform: translateX(5px); box-shadow: 0 10px 35px rgba(0,0,0,.07); border-color: transparent; }
+.vision-card:hover::after { transform: scaleY(1); }
+.vision-num {
+  font-size: 32px; font-weight: 900; color: white;
+  background: var(--saffron); width: 52px; height: 52px;
+  border-radius: 12px; display: flex; align-items: center; justify-content: center;
+  line-height: 1; flex-shrink: 0;
+  box-shadow: 0 5px 16px rgba(255,98,0,0.28); transition: transform .3s;
+}
+.vision-card:hover .vision-num { transform: scale(1.08); }
+.vision-title { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 8px; line-height: 1.3; }
+.vision-body { font-size: 13px; font-weight: 300; color: var(--muted); line-height: 1.75; }
+
+/* ══════════════════════════════════════════════
+   CTA BAND
+══════════════════════════════════════════════ */
+.cta-band {
+  background: var(--saffron);
+  padding: 70px 48px; text-align: center;
+  position: relative; overflow: hidden;
+}
+.cta-band::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(255,255,255,.07) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(0,0,0,.07) 0%, transparent 50%);
+  pointer-events: none;
+}
+.cta-band-inner { position: relative; z-index: 1; }
+.cta-band h2 { font-size: clamp(24px, 3.5vw, 40px); font-weight: 800; color: white; margin-bottom: 12px; line-height: 1.2; letter-spacing: -0.3px; }
+.cta-band p { font-size: 15px; font-weight: 300; color: rgba(255,255,255,.82); max-width: 520px; margin: 0 auto 32px; line-height: 1.7; }
+.cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.btn-white {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: white; color: var(--saffron);
+  font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700;
+  padding: 13px 28px; border-radius: 8px;
+  text-decoration: none; border: none; cursor: pointer;
+  transition: all .25s; box-shadow: 0 6px 22px rgba(0,0,0,.18);
+}
+.btn-white:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,.25); }
+.btn-white-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent; color: white;
+  font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 600;
+  padding: 12px 24px; border-radius: 8px;
+  text-decoration: none; border: 2px solid rgba(255,255,255,.5);
+  cursor: pointer; transition: all .25s;
+}
+.btn-white-outline:hover { border-color: white; background: rgba(255,255,255,.1); }
+
+/* ══════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════ */
+footer { background: #090E1A; padding: 60px 48px 30px; }
+.footer-inner { max-width: 1280px; margin: 0 auto; }
+.footer-top {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 48px; margin-bottom: 48px; padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.footer-brand-name { font-size: 18px; font-weight: 700; color: white; margin-bottom: 3px; }
+.footer-brand-role { font-size: 11px; font-weight: 600; color: var(--saffron); margin-bottom: 12px; letter-spacing: .5px; }
+.footer-brand-desc { font-size: 12.5px; font-weight: 300; color: rgba(255,255,255,.38); line-height: 1.75; }
+.footer-tricolor { display: flex; height: 3px; border-radius: 2px; overflow: hidden; width: 50px; margin-top: 14px; }
+.footer-tricolor span:nth-child(1) { flex:1; background: var(--saffron); }
+.footer-tricolor span:nth-child(2) { flex:1; background: white; opacity:.45; }
+.footer-tricolor span:nth-child(3) { flex:1; background: var(--green); }
+.footer-col-title { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.6); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 14px; }
+.footer-col-links { list-style: none; }
+.footer-col-links li { margin-bottom: 9px; }
+.footer-col-links a { font-size: 12.5px; font-weight: 300; color: rgba(255,255,255,.38); text-decoration: none; transition: color .2s; }
+.footer-col-links a:hover { color: var(--saffron); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: rgba(255,255,255,.22); }
+.footer-bottom a { color: rgba(255,255,255,.3); text-decoration: none; }
+.footer-bottom a:hover { color: var(--saffron); }
+.footer-social { display: flex; gap: 8px; }
+.social-btn {
+  width: 34px; height: 34px; border-radius: 8px;
+  background: rgba(255,255,255,.06);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; text-decoration: none;
+  transition: all .2s; cursor: pointer;
+}
+.social-btn:hover { background: var(--saffron); transform: translateY(-2px); }
+
+/* ══════════════════════════════════════════════
+   SCROLL REVEAL
+══════════════════════════════════════════════ */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity .65s, transform .65s; }
+.reveal.in { opacity: 1; transform: translateY(0); }
+.reveal-left { opacity: 0; transform: translateX(-26px); transition: opacity .65s, transform .65s; }
+.reveal-left.in { opacity: 1; transform: translateX(0); }
+.reveal-right { opacity: 0; transform: translateX(26px); transition: opacity .65s, transform .65s; }
+.reveal-right.in { opacity: 1; transform: translateX(0); }
+
+/* ══════════════════════════════════════════════
+   BACK TO TOP
+══════════════════════════════════════════════ */
+.back-top {
+  position: fixed; bottom: 24px; right: 24px;
+  width: 44px; height: 44px;
+  background: var(--saffron); color: white;
+  border: none; border-radius: 50%;
+  font-size: 18px; cursor: pointer;
+  box-shadow: 0 5px 18px rgba(255,98,0,.4);
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; z-index: 100;
+  opacity: 0; transform: translateY(10px);
+  transition: all .3s;
+}
+.back-top.visible { opacity: 1; transform: translateY(0); }
+.back-top:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(255,98,0,.5); }
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE — TABLET
+══════════════════════════════════════════════ */
+@media(max-width: 1100px) {
+  .nav-wrap { padding: 0 28px; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+
+  .section, .section-sm { padding: 70px 28px; }
+  .character-section { padding: 70px 28px; }
+  .cta-band { padding: 60px 28px; }
+
+  .bio-grid { grid-template-columns: 1fr; }
+  .leader-image-col { position: static; max-width: 420px; margin: 0 auto; }
+
+  .tl-heading-row { grid-template-columns: 1fr; gap: 20px; }
+  .tl-cards { grid-template-columns: 1fr 1fr; }
+  .tl-cards::before { display: none; }
+
+  /* Side image sections become stacked on tablet */
+  .side-img-section { grid-template-columns: 1fr; direction: ltr; }
+  .side-img-section.reverse { direction: ltr; }
+  .side-img-panel { min-height: 320px; }
+  .side-img-panel::after,
+  .side-img-section.reverse .side-img-panel::after {
+    background: linear-gradient(to bottom, transparent 50%, rgba(15,21,37,0.3) 100%);
+  }
+  .side-content-panel { padding: 48px 28px; }
+
+  .fact-row { grid-template-columns: 1fr 1fr; }
+  .quotes-grid { grid-template-columns: 1fr 1fr; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .areas-grid { grid-template-columns: repeat(3, 1fr); }
+  .drives-grid { grid-template-columns: 1fr 1fr; }
+  .constituency-3col { grid-template-columns: 1fr !important; }
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE — MOBILE
+══════════════════════════════════════════════ */
+@media(max-width: 768px) {
+  .nav-wrap { padding: 0 16px; }
+  .brand-name { font-size: 15px; }
+  .lang-toggle { margin-left: 6px; }
+  .lang-btn { padding: 4px 9px; font-size: 11px; }
+
+  .section, .section-sm { padding: 52px 16px; }
+  .character-section { padding: 52px 16px; }
+  .cta-band { padding: 52px 16px; }
+
+  .bio-grid { grid-template-columns: 1fr; gap: 40px; }
+  .leader-image-col { max-width: 100%; position: static; }
+
+  .fact-row { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .fact-chip { padding: 12px; }
+  .fact-chip-val { font-size: 12px; }
+
+  .tl-heading-row { grid-template-columns: 1fr; }
+  .tl-cards { grid-template-columns: 1fr; }
+  .tl-card { padding: 0; margin-bottom: 16px; }
+  .tl-card-dot-wrap { display: none; }
+
+  .side-img-section { grid-template-columns: 1fr; direction: ltr; }
+  .side-img-section.reverse { direction: ltr; }
+  .side-img-panel { min-height: 260px; }
+  .side-content-panel { padding: 36px 16px; }
+
+  .drives-grid { grid-template-columns: 1fr; }
+  .drives-quote-strip { padding: 36px 16px; }
+  .drives-quote-strip-text { font-size: 15px; }
+
+  .const-stats-grid { grid-template-columns: 1fr 1fr; }
+  .areas-grid { grid-template-columns: 1fr 1fr; }
+
+  .result-margin-tag { flex-direction: column; gap: 6px; text-align: center; padding: 14px; }
+
+  .quotes-grid { grid-template-columns: 1fr; }
+
+  .footer-top { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 14px; text-align: center; }
+
+  .cta-btns { flex-direction: column; align-items: center; }
+  .btn-white, .btn-white-outline { width: 100%; max-width: 280px; justify-content: center; }
+}
+
+@media(max-width: 480px) {
+  .section-title { font-size: 24px; }
+  .fact-row { grid-template-columns: 1fr 1fr; }
+  .const-stats-grid { grid-template-columns: 1fr 1fr; }
+  .const-stat-num { font-size: 26px; }
+  .areas-grid { grid-template-columns: 1fr 1fr; }
+  .side-img-panel { min-height: 220px; }
+  .vision-card { flex-direction: column; gap: 14px; }
+}
+</style>
+</head>
+
+<body id="top">
+
+<!-- ══════════════════════════════════════
+  NAVIGATION
+══════════════════════════════════════ -->
+<nav id="main-nav">
+  <div class="nav-wrap">
+    <a href="index.html" class="nav-brand">
+      <div class="brand-lotus">🪷</div>
+      <div>
+        <div class="brand-name" data-en>T. S. Srivatsa</div>
+        <div class="brand-name kn-font" data-kn>ಟಿ. ಎಸ್. ಶ್ರೀವತ್ಸ</div>
+        <div class="brand-role" data-en>MLA · Krishnaraja · BJP</div>
+        <div class="brand-role kn-font" data-kn>ಶಾಸಕರು · ಕೃಷ್ಣರಾಜ · ಬಿಜೆಪಿ</div>
+      <img src ="https://raw.githubusercontent.com/Yashwanth-MV/T-S-Srivatsa/refs/heads/main/BJP%20Logo.webp" height="25">
+      <div>
+        <div class="brand-name" data-en>T. S. Srivatsa</div>
+        <div class="brand-name kn-font" data-kn>ಟಿ. ಎಸ್. ಶ್ರೀವತ್ಸ</div>
+      </div>
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" data-en>Home</a><a href="index.html" class="kn-font" data-kn>ಮುಖಪುಟ</a></li>
+        <li><a href="about.html" class="current" data-en>About</a><a href="about.html" class="current kn-font" data-kn>ಪರಿಚಯ</a></li>
+        <li><a href="#" data-en>Work Done</a><a href="#" class="kn-font" data-kn>ಕೆಲಸ</a></li>
+        <li><a href="#" data-en>Positions</a><a href="#" class="kn-font" data-kn>ನಿಲುವು</a></li>
+        <li><a href="#" data-en>News</a><a href="#" class="kn-font" data-kn>ಸುದ್ದಿ</a></li>
+        <li><a href="#contact" class="nav-cta-link" data-en>Raise Grievance</a><a href="#contact" class="nav-cta-link kn-font" data-kn>ದೂರು ಸಲ್ಲಿಸಿ</a></li>
+        <li><a href="Home Page.html" data-en>Home</a>
+           <a href="Ho.html" class="kn-font" data-kn>ಮುಖಪುಟ</a></li>
+        <li><a href="about.html" class="current" data-en>About</a>
+          <a href="about.html" class="current kn-font" data-kn>ಪರಿಚಯ</a></li>
+        <li><a href="#" data-en>Work Done</a>
+          <a href="#" class="kn-font" data-kn>ಕೆಲಸ</a></li>
+        <li><a href="#" data-en>Posistions</a>
+          <a href="#" class="kn-font" data-kn>ನಿಲುವು</a></li>
+        <li><a href="#" data-en>News</a>
+          <a href="#" class="kn-font" data-kn>ಸುದ್ದಿ</a></li>
+        <li><a href="#contact" class="nav-cta-link" data-en>Raise Grievance</a>
+          <a href="#contact" class="nav-cta-link kn-font" data-kn>ದೂರು ಸಲ್ಲಿಸಿ</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="btn-kn" onclick="setLang('kn')">ಕನ್ನಡ</button>
+      </div>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="index.html" data-en>Home</a><a href="index.html" class="kn-font" data-kn>ಮುಖಪುಟ</a></li>
+    <li><a href="about.html" class="current" data-en>About</a><a href="about.html" class="current kn-font" data-kn>ಪರಿಚಯ</a></li>
+    <li><a href="#" data-en>Work Done</a><a href="#" class="kn-font" data-kn>ಕೆಲಸ</a></li>
+    <li><a href="#" data-en>Positions</a><a href="#" class="kn-font" data-kn>ನಿಲುವು</a></li>
+    <li><a href="#" data-en>News</a><a href="#" class="kn-font" data-kn>ಸುದ್ದಿ</a></li>
+  </ul>
+  <a href="#contact" class="mobile-cta" onclick="toggleMenu()" data-en>Raise Grievance →</a>
+  <a href="#contact" class="mobile-cta kn-font" onclick="toggleMenu()" data-kn>ದೂರು ಸಲ್ಲಿಸಿ →</a>
+</div>
+
+<!-- ══════════════════════════════════════
+  BIOGRAPHY SECTION
+══════════════════════════════════════ -->
+<section class="section bio-section" id="biography">
+  <div class="container">
+    <div class="bio-grid">
+
+      <div class="reveal-left">
+        <div class="eyebrow">
+          <div class="eyebrow-bar"></div>
+          <span class="eyebrow-text" data-en>Biography</span>
+          <span class="eyebrow-text kn-font" data-kn>ಜೀವನ ಚರಿತ್ರೆ</span>
+        </div>
+        <h2 class="section-title" data-en>A Mysurian Who Never <em>Forgot</em> Where He Came From</h2>
+        <h2 class="section-title kn-font" data-kn>ತನ್ನ ಮೂಲ ಮರೆಯದ <em>ಮೈಸೂರಿನ ಮಗ</em></h2>
+
+        <p class="section-body" data-en>
+          Talakadu Srinivasatatachar Srivatsa was born on <strong>November 3, 1967</strong>, in Mysuru — Karnataka's cultural capital. He grew up in the city's layered, community-rich neighbourhoods at a time when grassroots engagement was not a political strategy but a way of life. The social fabric of Mysuru — its traditions, its institutions, its unspoken civic pride — shaped who he would become.
+        </p>
+        <p class="section-body kn-font" data-kn>
+          ತಾಳಕಾಡು ಶ್ರೀನಿವಾಸತಾತಾಚಾರ್ ಶ್ರೀವತ್ಸ ಅವರು <strong>ನವೆಂಬರ್ 3, 1967</strong>ರಂದು ಕರ್ನಾಟಕದ ಸಾಂಸ್ಕೃತಿಕ ರಾಜಧಾನಿ ಮೈಸೂರಿನಲ್ಲಿ ಜನಿಸಿದರು. ಮೈಸೂರಿನ ನಾಡು-ನುಡಿ-ಸಂಸ್ಕೃತಿ ಅವರ ವ್ಯಕ್ತಿತ್ವ ರೂಪಿಸಿತು.
+        </p>
+
+        <p class="section-body" data-en>
+          After completing his <strong>B.Com from Banumaya College, Mysore University</strong> in 1988, Srivatsa chose public service over private gain. Through the 1990s and 2000s, he embedded himself in the BJP's Mysuru organisation — attending every ward-level meeting, knowing every party worker by name, and earning the kind of trust that cannot be bought with announcements or rallies.
+        </p>
+        <p class="section-body kn-font" data-kn>
+          1988ರಲ್ಲಿ <strong>ಬನುಮಯ ಕಾಲೇಜು, ಮೈಸೂರು ವಿವಿ</strong>ಯಿಂದ ಬಿ.ಕಾಂ ಮುಗಿಸಿ ಶ್ರೀವತ್ಸ ಖಾಸಗಿ ಲಾಭಕ್ಕಿಂತ ಸಾರ್ವಜನಿಕ ಸೇವೆ ಆರಿಸಿಕೊಂಡರು. ದಶಕಗಳ ಕಾಲ ಪ್ರತಿ ಪಕ್ಷ ಕಾರ್ಯಕರ್ತನ ಹೆಸರು ತಿಳಿದು ನಂಬಿಕೆ ಗಳಿಸಿದರು.
+        </p>
+
+        <blockquote class="pull-quote" data-en>"Politics is not a career I chose — it is a responsibility I accepted. Krishnaraja's people didn't give me a ticket, they gave me their trust. Those are not the same thing."</blockquote>
+        <blockquote class="pull-quote kn-font" data-kn>"ರಾಜಕೀಯ ನಾನು ಆರಿಸಿಕೊಂಡ ವೃತ್ತಿಯಲ್ಲ — ಅದು ನಾನು ಸ್ವೀಕರಿಸಿದ ಜವಾಬ್ದಾರಿ. ಕೃಷ್ಣರಾಜ ಜನ ನನಗೆ ಟಿಕೆಟ್ ಕೊಡಲಿಲ್ಲ, ನಂಬಿಕೆ ಕೊಟ್ಟರು. ಇವೆರಡೂ ಒಂದೇ ಅಲ್ಲ."</blockquote>
+
+        <p class="section-body" data-en>
+          He went on to serve as <strong>BJP Mysore City President</strong> — a role that required not just organisational capability but the ability to listen across wards, communities and interests. When the party fielded him in the 2023 Karnataka Assembly elections from Krishnaraja, he carried the constituency with <strong>73,670 votes and a 49% vote share</strong> — defeating two-time sitting MLA M.K. Somashekar in one of Mysuru's most closely watched contests.
+        </p>
+        <p class="section-body kn-font" data-kn>
+          <strong>ಬಿಜೆಪಿ ಮೈಸೂರು ನಗರ ಅಧ್ಯಕ್ಷ</strong>ರಾಗಿ ಸೇವೆ ಸಲ್ಲಿಸಿ 2023 ಚುನಾವಣೆಯಲ್ಲಿ <strong>73,670 ಮತ ಮತ್ತು 49% ಮತ ಹಂಚಿಕೆ</strong>ಯೊಂದಿಗೆ ಎರಡು ಬಾರಿ ಶಾಸಕ ಎಂ.ಕೆ. ಸೋಮಶೇಖರ್ ಅವರನ್ನು ಸೋಲಿಸಿದರು.
+        </p>
+
+        <div class="fact-row">
+          <div class="fact-chip">
+            <div class="fact-chip-lbl" data-en>Born</div>
+            <div class="fact-chip-lbl kn-font" data-kn>ಜನನ</div>
+            <div class="fact-chip-val">Nov 3, 1967</div>
+          </div>
+          <div class="fact-chip">
+            <div class="fact-chip-lbl" data-en>Education</div>
+            <div class="fact-chip-lbl kn-font" data-kn>ಶಿಕ್ಷಣ</div>
+            <div class="fact-chip-val" data-en>B.Com · 1988</div>
+            <div class="fact-chip-val kn-font" data-kn>ಬಿ.ಕಾಂ · 1988</div>
+          </div>
+          <div class="fact-chip">
+            <div class="fact-chip-lbl" data-en>Party Role</div>
+            <div class="fact-chip-lbl kn-font" data-kn>ಪಕ್ಷ ಪಾತ್ರ</div>
+            <div class="fact-chip-val" data-en>BJP City President</div>
+            <div class="fact-chip-val kn-font" data-kn>ಬಿಜೆಪಿ ನಗರ ಅಧ್ಯಕ್ಷ</div>
+          </div>
+          <div class="fact-chip">
+            <div class="fact-chip-lbl" data-en>Constituency</div>
+            <div class="fact-chip-lbl kn-font" data-kn>ಕ್ಷೇತ್ರ</div>
+            <div class="fact-chip-val">Krishnaraja #216</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Just the clean image, no overlays or stats -->
+      <div class="reveal-right">
+        <div class="leader-image-col">
+          <div style="border-radius:20px;overflow:hidden;display:inline-block;width:100%;">
+  <img src="https://raw.githubusercontent.com/Yashwanth-MV/T-S-Srivatsa/refs/heads/main/Hero%20image_About%20Page.png" alt="T. S. Srivatsa, MLA Krishnaraja" style="width:100%;display:block;">
+</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  WHAT DRIVES HIM — side image layout
+══════════════════════════════════════ -->
+<div class="drives-section-wrap">
+  <div class="section">
+    <div class="container">
+      <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 50px;">
+        <div class="eyebrow" style="justify-content:center;">
+          <div class="eyebrow-bar"></div>
+          <span class="eyebrow-text" data-en style="color:rgba(255,170,110,.9)">What Drives Him</span>
+          <span class="eyebrow-text kn-font" data-kn style="color:rgba(255,170,110,.9)">ಏನು ಪ್ರೇರಣೆ</span>
+        </div>
+        <h2 class="section-title" data-en style="color:white">Three Decades of <em>Purpose, Not Politics</em></h2>
+        <h2 class="section-title kn-font" data-kn style="color:white">ಮೂರು ದಶಕ <em>ಗುರಿ, ರಾಜಕೀಯ ಅಲ್ಲ</em></h2>
+      </div>
+      <div class="drives-grid">
+        <div class="drives-pill reveal">
+          <div class="drives-pill-icon">⚖️</div>
+          <div class="drives-pill-title" data-en>Zero Tolerance for Corruption</div>
+          <div class="drives-pill-title kn-font" data-kn>ಭ್ರಷ್ಟಾಚಾರಕ್ಕೆ ಶೂನ್ಯ ಸಹನೆ</div>
+          <div class="drives-pill-desc" data-en>Filed Lokayukta complaints, exposed ₹5,000 Cr MUDA scam and reversed a ₹900 Cr land deal in 24 hours. Public money belongs to the public.</div>
+          <div class="drives-pill-desc kn-font" data-kn>₹5,000 ಕೋಟಿ ಮುಡಾ ಮತ್ತು ₹900 ಕೋಟಿ ಭೂ ಹಗರಣ ಬಯಲು. ಸಾರ್ವಜನಿಕ ಹಣ ಜನರದ್ದೇ.</div>
+        </div>
+        <div class="drives-pill reveal">
+          <div class="drives-pill-icon">📋</div>
+          <div class="drives-pill-title" data-en>Land Rights for Every Family</div>
+          <div class="drives-pill-title kn-font" data-kn>ಪ್ರತಿ ಕುಟುಂಬಕ್ಕೂ ಭೂ ಹಕ್ಕು</div>
+          <div class="drives-pill-desc" data-en>Drove Mysuru to rank #2 in Karnataka for e-Khata issuance. A clean land record is the foundation of a family's security.</div>
+          <div class="drives-pill-desc kn-font" data-kn>ಮೈಸೂರನ್ನು ಕರ್ನಾಟಕದಲ್ಲಿ ಇ-ಖಾತಾ ವಿತರಣೆಯಲ್ಲಿ 2ನೇ ಸ್ಥಾನಕ್ಕೆ ತಂದರು.</div>
+        </div>
+        <div class="drives-pill reveal">
+          <div class="drives-pill-icon">🏛️</div>
+          <div class="drives-pill-title" data-en>Open Door Governance</div>
+          <div class="drives-pill-title kn-font" data-kn>ತೆರೆದ ಬಾಗಿಲ ಆಡಳಿತ</div>
+          <div class="drives-pill-desc" data-en>Kartavya Bhavan on Shankar Mutt Road — any resident can walk in without an appointment and leave with a response.</div>
+          <div class="drives-pill-desc kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ — ಯಾರು ಬೇಕಾದರೂ ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ಇಲ್ಲದೇ ಬಂದು ದೂರು ಸಲ್ಲಿಸಬಹುದು.</div>
+        </div>
+        <div class="drives-pill reveal">
+          <div class="drives-pill-icon">🤝</div>
+          <div class="drives-pill-title" data-en>Equal Development for All Wards</div>
+          <div class="drives-pill-title kn-font" data-kn>ಎಲ್ಲ ವಾರ್ಡ್‌ಗಳಿಗೂ ಸಮಾನ ಅಭಿವೃದ್ಧಿ</div>
+          <div class="drives-pill-desc" data-en>Fought publicly against political discrimination in development funds. No ward in Krishnaraja will be punished for how it voted.</div>
+          <div class="drives-pill-desc kn-font" data-kn>ಅಭಿವೃದ್ಧಿ ನಿಧಿಯಲ್ಲಿ ರಾಜಕೀಯ ತಾರತಮ್ಯ ವಿರುದ್ಧ ಹೋರಾಡಿದ್ದಾರೆ.</div>
+        </div>
+      </div>
+      <!-- Quote highlight -->
+      <div class="drives-quote-strip reveal" style="border-radius:20px;margin-top:40px;">
+        <div class="drives-quote-strip-text" data-en>"Krishnaraja is not just a constituency to me — it is the family I was trusted with. Every pothole, every pending title deed, every citizen being denied what is rightfully theirs — that is personal."</div>
+        <div class="drives-quote-strip-text kn-font" data-kn>"ಕೃಷ್ಣರಾಜ ನನಗೆ ಕೇವಲ ಕ್ಷೇತ್ರವಲ್ಲ — ನನ್ನ ಜವಾಬ್ದಾರಿಯ ಕುಟುಂಬ. ಪ್ರತಿ ಗುಂಡಿ, ಬಾಕಿ ಪಟ್ಟಾ, ಹಕ್ಕಿಂದ ವಂಚಿತ ಪ್ರತಿ ನಾಗರಿಕ — ಅದು ನನ್ನ ಅಂಗತ."</div>
+        <div class="drives-quote-strip-attr">— <span data-en>T. S. Srivatsa, MLA Krishnaraja</span><span class="kn-font" data-kn>ಟಿ. ಎಸ್. ಶ್ರೀವತ್ಸ, ಶಾಸಕರು ಕೃಷ್ಣರಾಜ</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  TIMELINE — Journey to Krishnaraja
+══════════════════════════════════════ -->
+<section class="section timeline-section" id="journey">
+  <div class="container">
+    <div class="tl-heading-row reveal">
+      <div>
+        <div class="eyebrow">
+          <div class="eyebrow-bar"></div>
+          <span class="eyebrow-text" data-en>The Journey</span>
+          <span class="eyebrow-text kn-font" data-kn>ಪಯಣ</span>
+        </div>
+        <h2 class="section-title" data-en>Decades of Roots<br><em>Before the Crown</em></h2>
+        <h2 class="section-title kn-font" data-kn>ಹೊಸ ಉಪಾಧಿಗೆ ಮೊದಲು<br><em>ದಶಕಗಳ ಅಡಿಪಾಯ</em></h2>
+      </div>
+      <p class="tl-intro" data-en>Most politicians arrive at a constituency. Srivatsa grew from one. His timeline is not a list of positions — it is a record of an ordinary man who chose extraordinary commitment over easy comfort, year after year.</p>
+      <p class="tl-intro kn-font" data-kn>ಹೆಚ್ಚಿನ ರಾಜಕಾರಣಿಗಳು ಕ್ಷೇತ್ರಕ್ಕೆ ಬರುತ್ತಾರೆ. ಶ್ರೀವತ್ಸ ಕ್ಷೇತ್ರದಿಂದಲೇ ಹುಟ್ಟಿದವರು.</p>
+    </div>
+
+    <div class="tl-cards">
+      <div class="tl-card reveal">
+        <div class="tl-card-dot-wrap"><div class="tl-card-dot"></div></div>
+        <div class="tl-card-body">
+          <div class="tl-card-year">1967</div>
+          <div class="tl-card-title" data-en>Born in Mysuru, Karnataka</div>
+          <div class="tl-card-title kn-font" data-kn>ಮೈಸೂರಿನಲ್ಲಿ ಜನನ</div>
+          <div class="tl-card-desc" data-en>Born into the cultural heart of Karnataka. Mysuru's traditions, civic pride, and its people shaped him from the beginning.</div>
+          <div class="tl-card-desc kn-font" data-kn>ಮೈಸೂರಿನ ಸಂಸ್ಕೃತಿ ಮತ್ತು ಜನ ಅವರನ್ನು ರೂಪಿಸಿತು.</div>
+        </div>
+      </div>
+      <div class="tl-card reveal">
+        <div class="tl-card-dot-wrap"><div class="tl-card-dot"></div></div>
+        <div class="tl-card-body">
+          <div class="tl-card-year">1988</div>
+          <div class="tl-card-title" data-en>B.Com Graduate — Mysore University</div>
+          <div class="tl-card-title kn-font" data-kn>ಬಿ.ಕಾಂ ಪದವಿ — ಮೈಸೂರು ವಿವಿ</div>
+          <div class="tl-card-desc" data-en>Completed his degree from Banumaya College. Commerce gave him the analytical framework; Mysuru gave him the civic instinct.</div>
+          <div class="tl-card-desc kn-font" data-kn>ಬನುಮಯ ಕಾಲೇಜಿನಿಂದ ಪದವಿ. ಮೈಸೂರು ನೀಡಿದ ನಾಗರಿಕ ಪ್ರಜ್ಞೆ.</div>
+        </div>
+      </div>
+      <div class="tl-card reveal">
+        <div class="tl-card-dot-wrap"><div class="tl-card-dot"></div></div>
+        <div class="tl-card-body">
+          <div class="tl-card-year">1990s–2010s</div>
+          <div class="tl-card-title" data-en>Grassroots BJP Worker & Organiser</div>
+          <div class="tl-card-title kn-font" data-kn>ತಳಮಟ್ಟ ಬಿಜೆಪಿ ಕಾರ್ಯಕರ್ತ</div>
+          <div class="tl-card-desc" data-en>Spent decades at ward level — attending every meeting, building the party's Mysuru network from booth to booth.</div>
+          <div class="tl-card-desc kn-font" data-kn>ದಶಕಗಳ ಕಾಲ ವಾರ್ಡ್ ಮಟ್ಟದಲ್ಲಿ ಕೆಲಸ ಮಾಡಿ ಪಕ್ಷದ ಮೈಸೂರು ಜಾಲ ಕಟ್ಟಿದರು.</div>
+        </div>
+      </div>
+      <div class="tl-card reveal">
+        <div class="tl-card-dot-wrap"><div class="tl-card-dot"></div></div>
+        <div class="tl-card-body">
+          <div class="tl-card-year">Pre-2023</div>
+          <div class="tl-card-title" data-en>BJP Mysore City President</div>
+          <div class="tl-card-title kn-font" data-kn>ಬಿಜೆಪಿ ಮೈಸೂರು ನಗರ ಅಧ್ಯಕ್ಷ</div>
+          <div class="tl-card-desc" data-en>Elected as BJP Mysore City President — coordinating across all three assembly constituencies in the city.</div>
+          <div class="tl-card-desc kn-font" data-kn>ನಗರದ ಮೂರು ಕ್ಷೇತ್ರಗಳ ಸಮನ್ವಯ ಮಾಡಿದರು.</div>
+        </div>
+      </div>
+      <div class="tl-card reveal">
+        <div class="tl-card-dot-wrap"><div class="tl-card-dot green"></div></div>
+        <div class="tl-card-body">
+          <div class="tl-card-year" style="color:var(--green)">May 2023</div>
+          <div class="tl-card-title" data-en>Elected MLA — Krishnaraja No. 216</div>
+          <div class="tl-card-title kn-font" data-kn>ಕೃಷ್ಣರಾಜ ಸಂ.216 ಶಾಸಕರಾಗಿ ಚುನಾಯಿತ</div>
+          <div class="tl-card-desc" data-en>Won 73,670 votes at 49% share. Defeated 2-time MLA M.K. Somashekar by 7,213. Sole BJP MLA from Mysuru District.</div>
+          <div class="tl-card-desc kn-font" data-kn>73,670 ಮತ ಗಳಿಸಿ ಮೈಸೂರು ಜಿಲ್ಲೆ ಏಕೈಕ ಬಿಜೆಪಿ ಶಾಸಕರಾದರು.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  EDUCATION — side image layout (image RIGHT)
+══════════════════════════════════════ -->
+<div class="edu-section-wrap" id="education">
+  <!-- H1 centered at top, full width -->
+  <div style="text-align:center;padding:56px 48px 32px;background:transparent;">
+    <div class="eyebrow" style="justify-content:center;">
+      
+      <span class="eyebrow-text" data-en></span>
+      
+    </div>
+    <h1 style="font-size:clamp(30px,3.5vw,48px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.3px;margin-bottom:8px;" data-en>Education &amp; <em style="font-style:italic;color:var(--saffron);">Credentials</em></h1>
+    <h1 style="font-size:clamp(30px,3.5vw,48px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.3px;margin-bottom:8px;" class="kn-font" data-kn>ಶಿಕ್ಷಣ ಮತ್ತು <em style="font-style:italic;color:var(--saffron);">ದಾಖಲೆ</em></h1>
+  </div>
+  <!-- Image LEFT, Academic card RIGHT -->
+  <div class="side-img-section reveal" style="background:transparent;">
+    <!-- Left: Portrait image with rounded corners -->
+    <div style="display:flex;align-items:center;justify-content:center;padding:0 48px 56px;background:transparent;">
+      <div style="position:relative;width:100%;max-width:460px;overflow:hidden;border-radius:20px">
+
+        <!-- PORTRAIT IMAGE — replace src on LINE 1252 -->
+        <img src="https://raw.githubusercontent.com/Yashwanth-MV/T-S-Srivatsa/refs/heads/main/Education%20and%20Credentials%20.png" alt="T. S. Srivatsa"
+          style="width:100%;max-height:480px;object-fit:contain;object-position:center;border-radius:500px;display:block;filter:drop-shadow(0 12px 32px rgba(0,0,0,0.22));">
+
+      </div>
+    </div>
+    <!-- Right: Academic card only (no repeated heading) -->
+    <div class="side-content-panel" style="background:transparent;">
+      <div class="edu-card-dark">
+        <div class="edu-card-badge">
+          <span class="edu-card-badge-text" data-en>Academic Background</span>
+          <span class="edu-card-badge-text kn-font" data-kn>ಶೈಕ್ಷಣಿಕ ಹಿನ್ನೆಲೆ</span>
+        </div>
+        <div class="edu-card-title" data-en>Bachelor of Commerce</div>
+        <div class="edu-card-title kn-font" data-kn>ವಾಣಿಜ್ಯ ಸ್ನಾತಕ</div>
+        <div class="edu-card-sub" data-en>B.Com (Bachelor of Commerce) — 1988</div>
+        <div class="edu-card-sub kn-font" data-kn>ಬಿ.ಕಾಂ — 1988</div>
+        <div class="edu-detail-row">
+          <div class="edu-detail-icon">🏛️</div>
+          <div>
+            <div class="edu-detail-label" data-en>Institution</div>
+            <div class="edu-detail-label kn-font" data-kn>ಸಂಸ್ಥೆ</div>
+            <div class="edu-detail-val" data-en>Banumaya College of Commerce and Management</div>
+            <div class="edu-detail-val kn-font" data-kn>ಬನುಮಯ ಕಾಲೇಜ್</div>
+            <div class="edu-detail-sub" data-en>Mysore, Karnataka</div>
+            <div class="edu-detail-sub kn-font" data-kn>ಮೈಸೂರು, ಕರ್ನಾಟಕ</div>
+          </div>
+        </div>
+        <div class="edu-detail-row">
+          <div class="edu-detail-icon">🎓</div>
+          <div>
+            <div class="edu-detail-label" data-en>University</div>
+            <div class="edu-detail-label kn-font" data-kn>ವಿಶ್ವವಿದ್ಯಾಲಯ</div>
+            <div class="edu-detail-val" data-en>University of Mysore</div>
+            <div class="edu-detail-val kn-font" data-kn>ಮೈಸೂರು ವಿಶ್ವವಿದ್ಯಾಲಯ</div>
+            <div class="edu-detail-sub" data-en>One of India's oldest and most prestigious universities</div>
+            <div class="edu-detail-sub kn-font" data-kn>ಭಾರತದ ಹಳೆಯ ಪ್ರತಿಷ್ಠಿತ ವಿಶ್ವವಿದ್ಯಾಲಯ</div>
+          </div>
+        </div>
+        <div class="edu-divider"></div>
+        <div class="edu-note">
+          <div class="edu-note-label" data-en>Beyond the Classroom</div>
+          <div class="edu-note-label kn-font" data-kn>ತರಗತಿಯ ಆಚೆ</div>
+          <p class="edu-note-text" data-en>Commerce taught Srivatsa numbers, budgets and systems thinking. But it was Mysuru itself — its street-level political culture and its communities — that completed his education in governance.</p>
+          <p class="edu-note-text kn-font" data-kn>ವಾಣಿಜ್ಯ ಅಂಕಿ ಮತ್ತು ವ್ಯವಸ್ಥಾ ಚಿಂತನೆ ಕಲಿಸಿತು. ಆಡಳಿತದ ಸಂಪೂರ್ಣ ಶಿಕ್ಷಣ ನೀಡಿದ್ದು ಮೈಸೂರೇ.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  POLITICAL CAREER — side image layout (image LEFT)
+══════════════════════════════════════ -->
+<div class="political-section-wrap" id="political-career">
+  <!-- H1 centered at top, full width -->
+  <div style="text-align:center;padding:56px 48px 0;background:var(--offwhite);">
+    <div class="eyebrow" style="justify-content:center;">
+      
+    </div>
+    <h1 style="font-size:clamp(30px,3.5vw,48px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.3px;margin-bottom:8px;" data-en>Political Career <em style="font-style:italic;color:var(--saffron);">Highlights</em></h1>
+    <h1 style="font-size:clamp(30px,3.5vw,48px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.3px;margin-bottom:8px;" class="kn-font" data-kn>ರಾಜಕೀಯ <em style="font-style:italic;color:var(--saffron);">ಕ್ಷಣಗಳು</em></h1>
+  </div>
+  <div class="side-img-section reverse reveal">
+    <!-- Left: Content (no repeated heading) -->
+    <div class="side-content-panel" style="background: var(--offwhite);">
+      <h3 style="font-size: clamp(20px,2.5vw,28px); font-weight:700; color:var(--navy); margin:0 0 24px; line-height:1.3" data-en>Earning Every Step — No Shortcuts</h3>
+      <h3 style="font-size: clamp(20px,2.5vw,28px); font-weight:700; color:var(--navy); margin:0 0 24px; line-height:1.3" class="kn-font" data-kn>ಪ್ರತಿ ಹಂತ ಗಳಿಸಿದ್ದು — ಶಾರ್ಟ್‌ಕಟ್ ಇಲ್ಲ</h3>
+
+      <div class="milestones">
+        <div class="milestone-item">
+          <div class="milestone-year-badge">1988</div>
+          <div>
+            <div class="milestone-title" data-en>Begins Public Life in Mysuru</div>
+            <div class="milestone-title kn-font" data-kn>ಮೈಸೂರಿನಲ್ಲಿ ಸಾರ್ವಜನಿಕ ಜೀವನ ಆರಂಭ</div>
+            <div class="milestone-desc" data-en>Post-graduation, commits entirely to community and party work. Chooses public service over professional career advancement.</div>
+            <div class="milestone-desc kn-font" data-kn>ಪದವಿ ನಂತರ ಸಮುದಾಯ ಮತ್ತು ಪಕ್ಷ ಕಾರ್ಯಕ್ಕೆ ಸಂಪೂರ್ಣ ಸಮರ್ಪಿಸಿಕೊಂಡರು.</div>
+          </div>
+        </div>
+        <div class="milestone-item">
+          <div class="milestone-year-badge">2000s</div>
+          <div>
+            <div class="milestone-title" data-en>BJP Ward & Zone Level Organiser</div>
+            <div class="milestone-title kn-font" data-kn>ಬಿಜೆಪಿ ವಾರ್ಡ್ ಮತ್ತು ವಲಯ ಸಂಘಟಕ</div>
+            <div class="milestone-desc" data-en>Builds credibility across Krishnaraja ward by ward. Known as a worker who shows up — at every booth, every event, every crisis.</div>
+            <div class="milestone-desc kn-font" data-kn>ಪ್ರತಿ ಸಂದರ್ಭದಲ್ಲೂ ಹಾಜರಾಗುವ ಕಾರ್ಯಕರ್ತ ಎಂದು ಹೆಸರಾದರು.</div>
+          </div>
+        </div>
+        <div class="milestone-item">
+          <div class="milestone-year-badge">Pre-2023</div>
+          <div>
+            <div class="milestone-title" data-en>BJP Mysore City President</div>
+            <div class="milestone-title kn-font" data-kn>ಬಿಜೆಪಿ ಮೈಸೂರು ನಗರ ಅಧ್ಯಕ್ಷ</div>
+            <div class="milestone-desc" data-en>Elected City President — oversees all of Mysuru's three urban segments, builds party strength ahead of 2023 polls.</div>
+            <div class="milestone-desc kn-font" data-kn>ಮೈಸೂರಿನ ಮೂರು ಕ್ಷೇತ್ರಗಳ ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ 2023 ಚುನಾವಣೆಗೆ ಪಕ್ಷ ಸಿದ್ಧಪಡಿಸಿದರು.</div>
+          </div>
+        </div>
+        <div class="milestone-item">
+          <div class="milestone-year-badge green">May 2023</div>
+          <div>
+            <div class="milestone-title" data-en>Elected MLA — Krishnaraja (No. 216), Mysuru</div>
+            <div class="milestone-title kn-font" data-kn>ಶಾಸಕರಾಗಿ ಚುನಾಯಿತ — ಕೃಷ್ಣರಾಜ (ಸಂ. 216)</div>
+            <div class="milestone-desc" data-en>Wins with 73,670 votes and 49% share. Defeats 2-time MLA M.K. Somashekar by 7,213 votes. Sole BJP MLA from Mysuru District in a Congress-wave year.</div>
+            <div class="milestone-desc kn-font" data-kn>73,670 ಮತ ಗಳಿಸಿ ಕಾಂಗ್ರೆಸ್ ಅಲೆಯ ನಡುವೆ ಗೆದ್ದರು.</div>
+          </div>
+        </div>
+        <div class="milestone-item">
+          <div class="milestone-year-badge green">2023–Now</div>
+          <div>
+            <div class="milestone-title" data-en>Active MLA — Corruption Fighter, Constituency Builder</div>
+            <div class="milestone-title kn-font" data-kn>ಸಕ್ರಿಯ ಶಾಸಕ — ಭ್ರಷ್ಟಾಚಾರ ವಿರೋಧಿ</div>
+            <div class="milestone-desc" data-en>Opens Kartavya Bhavan, files Lokayukta complaints on MUDA, exposes ₹900 Cr land scam, drives e-Khata reform.</div>
+            <div class="milestone-desc kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ ತೆರೆದು, ₹900 ಕೋಟಿ ಹಗರಣ ಬಯಲಿಗೆ ತಂದು ಇ-ಖಾತಾ ಸುಧಾರಣೆ ಮಾಡಿದ್ದಾರೆ.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right: Image (50% of section height) -->
+    <div class="side-img-panel dark-overlay half-height" style="border-radius:20px;overflow:hidden;margin-left:40px;">
+      <img src="https://raw.githubusercontent.com/Yashwanth-MV/T-S-Srivatsa/refs/heads/main/Political%20Highlights.png" alt="T. S. Srivatsa political journey">
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  CONSTITUENCY — side image layout (image RIGHT)
+══════════════════════════════════════ -->
+<div class="constituency-section-wrap" id="constituency">
+  <div class="section reveal">
+    <div class="container">
+      <!-- Header centered -->
+      <div style="text-align:center;margin-bottom:40px;">
+        <div class="eyebrow" style="justify-content:center;">
+          <div class="eyebrow-bar"></div>
+          <span class="eyebrow-text" data-en>The Constituency</span>
+          <span class="eyebrow-text kn-font" data-kn>ಕ್ಷೇತ್ರ</span>
+        </div>
+        <h2 class="section-title" data-en>Krishnaraja — <em>Heart of Mysuru City</em></h2>
+        <h2 class="section-title kn-font" data-kn>ಕೃಷ್ಣರಾಜ — <em>ಮೈಸೂರಿನ ಎದೆ</em></h2>
+        <p class="section-body" style="max-width:680px;margin:0 auto;" data-en>Assembly Constituency No. 216, Krishnaraja is one of three urban segments within the historic Mysore Lok Sabha constituency. Home to over one lakh active voters across Mysuru's most dynamic neighbourhoods.</p>
+        <p class="section-body kn-font" style="max-width:680px;margin:0 auto;" data-kn>ಕರ್ನಾಟಕ ವಿಧಾನಸಭೆಯ 216ನೇ ಕ್ಷೇತ್ರ, ಕೃಷ್ಣರಾಜ ಒಂದು ಲಕ್ಷಕ್ಕೂ ಹೆಚ್ಚು ಮತದಾರರ ತವರು.</p>
+      </div>
+
+      <!-- Three columns horizontal -->
+      <div class="constituency-3col" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:50px;align-items:start;">
+
+      
+        <!-- Column 1: Election Result -->
+        <div>
+          <div class="result-highlight">
+            <div class="result-highlight-title" data-en>2023 Election Result</div>
+            <div class="result-highlight-title kn-font" data-kn>2023 ಚುನಾವಣಾ ಫಲಿತಾಂಶ</div>
+            <div class="result-row"><div><div class="result-candidate-name" data-en>T. S. Srivatsa &nbsp;<span style="font-size:10px;background:rgba(255,98,0,0.2);color:#FF9050;padding:2px 7px;border-radius:4px;font-weight:700">WON ✓</span></div><div class="result-candidate-name kn-font" data-kn>ಟಿ. ಎಸ್. ಶ್ರೀವತ್ಸ &nbsp;<span style="font-size:10px;background:rgba(255,98,0,0.2);color:#FF9050;padding:2px 7px;border-radius:4px;font-weight:700">ಗೆದ್ದರು ✓</span></div><div class="result-party">BJP</div></div><div class="result-votes-num" style="color:var(--saffron)">73,670</div></div>
+            <div class="result-bar-track"><div class="result-bar-fill" style="background:var(--saffron);width:49%"></div></div>
+            <div class="result-row"><div><div class="result-candidate-name">M.K. Somashekar</div><div class="result-party" data-en>INC (2-time MLA)</div><div class="result-party kn-font" data-kn>ಕಾಂಗ್ರೆಸ್</div></div><div class="result-votes-num" style="color:#6B9FD4">66,457</div></div>
+            <div class="result-bar-track"><div class="result-bar-fill" style="background:#1565C0;width:44%"></div></div>
+            <div class="result-margin-tag">
+              <div class="margin-num">7,213</div>
+              <div class="margin-desc" data-en>Winning margin · 59.34% turnout<br>Sole BJP MLA from Mysuru District</div>
+              <div class="margin-desc kn-font" data-kn>ಗೆಲ್ಲಿನ ಅಂತರ · ಮೈಸೂರು ಜಿಲ್ಲೆ ಏಕೈಕ ಬಿಜೆಪಿ ಶಾಸಕ</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Stats -->
+        <div>
+          <div class="areas-heading" data-en>Stats</div>
+          <div class="areas-heading kn-font" data-kn>ಅಂಕಿಅಂಶಗಳು</div>
+          <div class="const-stats-grid" style="padding-top:50px">
+            
+            <div class="const-stat"><div class="const-stat-num">216</div><div class="const-stat-lbl" data-en>Assembly Number</div><div class="const-stat-lbl kn-font" data-kn>ಕ್ಷೇತ್ರ ಸಂಖ್ಯೆ</div></div>
+            <div class="const-stat"><div class="const-stat-num">73K+</div><div class="const-stat-lbl" data-en>Votes — 2023</div><div class="const-stat-lbl kn-font" data-kn>ಮತ — 2023</div></div>
+            <div class="const-stat"><div class="const-stat-num">49%</div><div class="const-stat-lbl" data-en>Vote Share</div><div class="const-stat-lbl kn-font" data-kn>ಮತ ಹಂಚಿಕೆ</div></div>
+            <div class="const-stat"><div class="const-stat-num">266</div><div class="const-stat-lbl" data-en>Polling Booths</div><div class="const-stat-lbl kn-font" data-kn>ಮತಗಟ್ಟೆ</div></div>
+          </div>
+        </div>
+
+        <!-- Column 3: Neighbourhoods -->
+        <div>
+          <div class="areas-heading" data-en>Neighbourhoods</div>
+          <div class="areas-heading kn-font" data-kn>ಪ್ರದೇಶಗಳು</div>
+          <div class="areas-grid" style="grid-template-columns:1fr 1fr;">
+            <div class="area-tile"><div class="area-tile-name" data-en>T.K. Layout</div><div class="area-tile-name kn-font" data-kn>ಟಿ.ಕೆ. ಲೇಔಟ್</div><div class="area-tile-sub" data-en>Residential hub</div></div>
+            <div class="area-tile"><div class="area-tile-name" data-en>Kuvempunagar</div><div class="area-tile-name kn-font" data-kn>ಕುವೆಂಪುನಗರ</div><div class="area-tile-sub" data-en>Cultural zone</div></div>
+            <div class="area-tile"><div class="area-tile-name" data-en>Vidyaranyapuram</div><div class="area-tile-name kn-font" data-kn>ವಿದ್ಯಾರಣ್ಯಪುರ</div><div class="area-tile-sub" data-en>Growing area</div></div>
+            <div class="area-tile"><div class="area-tile-name" data-en>Ashokapuram</div><div class="area-tile-name kn-font" data-kn>ಅಶೋಕಪುರ</div><div class="area-tile-sub" data-en>Urban neighbourhood</div></div>
+            <div class="area-tile"><div class="area-tile-name" data-en>Jayanagar</div><div class="area-tile-name kn-font" data-kn>ಜಯನಗರ</div><div class="area-tile-sub" data-en>Civic centre</div></div>
+            <div class="area-tile"><div class="area-tile-name" data-en>Chamarajapuram</div><div class="area-tile-name kn-font" data-kn>ಚಾಮರಾಜಪುರ</div><div class="area-tile-sub" data-en>Historic ward</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  CONVICTIONS — Quotes grid
+══════════════════════════════════════ -->
+<section class="character-section">
+  <div class="character-inner">
+    <div class="character-header reveal">
+      <div class="eyebrow" style="justify-content:center">
+        <div class="eyebrow-bar"></div>
+        <span class="eyebrow-text" data-en>In His Own Words</span>
+        <span class="eyebrow-text kn-font" data-kn>ಅವರದ್ದೇ ಮಾತುಗಳಲ್ಲಿ</span>
+      </div>
+      <h2 class="section-title" data-en>The Convictions That <em><br>Drive Every Decision</em></h2>
+      <h2 class="section-title kn-font" data-kn>ಪ್ರತಿ ನಿರ್ಧಾರ ಹಿಂದಿನ <em><br>ದೃಢ ನಂಬಿಕೆ</em></h2>
+      <p class="section-body" data-en>These aren't sound bites or campaign slogans. They are the principles that guide how Srivatsa shows up — in the Assembly, in Kartavya Bhavan, and on the streets of Krishnaraja.</p>
+      <p class="section-body kn-font" data-kn>ಇವು ಚುನಾವಣಾ ಘೋಷಣೆಗಳಲ್ಲ. ವಿಧಾನಸಭೆಯಲ್ಲಿ ಮತ್ತು ಕೃಷ್ಣರಾಜ ಬೀದಿಗಳಲ್ಲಿ ಶ್ರೀವತ್ಸ ಹೇಗೆ ಕಾರ್ಯ ನಿರ್ವಹಿಸುತ್ತಾರೆ ಎಂಬ ತತ್ವಗಳು.</p>
+    </div>
+    <div class="quotes-grid">
+      <div class="quote-card reveal">
+        <p class="quote-text" data-en>"When ₹5,000 crore of public money disappears into bad land deals, there is only one responsible response — file the complaint, name the names, and refuse to be silent."</p>
+        <p class="quote-text kn-font" data-kn>"₹5,000 ಕೋಟಿ ಸಾರ್ವಜನಿಕ ಹಣ ಭೂ ಒಪ್ಪಂದಗಳಲ್ಲಿ ಮಾಯವಾದಾಗ, ಒಂದೇ ಜವಾಬ್ದಾರಿ — ದೂರು ಸಲ್ಲಿಸು, ಹೆಸರು ಹೇಳು."</p>
+        <div class="quote-theme" data-en>On Accountability</div>
+        <div class="quote-theme kn-font" data-kn>ಜವಾಬ್ದಾರಿ ಬಗ್ಗೆ</div>
+      </div>
+      <div class="quote-card reveal">
+        <p class="quote-text" data-en>"A family without a clean title deed lives on borrowed certainty. Every pending e-Khata record represents a family that cannot fully call their home their own."</p>
+        <p class="quote-text kn-font" data-kn>"ಸ್ಪಷ್ಟ ಪಟ್ಟಾ ಇಲ್ಲದ ಕುಟುಂಬ ಸಾಲ ತೆಗೆದ ಖಾತ್ರಿಯ ಮೇಲೆ ಬದುಕುತ್ತದೆ."</p>
+        <div class="quote-theme" data-en>On Land Rights</div>
+        <div class="quote-theme kn-font" data-kn>ಭೂ ಹಕ್ಕು ಬಗ್ಗೆ</div>
+      </div>
+      <div class="quote-card reveal">
+        <p class="quote-text" data-en>"Kartavya Bhavan is not a political office — it is a service centre. If you have a problem and you are from Krishnaraja, the door is open. That is not a campaign promise, it is just basic duty."</p>
+        <p class="quote-text kn-font" data-kn>"ಕರ್ತವ್ಯ ಭವನ ರಾಜಕೀಯ ಕಚೇರಿಯಲ್ಲ — ಸೇವಾ ಕೇಂದ್ರ. ಕೇವಲ ಮೂಲಭೂತ ಕರ್ತವ್ಯ."</p>
+        <div class="quote-theme" data-en>On Citizen Service</div>
+        <div class="quote-theme kn-font" data-kn>ನಾಗರಿಕ ಸೇವೆ ಬಗ್ಗೆ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  VISION FOR KRISHNARAJA — side image layout (image LEFT)
+══════════════════════════════════════ -->
+<div class="vision-section-wrap" id="vision">
+  <div class="side-img-section reverse reveal">
+    <!-- Left: Content -->
+    <div class="side-content-panel" style="background: var(--offwhite);">
+      <div class="eyebrow">
+        <div class="eyebrow-bar"></div>
+        <span class="eyebrow-text" data-en>Vision for Krishnaraja</span>
+        <span class="eyebrow-text kn-font" data-kn>ಕೃಷ್ಣರಾಜ ದೃಷ್ಟಿಕೋನ</span>
+      </div>
+      <h2 class="section-title" data-en>What Krishnaraja <em>Deserves</em></h2>
+      <h2 class="section-title kn-font" data-kn>ಕೃಷ್ಣರಾಜ <em>ಅರ್ಹವಾದದ್ದು</em></h2>
+
+      <div class="vision-grid" style="margin-top: 28px;">
+        <div class="vision-card">
+          <div class="vision-num">01</div>
+          <div>
+            <div class="vision-title" data-en>Zero Pending Land Records by 2026</div>
+            <div class="vision-title kn-font" data-kn>2026 ರ ವೇಳೆಗೆ ಬಾಕಿ ಭೂ ದಾಖಲೆ ಶೂನ್ಯ</div>
+            <div class="vision-body" data-en>Every family in Krishnaraja with a pending e-Khata or Group Housing title deed gets it resolved. No resident should wait another five years for legal ownership.</div>
+            <div class="vision-body kn-font" data-kn>ಕೃಷ್ಣರಾಜದ ಪ್ರತಿ ಕುಟುಂಬದ ಬಾಕಿ ಇ-ಖಾತಾ ಪರಿಹರಿಸಲಾಗುತ್ತದೆ.</div>
+          </div>
+        </div>
+        <div class="vision-card">
+          <div class="vision-num">02</div>
+          <div>
+            <div class="vision-title" data-en>Equal Infrastructure Funding — No Political Penalty</div>
+            <div class="vision-title kn-font" data-kn>ಸಮಾನ ಮೂಲಸೌಕರ್ಯ ನಿಧಿ</div>
+            <div class="vision-body" data-en>Krishnaraja will receive the development funds it is entitled to — roads, drainage, parks, lighting. A constituency should not be punished because it returned an opposition MLA.</div>
+            <div class="vision-body kn-font" data-kn>ಕೃಷ್ಣರಾಜ ಅರ್ಹ ಅಭಿವೃದ್ಧಿ ನಿಧಿ ಪಡೆಯುತ್ತದೆ.</div>
+          </div>
+        </div>
+        <div class="vision-card">
+          <div class="vision-num">03</div>
+          <div>
+            <div class="vision-title" data-en>Government Land Protected for Future Generations</div>
+            <div class="vision-title kn-font" data-kn>ಮುಂದಿನ ಪೀಳಿಗೆಗಾಗಿ ಸರ್ಕಾರಿ ಭೂಮಿ ರಕ್ಷಣೆ</div>
+            <div class="vision-body" data-en>Not a single acre of government land in Mysuru District changes hands through irregular means while Srivatsa can prevent it. The ₹900 Cr Kurubarahalli reversal is just the beginning.</div>
+            <div class="vision-body kn-font" data-kn>ಯಾವ ಸರ್ಕಾರಿ ಭೂಮಿಯೂ ಅಕ್ರಮ ಮಾರ್ಗದಲ್ಲಿ ಕೈ ಬದಲಾಗದ ಹಾಗೆ ಶ್ರೀವತ್ಸ ಕಾಯುತ್ತಾರೆ.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right: Image (50% of section height) -->
+    <div class="side-img-panel dark-overlay half-height" style="border-radius:20px;overflow:hidden;margin-left:40px;">
+      <img src="https://raw.githubusercontent.com/Yashwanth-MV/T-S-Srivatsa/refs/heads/main/What%20Krishnaraja%20Deserves.png" alt="Vision for Krishnaraja">
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  CTA BAND
+══════════════════════════════════════ -->
+<div class="cta-band" id="contact">
+  <div class="cta-band-inner">
+    <h2 data-en>Your Concern Is Srivatsa's<br>Priority. Always Has Been.</h2>
+    <h2 data-kn class="kn-font">ನಿಮ್ಮ ಸಮಸ್ಯೆ ಶ್ರೀವತ್ಸಗೆ<br>ಯಾವಾಗಲೂ ಮೊದಲ ಆದ್ಯತೆ.</h2>
+    <p data-en>Walk into Kartavya Bhavan on Shankar Mutt Road, Mysuru — or reach out right now. No queue. No appointment. Just answers.</p>
+    <p data-kn class="kn-font">ಶಂಕರ ಮಠ ರಸ್ತೆ, ಮೈಸೂರಿನ ಕರ್ತವ್ಯ ಭವನಕ್ಕೆ ಬನ್ನಿ. ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ಬೇಡ. ಉತ್ತರ ಸಿಗುತ್ತದೆ.</p>
+    <div class="cta-btns">
+      <a href="#" class="btn-white" data-en>Submit a Grievance →</a>
+      <a href="#" class="btn-white kn-font" data-kn>ದೂರು ಸಲ್ಲಿಸಿ →</a>
+      <a href="#" class="btn-white-outline" data-en>Visit Kartavya Bhavan</a>
+      <a href="#" class="btn-white-outline kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ ಭೇಟಿ ಮಾಡಿ</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  FOOTER
+══════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name" data-en>T. S. Srivatsa</div>
+        <div class="footer-brand-name kn-font" data-kn>ಟಿ. ಎಸ್. ಶ್ರೀವತ್ಸ</div>
+        <div class="footer-brand-role" data-en>MLA — Krishnaraja | BJP Mysuru City President</div>
+        <div class="footer-brand-role kn-font" data-kn>ಶಾಸಕರು — ಕೃಷ್ಣರಾಜ | ಬಿಜೆಪಿ ಮೈಸೂರು ನಗರ ಅಧ್ಯಕ್ಷ</div>
+        <p class="footer-brand-desc" data-en>Serving Krishnaraja with transparency, accountability, and an open door for every citizen of Mysuru.</p>
+        <p class="footer-brand-desc kn-font" data-kn>ಪಾರದರ್ಶಕತೆ, ಜವಾಬ್ದಾರಿ ಮತ್ತು ತೆರೆದ ಬಾಗಿಲಿನೊಂದಿಗೆ ಕೃಷ್ಣರಾಜ ಸೇವೆ.</p>
+        <div class="footer-tricolor"><span></span><span></span><span></span></div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-en>Pages</div>
+        <div class="footer-col-title kn-font" data-kn>ಪುಟಗಳು</div>
+        <ul class="footer-col-links">
+          <li><a href="index.html" data-en>→ Homepage</a><a href="index.html" class="kn-font" data-kn>→ ಮುಖಪುಟ</a></li>
+          <li><a href="about.html" data-en>→ About</a><a href="about.html" class="kn-font" data-kn>→ ಪರಿಚಯ</a></li>
+          <li><a href="#" data-en>→ Work Done</a><a href="#" class="kn-font" data-kn>→ ಕೆಲಸ</a></li>
+          <li><a href="#" data-en>→ Positions</a><a href="#" class="kn-font" data-kn>→ ನಿಲುವುಗಳು</a></li>
+          <li><a href="#" data-en>→ News & Media</a><a href="#" class="kn-font" data-kn>→ ಸುದ್ದಿ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-en>Constituency</div>
+        <div class="footer-col-title kn-font" data-kn>ಕ್ಷೇತ್ರ</div>
+        <ul class="footer-col-links">
+          <li><a href="#" data-en>→ About Krishnaraja</a><a href="#" class="kn-font" data-kn>→ ಕೃಷ್ಣರಾಜ ಬಗ್ಗೆ</a></li>
+          <li><a href="#" data-en>→ Key Achievements</a><a href="#" class="kn-font" data-kn>→ ಮುಖ್ಯ ಸಾಧನೆ</a></li>
+          <li><a href="#" data-en>→ 2023 Result</a><a href="#" class="kn-font" data-kn>→ 2023 ಫಲಿತಾಂಶ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-en>Connect</div>
+        <div class="footer-col-title kn-font" data-kn>ಸಂಪರ್ಕ</div>
+        <ul class="footer-col-links">
+          <li><a href="#contact" data-en>→ Raise Grievance</a><a href="#contact" class="kn-font" data-kn>→ ದೂರು ಸಲ್ಲಿಸಿ</a></li>
+          <li><a href="#" data-en>→ Kartavya Bhavan</a><a href="#" class="kn-font" data-kn>→ ಕರ್ತವ್ಯ ಭವನ</a></li>
+          <li><a href="#" data-en>→ Join BJP</a><a href="#" class="kn-font" data-kn>→ ಬಿಜೆಪಿ ಸೇರಿ</a></li>
+          <li><a href="#" data-en>→ Volunteer</a><a href="#" class="kn-font" data-kn>→ ಸ್ವಯಂಸೇವಕ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div data-en>© 2025 T. S. Srivatsa, MLA Krishnaraja. Official Website. | <a href="#">Privacy</a></div>
+      <div class="kn-font" data-kn>© 2025 ಟಿ. ಎಸ್. ಶ್ರೀವತ್ಸ, ಶಾಸಕರು ಕೃಷ್ಣರಾಜ.</div>
+      <div class="footer-social">
+        <a class="social-btn" href="#">𝕗</a>
+        <a class="social-btn" href="#">𝕏</a>
+        <a class="social-btn" href="#">📸</a>
+        <a class="social-btn" href="#">▶</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="#top" class="back-top" id="back-top">↑</a>
+
+<!-- ══════════════════════════════════════
+  JAVASCRIPT
+══════════════════════════════════════ -->
+<script>
+/* Language toggle */
+function setLang(lang) {
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-kn').classList.toggle('active', lang === 'kn');
+  document.body.classList.toggle('kn', lang === 'kn');
+}
+
+/* Mobile menu */
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const burger = document.getElementById('hamburger');
+  menu.classList.toggle('open');
+  burger.classList.toggle('open');
+}
+
+/* Close menu on outside click */
+document.addEventListener('click', function(e) {
+  const menu = document.getElementById('mobile-menu');
+  const burger = document.getElementById('hamburger');
+  if (!menu.contains(e.target) && !burger.contains(e.target)) {
+    menu.classList.remove('open');
+    burger.classList.remove('open');
+  }
+});
+
+/* Sticky nav + back-to-top */
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+  document.getElementById('back-top').classList.toggle('visible', window.scrollY > 400);
+});
+
+/* Scroll reveal */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
