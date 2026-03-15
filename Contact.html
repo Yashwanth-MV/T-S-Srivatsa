@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — T. S. Srivatsa MLA | BJP Krishnaraja Mysuru</title>
+<meta name="description" content="Contact T. S. Srivatsa, BJP MLA for Krishnaraja constituency — visit Kartavya Bhavan, raise a grievance, or connect with the constituency office in Mysuru.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Kannada&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ══════════════════════════════════════════════
+   DESIGN TOKENS
+══════════════════════════════════════════════ */
+:root {
+  --saffron:      #FF6200;
+  --saffron-mid:  #E85500;
+  --saffron-pale: #FFF4ED;
+  --saffron-soft: #FFE8D6;
+  --green:        #0C7A07;
+  --green-pale:   #EDF7EC;
+  --navy:         #0F1525;
+  --navy-mid:     #1A2540;
+  --white:        #FFFFFF;
+  --offwhite:     #F8F5F1;
+  --stone:        #EDE6DC;
+  --ink:          #1A1A1A;
+  --ink-mid:      #3D3D3D;
+  --muted:        #6B7280;
+  --muted-light:  #9CA3AF;
+  --gold:         #C9922A;
+  --blue:         #1565C0;
+  --blue-pale:    #E3EEFF;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--white);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+/* ══════════════════════════════════════════════
+   LANGUAGE SYSTEM
+══════════════════════════════════════════════ */
+[data-kn]                               { display: none !important; }
+body.kn [data-en]                       { display: none !important; }
+body.kn [data-kn]                       { display: block !important; }
+span[data-kn], a[data-kn]              { display: none; }
+span[data-en], a[data-en]              { display: inline; }
+body.kn span[data-en], body.kn a[data-en] { display: none; }
+body.kn span[data-kn], body.kn a[data-kn] { display: inline; font-family: 'Tiro Kannada', serif; }
+.kn-font { font-family: 'Tiro Kannada', serif; }
+
+/* ══════════════════════════════════════════════
+   NAVIGATION
+══════════════════════════════════════════════ */
+nav {
+  position: sticky; top: 0; z-index: 300;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--stone);
+  transition: box-shadow .3s;
+}
+nav.scrolled { box-shadow: 0 4px 28px rgba(0,0,0,0.08); }
+.nav-wrap {
+  max-width: 1280px; margin: 0 auto;
+  padding: 0 48px; height: 68px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand-lotus {
+  width: 40px; height: 40px; background: var(--saffron);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0; box-shadow: 0 4px 14px rgba(255,98,0,0.28);
+}
+.brand-name { font-size: 18px; font-weight: 700; color: var(--navy); line-height: 1.1; }
+.brand-role { font-size: 10px; font-weight: 600; color: var(--saffron); letter-spacing: 1.5px; text-transform: uppercase; }
+.nav-right { display: flex; align-items: center; gap: 6px; }
+.nav-links { list-style: none; display: flex; align-items: center; gap: 4px; }
+.nav-links li a {
+  text-decoration: none; font-size: 13.5px; font-weight: 500;
+  color: var(--ink-mid); padding: 6px 13px; border-radius: 6px; transition: all .2s;
+}
+.nav-links li a:hover { background: var(--saffron-pale); color: var(--saffron); }
+.nav-links li a.current { color: var(--saffron); font-weight: 600; }
+.nav-cta-link { background: var(--saffron) !important; color: white !important; font-weight: 600 !important; }
+.nav-cta-link:hover { background: var(--saffron-mid) !important; transform: translateY(-1px); }
+.lang-toggle {
+  display: flex; align-items: center; gap: 3px;
+  background: var(--offwhite); border: 1px solid var(--stone);
+  border-radius: 30px; padding: 3px; margin-left: 12px;
+}
+.lang-btn {
+  border: none; background: transparent; font-family: 'Poppins', sans-serif;
+  font-size: 12px; font-weight: 600; color: var(--muted);
+  padding: 4px 13px; border-radius: 20px; cursor: pointer; transition: all .22s;
+}
+.lang-btn.active { background: var(--saffron); color: white; }
+.lang-btn:hover:not(.active) { color: var(--saffron); }
+
+/* ══════════════════════════════════════════════
+   PAGE BANNER
+══════════════════════════════════════════════ */
+.page-banner {
+  background: linear-gradient(135deg, #0F1525 0%, #1a2a46 55%, #0F1525 100%);
+  padding: 52px 48px 56px; position: relative; overflow: hidden;
+}
+.page-banner::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 80% 35%, rgba(255,98,0,0.13) 0%, transparent 52%),
+    radial-gradient(ellipse at 8% 65%, rgba(12,122,7,0.07) 0%, transparent 42%);
+  pointer-events: none;
+}
+.page-banner::after {
+  content: ''; position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.028) 1px, transparent 1px);
+  background-size: 28px 28px; pointer-events: none;
+}
+.page-banner-inner { max-width: 1280px; margin: 0 auto; position: relative; z-index: 2; }
+.breadcrumb {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 22px;
+  font-size: 12px; font-weight: 500; color: rgba(255,255,255,0.38);
+}
+.breadcrumb a { color: rgba(255,255,255,0.38); text-decoration: none; transition: color .2s; }
+.breadcrumb a:hover { color: var(--saffron); }
+.breadcrumb-sep { color: rgba(255,255,255,0.18); }
+.banner-eyebrow {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: rgba(255,98,0,0.12); border: 1px solid rgba(255,98,0,0.28);
+  padding: 5px 16px; border-radius: 30px; margin-bottom: 18px;
+}
+.banner-eyebrow-dot {
+  width: 6px; height: 6px; border-radius: 50%; background: var(--saffron);
+  animation: pulse-dot 1.6s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%,100% { box-shadow: 0 0 0 0 rgba(255,98,0,.5); }
+  50%      { box-shadow: 0 0 0 5px rgba(255,98,0,0); }
+}
+.banner-eyebrow-text {
+  font-size: 10px; font-weight: 700; color: rgba(255,170,110,.9);
+  letter-spacing: 1.5px; text-transform: uppercase;
+}
+.banner-h1 {
+  font-size: clamp(36px, 5vw, 62px); font-weight: 800; color: white;
+  line-height: 1.08; margin-bottom: 14px; letter-spacing: -0.5px;
+}
+.banner-h1 em { font-style: normal; color: var(--saffron); }
+.banner-sub {
+  font-size: 13px; font-weight: 400; color: rgba(255,255,255,.4);
+  letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 36px;
+}
+
+/* Contact method pills in banner */
+.banner-contact-pills {
+  display: flex; gap: 10px; flex-wrap: wrap;
+}
+.contact-pill {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+  padding: 10px 18px; border-radius: 10px;
+  text-decoration: none; transition: all .25s;
+}
+.contact-pill:hover { background: rgba(255,98,0,.12); border-color: rgba(255,98,0,.35); transform: translateY(-2px); }
+.contact-pill-icon { font-size: 18px; flex-shrink: 0; }
+.contact-pill-lbl { font-size: 10px; font-weight: 700; color: rgba(255,255,255,.4); letter-spacing: 1.5px; text-transform: uppercase; }
+.contact-pill-val { font-size: 13px; font-weight: 600; color: white; }
+
+/* ══════════════════════════════════════════════
+   SECTION UTILITIES
+══════════════════════════════════════════════ */
+.section     { padding: 88px 48px; background: var(--white); }
+.section-alt { padding: 88px 48px; background: var(--offwhite); }
+.section-dark { padding: 88px 48px; background: var(--navy); position: relative; overflow: hidden; }
+.section-dark::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 85% 20%, rgba(255,98,0,0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 8% 80%, rgba(12,122,7,0.05) 0%, transparent 40%);
+  pointer-events: none;
+}
+.container { max-width: 1280px; margin: 0 auto; position: relative; z-index: 1; }
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.eyebrow-bar { width: 28px; height: 3px; background: var(--saffron); border-radius: 2px; }
+.eyebrow-text { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--saffron); }
+.eyebrow-text-light { color: rgba(255,170,110,.85); }
+.section-title {
+  font-size: clamp(26px, 3.2vw, 44px); font-weight: 800; color: var(--navy);
+  line-height: 1.12; margin-bottom: 14px; letter-spacing: -0.3px;
+}
+.section-title em { font-style: italic; color: var(--saffron); }
+.section-title-light { color: white; }
+.section-body { font-size: 15.5px; font-weight: 300; color: #4a4a5a; line-height: 1.9; margin-bottom: 16px; }
+.section-body-light { color: rgba(255,255,255,.62); }
+.section-body strong { color: var(--ink); font-weight: 600; }
+
+/* Reveal */
+.reveal      { opacity: 0; transform: translateY(22px); transition: opacity .62s, transform .62s; }
+.reveal.in   { opacity: 1; transform: none; }
+.reveal-l    { opacity: 0; transform: translateX(-22px); transition: opacity .62s, transform .62s; }
+.reveal-l.in { opacity: 1; transform: none; }
+.reveal-r    { opacity: 0; transform: translateX(22px); transition: opacity .62s, transform .62s; }
+.reveal-r.in { opacity: 1; transform: none; }
+.d1 { transition-delay: .08s; }
+.d2 { transition-delay: .16s; }
+.d3 { transition-delay: .24s; }
+.d4 { transition-delay: .32s; }
+
+/* ══════════════════════════════════════════════
+   MAIN CONTACT GRID
+══════════════════════════════════════════════ */
+.contact-main-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start;
+}
+
+/* ══════════════════════════════════════════════
+   CONTACT FORM
+══════════════════════════════════════════════ */
+.contact-form-card {
+  background: white; border-radius: 20px; padding: 44px;
+  border: 1px solid var(--stone); box-shadow: 0 8px 40px rgba(0,0,0,.05);
+}
+.cf-title { font-size: 24px; font-weight: 800; color: var(--navy); margin-bottom: 6px; line-height: 1.2; }
+.cf-sub { font-size: 14px; font-weight: 300; color: var(--muted); margin-bottom: 30px; line-height: 1.65; }
+
+.form-row { margin-bottom: 18px; }
+.form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
+.form-label {
+  display: block; font-size: 11px; font-weight: 700; color: var(--navy);
+  letter-spacing: 0.5px; margin-bottom: 7px; text-transform: uppercase;
+}
+.form-label span { font-weight: 400; color: var(--muted); text-transform: none; letter-spacing: 0; }
+.form-input, .form-select, .form-textarea {
+  width: 100%; padding: 12px 16px; border-radius: 10px;
+  border: 1.5px solid var(--stone); background: var(--offwhite);
+  font-family: 'Poppins', sans-serif; font-size: 14px; color: var(--ink);
+  outline: none; transition: border-color .2s, background .2s; appearance: none;
+}
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: var(--saffron); background: white;
+  box-shadow: 0 0 0 3px rgba(255,98,0,0.08);
+}
+.form-textarea { min-height: 120px; resize: vertical; }
+.form-input::placeholder, .form-textarea::placeholder { color: var(--muted-light); }
+
+/* Purpose tags selector */
+.purpose-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+.purpose-tag {
+  padding: 7px 16px; border-radius: 30px; cursor: pointer;
+  font-family: 'Poppins', sans-serif; font-size: 12.5px; font-weight: 600;
+  border: 1.5px solid var(--stone); background: white; color: var(--muted);
+  transition: all .2s; white-space: nowrap;
+}
+.purpose-tag:hover { border-color: var(--saffron); color: var(--saffron); background: var(--saffron-pale); }
+.purpose-tag.active { background: var(--saffron); color: white; border-color: var(--saffron); }
+
+.form-submit {
+  width: 100%; padding: 14px; border-radius: 10px;
+  background: var(--saffron); color: white;
+  font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 700;
+  border: none; cursor: pointer; transition: all .25s;
+  box-shadow: 0 6px 22px rgba(255,98,0,.28); margin-top: 4px;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.form-submit:hover { background: var(--saffron-mid); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(255,98,0,.35); }
+
+.form-disclaimer {
+  margin-top: 14px; font-size: 11.5px; color: var(--muted);
+  text-align: center; line-height: 1.6;
+}
+
+/* Success state */
+.form-success {
+  display: none; text-align: center; padding: 48px 24px;
+}
+.form-success-icon { font-size: 60px; display: block; margin-bottom: 18px; }
+.form-success-title { font-size: 22px; font-weight: 800; color: var(--green); margin-bottom: 10px; }
+.form-success-body { font-size: 14.5px; font-weight: 300; color: var(--muted); line-height: 1.75; }
+
+/* ══════════════════════════════════════════════
+   CONTACT INFO COLUMN
+══════════════════════════════════════════════ */
+.contact-info-col {}
+
+/* Primary office card */
+.office-card {
+  background: var(--navy); border-radius: 20px; padding: 40px;
+  position: relative; overflow: hidden; margin-bottom: 20px;
+}
+.office-card::before {
+  content: ''; position: absolute; top: -50px; right: -50px;
+  width: 200px; height: 200px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,98,0,0.13) 0%, transparent 70%);
+}
+.office-card::after {
+  content: ''; position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 20px 20px; pointer-events: none;
+}
+.office-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,98,0,0.12); border: 1px solid rgba(255,98,0,.28);
+  padding: 5px 14px; border-radius: 20px; margin-bottom: 20px; position: relative; z-index: 1;
+}
+.office-badge-text { font-size: 10px; font-weight: 700; color: rgba(255,170,110,.9); letter-spacing: 1.5px; text-transform: uppercase; }
+.office-name { font-size: 26px; font-weight: 800; color: white; margin-bottom: 5px; position: relative; z-index: 1; }
+.office-tagline { font-size: 13px; color: rgba(255,255,255,.42); margin-bottom: 28px; position: relative; z-index: 1; }
+
+.office-detail-row { display: flex; gap: 14px; margin-bottom: 16px; align-items: flex-start; position: relative; z-index: 1; }
+.office-detail-icon {
+  width: 38px; height: 38px; flex-shrink: 0;
+  background: rgba(255,98,0,0.1); border-radius: 9px;
+  display: flex; align-items: center; justify-content: center; font-size: 16px;
+}
+.office-detail-lbl { font-size: 9.5px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,98,0,.75); margin-bottom: 3px; }
+.office-detail-val { font-size: 14px; font-weight: 600; color: white; line-height: 1.4; }
+.office-detail-sub { font-size: 12px; color: rgba(255,255,255,.4); margin-top: 2px; }
+
+.office-divider { height: 1px; background: rgba(255,255,255,.07); margin: 20px 0; position: relative; z-index: 1; }
+
+.office-status-row { display: flex; gap: 8px; flex-wrap: wrap; position: relative; z-index: 1; }
+.office-status-chip {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 5px 12px; border-radius: 6px;
+  font-size: 11.5px; font-weight: 600;
+}
+.chip-open { background: rgba(12,122,7,.15); color: #4ade80; border: 1px solid rgba(12,122,7,.25); }
+.chip-free { background: rgba(255,98,0,.1); color: rgba(255,170,110,.9); border: 1px solid rgba(255,98,0,.22); }
+.chip-walkin { background: rgba(21,101,192,.15); color: #93c5fd; border: 1px solid rgba(21,101,192,.25); }
+
+/* Quick contact cards */
+.quick-contact-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+}
+.quick-card {
+  background: white; border: 1px solid var(--stone); border-radius: 14px;
+  padding: 20px 18px; transition: all .28s; text-decoration: none; display: block;
+}
+.quick-card:hover { border-color: var(--saffron); transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,.08); }
+.quick-card-icon { font-size: 24px; margin-bottom: 10px; display: block; }
+.quick-card-lbl { font-size: 9.5px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--saffron); margin-bottom: 5px; }
+.quick-card-val { font-size: 13.5px; font-weight: 700; color: var(--navy); line-height: 1.3; }
+.quick-card-sub { font-size: 11.5px; font-weight: 300; color: var(--muted); margin-top: 3px; line-height: 1.5; }
+
+/* ══════════════════════════════════════════════
+   MAP SECTION
+══════════════════════════════════════════════ */
+.map-section { padding: 88px 48px; background: var(--offwhite); }
+.map-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; align-items: stretch; }
+
+/* Map placeholder */
+.map-frame {
+  border-radius: 20px; overflow: hidden; min-height: 400px;
+  background: linear-gradient(155deg, #1a2742 0%, #0F1525 60%, rgba(255,98,0,0.06) 100%);
+  position: relative; display: flex; flex-direction: column;
+  justify-content: space-between; box-shadow: 0 16px 48px rgba(0,0,0,.14);
+  border: 1px solid rgba(255,255,255,.06);
+}
+.map-bg-dots {
+  position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 22px 22px; pointer-events: none;
+}
+.map-glow {
+  position: absolute; bottom: -40px; right: -40px;
+  width: 200px; height: 200px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,98,0,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+.map-label {
+  position: relative; z-index: 1; padding: 20px 22px;
+  display: flex; align-items: center; gap: 10px;
+}
+.map-label-badge {
+  background: rgba(255,98,0,.15); border: 1px solid rgba(255,98,0,.3);
+  border-radius: 8px; padding: 6px 13px;
+  font-size: 10px; font-weight: 700; color: rgba(255,170,110,.9);
+  letter-spacing: 1.5px; text-transform: uppercase;
+}
+.map-center { position: relative; z-index: 1; text-align: center; padding: 20px; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.map-pin-icon { font-size: 52px; margin-bottom: 14px; display: block; }
+.map-location-name { font-size: 22px; font-weight: 800; color: white; margin-bottom: 4px; }
+.map-location-addr { font-size: 13px; color: rgba(255,255,255,.45); line-height: 1.6; }
+.map-directions-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--saffron); color: white; text-decoration: none;
+  font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 700;
+  padding: 11px 22px; border-radius: 9px; border: none; cursor: pointer;
+  transition: all .25s; box-shadow: 0 5px 18px rgba(255,98,0,.3);
+  margin-top: 18px;
+}
+.map-directions-btn:hover { background: var(--saffron-mid); transform: translateY(-2px); }
+.map-bottom { position: relative; z-index: 1; padding: 20px 22px; border-top: 1px solid rgba(255,255,255,.07); }
+.map-nearby { display: flex; gap: 8px; flex-wrap: wrap; }
+.map-nearby-tag {
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+  padding: 4px 11px; border-radius: 5px; font-size: 11px; font-weight: 500; color: rgba(255,255,255,.5);
+}
+
+/* Directions info */
+.directions-info {}
+.dir-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 6px; line-height: 1.3; }
+.dir-sub { font-size: 14px; font-weight: 300; color: var(--muted); margin-bottom: 28px; line-height: 1.65; }
+
+.direction-item {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 16px 0; border-bottom: 1px solid var(--stone); transition: all .2s;
+}
+.direction-item:last-child { border-bottom: none; }
+.direction-item:hover { padding-left: 6px; }
+.direction-icon-wrap {
+  width: 40px; height: 40px; flex-shrink: 0; border-radius: 10px;
+  background: var(--saffron-pale); display: flex; align-items: center;
+  justify-content: center; font-size: 18px; transition: background .25s;
+}
+.direction-item:hover .direction-icon-wrap { background: var(--saffron); }
+.direction-mode { font-size: 11.5px; font-weight: 700; color: var(--saffron); margin-bottom: 3px; letter-spacing: 0.5px; }
+.direction-desc { font-size: 13.5px; font-weight: 500; color: var(--navy); margin-bottom: 2px; }
+.direction-sub { font-size: 12px; font-weight: 300; color: var(--muted); line-height: 1.5; }
+
+/* ══════════════════════════════════════════════
+   SOCIAL CONNECT (dark)
+══════════════════════════════════════════════ */
+.social-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 48px; }
+.social-card {
+  background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.07);
+  border-radius: 16px; padding: 28px 22px; text-align: center;
+  transition: all .3s; text-decoration: none; display: block;
+}
+.social-card:hover { background: rgba(255,98,0,.1); border-color: rgba(255,98,0,.3); transform: translateY(-4px); }
+.social-icon { font-size: 34px; margin-bottom: 12px; display: block; }
+.social-name { font-size: 15px; font-weight: 700; color: white; margin-bottom: 4px; }
+.social-handle { font-size: 12px; color: rgba(255,255,255,.4); margin-bottom: 14px; }
+.social-follow {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(255,98,0,.12); border: 1px solid rgba(255,98,0,.25);
+  padding: 6px 14px; border-radius: 20px;
+  font-size: 11px; font-weight: 700; color: rgba(255,170,110,.9);
+  transition: all .2s; letter-spacing: 0.5px;
+}
+.social-card:hover .social-follow { background: var(--saffron); color: white; }
+
+/* ══════════════════════════════════════════════
+   FAQ
+══════════════════════════════════════════════ */
+.faq-section { padding: 88px 48px; background: var(--offwhite); }
+.faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 48px; }
+.faq-item {
+  background: white; border: 1px solid var(--stone); border-radius: 14px;
+  overflow: hidden; transition: box-shadow .25s;
+}
+.faq-item:hover { box-shadow: 0 8px 28px rgba(0,0,0,.07); }
+.faq-question {
+  padding: 20px 24px; display: flex; align-items: center; justify-content: space-between;
+  cursor: pointer; gap: 16px; user-select: none;
+}
+.faq-q-text { font-size: 14.5px; font-weight: 700; color: var(--navy); line-height: 1.4; }
+.faq-toggle {
+  width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+  background: var(--saffron-pale); border: 1px solid rgba(255,98,0,.2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; font-weight: 700; color: var(--saffron);
+  transition: all .25s;
+}
+.faq-item.open .faq-toggle { background: var(--saffron); color: white; transform: rotate(45deg); }
+.faq-answer {
+  max-height: 0; overflow: hidden; transition: max-height .35s ease;
+}
+.faq-item.open .faq-answer { max-height: 400px; }
+.faq-answer-inner {
+  padding: 0 24px 20px;
+  font-size: 13.5px; font-weight: 300; color: var(--muted); line-height: 1.75;
+  border-top: 1px solid var(--stone);
+  padding-top: 16px;
+}
+
+/* ══════════════════════════════════════════════
+   CTA BAND
+══════════════════════════════════════════════ */
+.cta-band {
+  background: var(--saffron); padding: 72px 48px; text-align: center;
+  position: relative; overflow: hidden;
+}
+.cta-band::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 18% 50%, rgba(255,255,255,.07) 0%, transparent 50%),
+    radial-gradient(circle at 82% 50%, rgba(0,0,0,.07) 0%, transparent 50%);
+  pointer-events: none;
+}
+.cta-band-inner { position: relative; z-index: 1; }
+.cta-band h2 { font-size: clamp(24px, 3.2vw, 42px); font-weight: 800; color: white; margin-bottom: 12px; line-height: 1.2; }
+.cta-band p { font-size: 16px; font-weight: 300; color: rgba(255,255,255,.82); max-width: 500px; margin: 0 auto 34px; line-height: 1.7; }
+.cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.btn-white {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: white; color: var(--saffron); font-family: 'Poppins', sans-serif;
+  font-size: 14px; font-weight: 700; padding: 13px 30px; border-radius: 8px;
+  text-decoration: none; border: none; cursor: pointer; transition: all .25s;
+  box-shadow: 0 6px 22px rgba(0,0,0,.18);
+}
+.btn-white:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,.25); }
+.btn-white-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent; color: white; font-family: 'Poppins', sans-serif;
+  font-size: 14px; font-weight: 600; padding: 12px 26px; border-radius: 8px;
+  text-decoration: none; border: 2px solid rgba(255,255,255,.5); cursor: pointer; transition: all .25s;
+}
+.btn-white-outline:hover { border-color: white; background: rgba(255,255,255,.1); }
+
+/* ══════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════ */
+footer { background: #090E1A; padding: 60px 48px 30px; }
+.footer-inner { max-width: 1280px; margin: 0 auto; }
+.footer-top {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px;
+  margin-bottom: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.footer-brand-name { font-size: 20px; font-weight: 700; color: white; margin-bottom: 3px; }
+.footer-brand-role { font-size: 11px; font-weight: 600; color: var(--saffron); margin-bottom: 14px; }
+.footer-brand-desc { font-size: 13px; font-weight: 300; color: rgba(255,255,255,.38); line-height: 1.75; }
+.footer-tricolor { display: flex; height: 3px; border-radius: 2px; overflow: hidden; width: 55px; margin-top: 16px; }
+.footer-tricolor span:nth-child(1) { flex:1; background: var(--saffron); }
+.footer-tricolor span:nth-child(2) { flex:1; background: white; opacity:.45; }
+.footer-tricolor span:nth-child(3) { flex:1; background: var(--green); }
+.footer-col-title { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.6); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 16px; }
+.footer-col-links { list-style: none; }
+.footer-col-links li { margin-bottom: 10px; }
+.footer-col-links a { font-size: 13px; font-weight: 300; color: rgba(255,255,255,.38); text-decoration: none; transition: color .2s; }
+.footer-col-links a:hover { color: var(--saffron); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: rgba(255,255,255,.22); }
+.footer-bottom a { color: rgba(255,255,255,.3); text-decoration: none; }
+.footer-bottom a:hover { color: var(--saffron); }
+.footer-social { display: flex; gap: 8px; }
+.fsocial-btn {
+  width: 34px; height: 34px; border-radius: 8px; background: rgba(255,255,255,.06);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; text-decoration: none; transition: all .2s; cursor: pointer;
+}
+.fsocial-btn:hover { background: var(--saffron); transform: translateY(-2px); }
+.back-top {
+  position: fixed; bottom: 28px; right: 28px; width: 44px; height: 44px;
+  background: var(--saffron); color: white; border: none; border-radius: 50%;
+  font-size: 18px; cursor: pointer; box-shadow: 0 5px 18px rgba(255,98,0,.4);
+  display: flex; align-items: center; justify-content: center; text-decoration: none;
+  z-index: 100; opacity: 0; transform: translateY(10px); transition: all .3s;
+}
+.back-top.visible { opacity: 1; transform: translateY(0); }
+.back-top:hover { transform: translateY(-3px); }
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+@media (max-width: 1100px) {
+  .contact-main-grid  { grid-template-columns: 1fr; gap: 44px; }
+  .map-grid           { grid-template-columns: 1fr; gap: 44px; }
+  .quick-contact-grid { grid-template-columns: 1fr 1fr; }
+  .social-grid        { grid-template-columns: 1fr 1fr; }
+  .faq-grid           { grid-template-columns: 1fr; }
+  .footer-top         { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .nav-wrap   { padding: 0 16px; height: 60px; }
+  .nav-links  { display: none; }
+  .page-banner { padding: 32px 16px 40px; }
+  .section, .section-alt, .section-dark, .map-section, .faq-section { padding: 56px 16px; }
+  .cta-band   { padding: 56px 16px; }
+  footer      { padding: 44px 16px 24px; }
+  .banner-h1  { font-size: clamp(28px, 8vw, 44px); }
+  .banner-contact-pills { gap: 8px; }
+  .contact-pill { padding: 8px 14px; }
+  .contact-form-card { padding: 28px 20px; }
+  .office-card { padding: 28px 22px; }
+  .form-row-2 { grid-template-columns: 1fr; }
+  .quick-contact-grid { grid-template-columns: 1fr 1fr; }
+  .social-grid { grid-template-columns: 1fr 1fr; }
+  .map-frame  { min-height: 320px; }
+  .footer-top { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  .cta-btns   { flex-direction: column; align-items: center; }
+  .btn-white, .btn-white-outline { width: 100%; max-width: 280px; justify-content: center; }
+}
+@media (max-width: 480px) {
+  .page-banner { padding: 24px 12px 32px; }
+  .section, .section-alt, .section-dark, .map-section, .faq-section { padding: 44px 12px; }
+  .quick-contact-grid { grid-template-columns: 1fr; }
+  .social-grid { grid-template-columns: 1fr 1fr; }
+  .banner-contact-pills { flex-direction: column; }
+  .contact-pill { width: 100%; }
+}
+</style>
+</head>
+<body id="top">
+
+<!-- ══════════════════════════════════════
+  NAVIGATION
+══════════════════════════════════════ -->
+<nav id="main-nav">
+  <div class="nav-wrap">
+    <a href="index.html" class="nav-brand">
+      <div class="brand-lotus">🪷</div>
+      <div>
+        <div class="brand-name" data-en>T. S. Srivatsa</div>
+        <div class="brand-name kn-font" data-kn>ಟಿ. ಎಸ್. ಶ್ರೀವತ್ಸ</div>
+        <div class="brand-role" data-en>MLA · Krishnaraja · BJP</div>
+        <div class="brand-role kn-font" data-kn>ಶಾಸಕರು · ಕೃಷ್ಣರಾಜ · ಬಿಜೆಪಿ</div>
+      </div>
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" data-en>Home</a><a href="index.html" class="kn-font" data-kn>ಮುಖಪುಟ</a></li>
+        <li><a href="about.html" data-en>About</a><a href="about.html" class="kn-font" data-kn>ಪರಿಚಯ</a></li>
+        <li><a href="constituency.html" data-en>Constituency</a><a href="constituency.html" class="kn-font" data-kn>ಕ್ಷೇತ್ರ</a></li>
+        <li><a href="work.html" data-en>Work Done</a><a href="work.html" class="kn-font" data-kn>ಕೆಲಸ</a></li>
+        <li><a href="news.html" data-en>News</a><a href="news.html" class="kn-font" data-kn>ಸುದ್ದಿ</a></li>
+        <li><a href="get-involved.html" data-en>Get Involved</a><a href="get-involved.html" class="kn-font" data-kn>ಭಾಗವಹಿಸಿ</a></li>
+        <li><a href="contact.html" class="current" data-en>Contact</a><a href="contact.html" class="current kn-font" data-kn>ಸಂಪರ್ಕ</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="btn-kn" onclick="setLang('kn')">ಕನ್ನಡ</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════
+  PAGE BANNER
+══════════════════════════════════════ -->
+<div class="page-banner">
+  <div class="page-banner-inner">
+    <div class="breadcrumb">
+      <a href="index.html" data-en>Home</a><a href="index.html" class="kn-font" data-kn>ಮುಖಪುಟ</a>
+      <span class="breadcrumb-sep">›</span>
+      <span data-en>Contact</span><span class="kn-font" data-kn>ಸಂಪರ್ಕ</span>
+    </div>
+    <div class="banner-eyebrow">
+      <div class="banner-eyebrow-dot"></div>
+      <span class="banner-eyebrow-text" data-en>Reach T. S. Srivatsa MLA</span>
+      <span class="banner-eyebrow-text kn-font" data-kn>ಟಿ. ಎಸ್. ಶ್ರೀವತ್ಸ ಶಾಸಕರನ್ನು ತಲುಪಿ</span>
+    </div>
+    <h1 class="banner-h1" data-en>Get in<br><em>Touch</em></h1>
+    <h1 class="banner-h1 kn-font" data-kn><em>ಸಂಪರ್ಕ</em><br>ಮಾಡಿ</h1>
+    <div class="banner-sub" data-en>MLA Krishnaraja · BJP · Mysuru · Karnataka</div>
+    <div class="banner-sub kn-font" data-kn>ಶಾಸಕರು ಕೃಷ್ಣರಾಜ · ಬಿಜೆಪಿ · ಮೈಸೂರು · ಕರ್ನಾಟಕ</div>
+    <div class="banner-contact-pills">
+      <div class="contact-pill">
+        <span class="contact-pill-icon">🏛️</span>
+        <div>
+          <div class="contact-pill-lbl" data-en>Walk-In Office</div>
+          <div class="contact-pill-lbl kn-font" data-kn>ವಾಕ್-ಇನ್ ಕಚೇರಿ</div>
+          <div class="contact-pill-val" data-en>Kartavya Bhavan, Shankar Mutt Road</div>
+          <div class="contact-pill-val kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ, ಶಂಕರ ಮಠ ರಸ್ತೆ</div>
+        </div>
+      </div>
+      <div class="contact-pill">
+        <span class="contact-pill-icon">🕐</span>
+        <div>
+          <div class="contact-pill-lbl" data-en>Office Hours</div>
+          <div class="contact-pill-lbl kn-font" data-kn>ಕಚೇರಿ ಸಮಯ</div>
+          <div class="contact-pill-val" data-en>Mon – Sat · 10 AM – 5 PM</div>
+          <div class="contact-pill-val kn-font" data-kn>ಸೋಮ – ಶನಿ · 10 AM – 5 PM</div>
+        </div>
+      </div>
+      <div class="contact-pill">
+        <span class="contact-pill-icon">✅</span>
+        <div>
+          <div class="contact-pill-lbl" data-en>Appointment</div>
+          <div class="contact-pill-lbl kn-font" data-kn>ಅಪಾಯಿಂಟ್ಮೆಂಟ್</div>
+          <div class="contact-pill-val" data-en>Not Required</div>
+          <div class="contact-pill-val kn-font" data-kn>ಅಗತ್ಯ ಇಲ್ಲ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  MAIN CONTACT SECTION
+══════════════════════════════════════ -->
+<section class="section" id="contact-form">
+  <div class="container">
+    <div class="contact-main-grid">
+
+      <!-- LEFT: Contact Form -->
+      <div class="reveal-l">
+        <div class="contact-form-card">
+          <div id="contact-form-inner">
+            <div class="cf-title" data-en>Send a Message</div>
+            <div class="cf-title kn-font" data-kn>ಸಂದೇಶ ಕಳುಹಿಸಿ</div>
+            <div class="cf-sub" data-en>Use this form to reach the MLA's office directly. All messages are received at Kartavya Bhavan and responded to within 2–3 working days.</div>
+            <div class="cf-sub kn-font" data-kn>ಶಾಸಕ ಕಚೇರಿ ನೇರ ಸಂಪರ್ಕಿಸಲು ಈ ಫಾರ್ಮ್ ಬಳಸಿ. ಎಲ್ಲ ಸಂದೇಶ ಕರ್ತವ್ಯ ಭವನ ಸ್ವೀಕರಿಸಿ 2–3 ಕಾರ್ಯ ದಿನದಲ್ಲಿ ಉತ್ತರಿಸುತ್ತದೆ.</div>
+
+            <!-- Purpose selector -->
+            <div class="form-row">
+              <label class="form-label" data-en>What is this about?</label>
+              <label class="form-label kn-font" data-kn>ಇದು ಯಾವ ವಿಷಯ?</label>
+              <div class="purpose-tags" id="purpose-tags">
+                <button class="purpose-tag active" onclick="selectPurpose(this)" data-en>Grievance</button>
+                <button class="purpose-tag active kn-font" onclick="selectPurpose(this)" data-kn>ದೂರು</button>
+                <button class="purpose-tag" onclick="selectPurpose(this)" data-en>Land Record</button>
+                <button class="purpose-tag kn-font" onclick="selectPurpose(this)" data-kn>ಭೂ ದಾಖಲೆ</button>
+                <button class="purpose-tag" onclick="selectPurpose(this)" data-en>Development Issue</button>
+                <button class="purpose-tag kn-font" onclick="selectPurpose(this)" data-kn>ಅಭಿವೃದ್ಧಿ ಸಮಸ್ಯೆ</button>
+                <button class="purpose-tag" onclick="selectPurpose(this)" data-en>Press / Media</button>
+                <button class="purpose-tag kn-font" onclick="selectPurpose(this)" data-kn>ಪ್ರೆಸ್ / ಮಾಧ್ಯಮ</button>
+                <button class="purpose-tag" onclick="selectPurpose(this)" data-en>Volunteer / Join BJP</button>
+                <button class="purpose-tag kn-font" onclick="selectPurpose(this)" data-kn>ಸ್ವಯಂಸೇವಕ / ಬಿಜೆಪಿ</button>
+                <button class="purpose-tag" onclick="selectPurpose(this)" data-en>Other</button>
+                <button class="purpose-tag kn-font" onclick="selectPurpose(this)" data-kn>ಇತರ</button>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div>
+                <label class="form-label" data-en>Full Name <span>*</span></label>
+                <label class="form-label kn-font" data-kn>ಪೂರ್ಣ ಹೆಸರು <span>*</span></label>
+                <input class="form-input" type="text" id="c-name" placeholder="Your full name">
+              </div>
+              <div>
+                <label class="form-label" data-en>Mobile Number <span>*</span></label>
+                <label class="form-label kn-font" data-kn>ಮೊಬೈಲ್ ಸಂಖ್ಯೆ <span>*</span></label>
+                <input class="form-input" type="tel" id="c-phone" placeholder="10-digit mobile">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" data-en>Email <span>(optional)</span></label>
+              <label class="form-label kn-font" data-kn>ಇಮೇಲ್ <span>(ಐಚ್ಛಿಕ)</span></label>
+              <input class="form-input" type="email" id="c-email" placeholder="your@email.com">
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" data-en>Ward / Area in Krishnaraja</label>
+              <label class="form-label kn-font" data-kn>ಕೃಷ್ಣರಾಜದ ವಾರ್ಡ್ / ಪ್ರದೇಶ</label>
+              <select class="form-select" id="c-ward">
+                <option value="" data-en>-- Select your ward (optional) --</option>
+                <option>T.K. Layout</option>
+                <option>Kuvempunagar</option>
+                <option>Vidyaranyapuram</option>
+                <option>Ashokapuram</option>
+                <option>Jayanagar</option>
+                <option>Chamarajapuram</option>
+                <option>Shankar Mutt Road</option>
+                <option>Gandhinagar</option>
+                <option>Lakshmipuram</option>
+                <option>New Kantharaj Urs Road</option>
+                <option>Kurubarahalli</option>
+                <option>Ramakrishnanagar</option>
+                <option data-en>Other / Not sure</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" data-en>Your Message <span>*</span></label>
+              <label class="form-label kn-font" data-kn>ನಿಮ್ಮ ಸಂದೇಶ <span>*</span></label>
+              <textarea class="form-textarea" id="c-message" placeholder="Describe your issue, question or request in as much detail as you can. The more specific you are, the faster the team can act."></textarea>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" data-en>Preferred Response Method</label>
+              <label class="form-label kn-font" data-kn>ಇಚ್ಛಿತ ಪ್ರತಿಕ್ರಿಯಾ ವಿಧಾನ</label>
+              <select class="form-select" id="c-response">
+                <option data-en>Phone call</option>
+                <option data-en>WhatsApp message</option>
+                <option data-en>Email</option>
+                <option data-en>Visit Kartavya Bhavan in person</option>
+              </select>
+            </div>
+
+            <button class="form-submit" onclick="submitContact()">
+              <span data-en>Send Message →</span>
+              <span class="kn-font" data-kn>ಸಂದೇಶ ಕಳುಹಿಸಿ →</span>
+            </button>
+            <p class="form-disclaimer" data-en>Your information is used only to respond to your query and is never shared with third parties. All messages are read by the MLA's team at Kartavya Bhavan.</p>
+            <p class="form-disclaimer kn-font" data-kn>ನಿಮ್ಮ ಮಾಹಿತಿ ಕೇವಲ ಪ್ರತಿಕ್ರಿಯೆಗೆ ಬಳಕೆ. ಮೂರನೇ ಪಕ್ಷಕ್ಕೆ ಹಂಚಿಕೊಳ್ಳಲ್ಲ. ಕರ್ತವ್ಯ ಭವನ ತಂಡ ಎಲ್ಲ ಸಂದೇಶ ಓದುತ್ತದೆ.</p>
+          </div>
+          <div class="form-success" id="contact-success">
+            <span class="form-success-icon">✅</span>
+            <div class="form-success-title" data-en>Message Sent!</div>
+            <div class="form-success-title kn-font" data-kn>ಸಂದೇಶ ಕಳುಹಿಸಲಾಗಿದೆ!</div>
+            <div class="form-success-body" data-en>
+              Your message has been received by the Kartavya Bhavan team. You will be contacted via your preferred method within 2–3 working days.<br><br>
+              For urgent matters, please visit Kartavya Bhavan directly at MCC Zonal Office No. 1, Shankar Mutt Road, Mysuru — Monday to Saturday, 10 AM to 5 PM.
+            </div>
+            <div class="form-success-body kn-font" data-kn>
+              ನಿಮ್ಮ ಸಂದೇಶ ಕರ್ತವ್ಯ ಭವನ ತಂಡ ಸ್ವೀಕರಿಸಿದೆ. 2–3 ಕಾರ್ಯ ದಿನದಲ್ಲಿ ಸಂಪರ್ಕಿಸಲಾಗುತ್ತದೆ.<br><br>
+              ತುರ್ತು ವಿಷಯಕ್ಕೆ ನೇರ ಕರ್ತವ್ಯ ಭವನ, ಎಂಸಿಸಿ ವಲಯ ಕಚೇರಿ ಸಂ. 1, ಶಂಕರ ಮಠ ರಸ್ತೆ, ಮೈಸೂರು — ಸೋಮ–ಶನಿ, 10 AM–5 PM.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Office info + quick contacts -->
+      <div class="contact-info-col reveal-r">
+        <!-- Primary office card -->
+        <div class="office-card">
+          <div class="office-badge">
+            <span class="office-badge-text" data-en>Primary Constituent Office</span>
+            <span class="office-badge-text kn-font" data-kn>ಪ್ರಾಥಮಿಕ ನಿರ್ವಾಚಕ ಕಚೇರಿ</span>
+          </div>
+          <div class="office-name" data-en>Kartavya Bhavan</div>
+          <div class="office-name kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ</div>
+          <div class="office-tagline" data-en>Karnataka's first walk-in MLA citizen service office</div>
+          <div class="office-tagline kn-font" data-kn>ಕರ್ನಾಟಕದ ಮೊದಲ ವಾಕ್-ಇನ್ ಶಾಸಕ ನಾಗರಿಕ ಸೇವಾ ಕಚೇರಿ</div>
+
+          <div class="office-detail-row">
+            <div class="office-detail-icon">📍</div>
+            <div>
+              <div class="office-detail-lbl" data-en>Address</div>
+              <div class="office-detail-lbl kn-font" data-kn>ವಿಳಾಸ</div>
+              <div class="office-detail-val" data-en>MCC Zonal Office No. 1, Shankar Mutt Road</div>
+              <div class="office-detail-val kn-font" data-kn>ಎಂಸಿಸಿ ವಲಯ ಕಚೇರಿ ಸಂ. 1, ಶಂಕರ ಮಠ ರಸ್ತೆ</div>
+              <div class="office-detail-sub">Mysuru, Karnataka — 570 004</div>
+            </div>
+          </div>
+
+          <div class="office-detail-row">
+            <div class="office-detail-icon">🕐</div>
+            <div>
+              <div class="office-detail-lbl" data-en>Working Hours</div>
+              <div class="office-detail-lbl kn-font" data-kn>ಕಾರ್ಯ ಸಮಯ</div>
+              <div class="office-detail-val" data-en>Monday – Saturday, 10:00 AM – 5:00 PM</div>
+              <div class="office-detail-val kn-font" data-kn>ಸೋಮವಾರ – ಶನಿವಾರ, ಬೆಳಿಗ್ಗೆ 10 – ಸಂಜೆ 5</div>
+              <div class="office-detail-sub" data-en>Closed on public holidays</div>
+              <div class="office-detail-sub kn-font" data-kn>ಸಾರ್ವಜನಿಕ ರಜಾ ದಿನ ಮುಚ್ಚಿರುತ್ತದೆ</div>
+            </div>
+          </div>
+
+          <div class="office-detail-row">
+            <div class="office-detail-icon">👤</div>
+            <div>
+              <div class="office-detail-lbl" data-en>Appointment Required</div>
+              <div class="office-detail-lbl kn-font" data-kn>ಅಪಾಯಿಂಟ್ಮೆಂಟ್</div>
+              <div class="office-detail-val" data-en>No — all Krishnaraja residents are welcome to walk in</div>
+              <div class="office-detail-val kn-font" data-kn>ಇಲ್ಲ — ಎಲ್ಲ ಕೃಷ್ಣರಾಜ ನಿವಾಸಿ ನೇರ ಬರಬಹುದು</div>
+            </div>
+          </div>
+
+          <div class="office-detail-row">
+            <div class="office-detail-icon">🌐</div>
+            <div>
+              <div class="office-detail-lbl" data-en>Languages</div>
+              <div class="office-detail-lbl kn-font" data-kn>ಭಾಷೆ</div>
+              <div class="office-detail-val" data-en>Kannada · English</div>
+              <div class="office-detail-sub" data-en>All documents accepted in Kannada or English</div>
+              <div class="office-detail-sub kn-font" data-kn>ಕನ್ನಡ ಅಥವಾ ಇಂಗ್ಲಿಷ್ ದಾಖಲೆ ಸ್ವೀಕೃತ</div>
+            </div>
+          </div>
+
+          <div class="office-divider"></div>
+          <div class="office-status-row">
+            <span class="office-status-chip chip-open">✓ Open Mon–Sat</span>
+            <span class="office-status-chip chip-free">✓ Free of charge</span>
+            <span class="office-status-chip chip-walkin">✓ No appointment</span>
+          </div>
+        </div>
+
+        <!-- Quick contact cards -->
+        <div class="quick-contact-grid">
+          <div class="quick-card">
+            <span class="quick-card-icon">🏛️</span>
+            <div class="quick-card-lbl" data-en>Legislative Assembly</div>
+            <div class="quick-card-lbl kn-font" data-kn>ವಿಧಾನಸಭೆ</div>
+            <div class="quick-card-val" data-en>Karnataka Vidhana Soudha</div>
+            <div class="quick-card-val kn-font" data-kn>ಕರ್ನಾಟಕ ವಿಧಾನ ಸೌಧ</div>
+            <div class="quick-card-sub" data-en>Bengaluru — when Assembly is in session</div>
+            <div class="quick-card-sub kn-font" data-kn>ಅಧಿವೇಶನ ಸಮಯ ಬೆಂಗಳೂರು</div>
+          </div>
+          <div class="quick-card">
+            <span class="quick-card-icon">📱</span>
+            <div class="quick-card-lbl" data-en>WhatsApp</div>
+            <div class="quick-card-val" data-en>via Kartavya Bhavan</div>
+            <div class="quick-card-val kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ ಮೂಲಕ</div>
+            <div class="quick-card-sub" data-en>Reach out through the office team for WhatsApp updates</div>
+            <div class="quick-card-sub kn-font" data-kn>ವಾಟ್ಸ್ಆಪ್ ಅಪ್ಡೇಟ್ ಕಚೇರಿ ಮೂಲಕ</div>
+          </div>
+          <a href="#" class="quick-card">
+            <span class="quick-card-icon">𝕗</span>
+            <div class="quick-card-lbl">Facebook</div>
+            <div class="quick-card-val">@TSSrivatsa.MLA</div>
+            <div class="quick-card-sub" data-en>Official Facebook page — news &amp; updates</div>
+            <div class="quick-card-sub kn-font" data-kn>ಅಧಿಕೃತ ಫೇಸ್ಬುಕ್ — ಸುದ್ದಿ &amp; ಅಪ್ಡೇಟ್</div>
+          </a>
+          <a href="#" class="quick-card">
+            <span class="quick-card-icon">𝕏</span>
+            <div class="quick-card-lbl">X (Twitter)</div>
+            <div class="quick-card-val">@TSSrivatsa</div>
+            <div class="quick-card-sub" data-en>Statements, positions &amp; Assembly updates</div>
+            <div class="quick-card-sub kn-font" data-kn>ಹೇಳಿಕೆ, ನಿಲುವು ಮತ್ತು ವಿಧಾನಸಭೆ ಅಪ್ಡೇಟ್</div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  MAP / HOW TO REACH
+══════════════════════════════════════ -->
+<div class="map-section" id="directions">
+  <div class="container">
+    <div class="map-grid">
+      <!-- Map placeholder -->
+      <div class="map-frame reveal-l">
+        <div class="map-bg-dots"></div>
+        <div class="map-glow"></div>
+        <div class="map-label">
+          <div class="map-label-badge" data-en>📍 Krishnaraja · Mysuru</div>
+          <div class="map-label-badge kn-font" data-kn>📍 ಕೃಷ್ಣರಾಜ · ಮೈಸೂರು</div>
+        </div>
+        <div class="map-center">
+          <span class="map-pin-icon">📍</span>
+          <div class="map-location-name" data-en>Kartavya Bhavan</div>
+          <div class="map-location-name kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ</div>
+          <div class="map-location-addr" data-en>MCC Zonal Office No. 1<br>Shankar Mutt Road, Mysuru<br>Karnataka — 570 004</div>
+          <div class="map-location-addr kn-font" data-kn>ಎಂಸಿಸಿ ವಲಯ ಕಚೇರಿ ಸಂ. 1<br>ಶಂಕರ ಮಠ ರಸ್ತೆ, ಮೈಸೂರು<br>ಕರ್ನಾಟಕ — 570 004</div>
+          <a href="https://maps.google.com/?q=MCC+Zonal+Office+Shankar+Mutt+Road+Mysuru" target="_blank" class="map-directions-btn" data-en>Open in Google Maps →</a>
+          <a href="https://maps.google.com/?q=MCC+Zonal+Office+Shankar+Mutt+Road+Mysuru" target="_blank" class="map-directions-btn kn-font" data-kn>ಗೂಗಲ್ ಮ್ಯಾಪ್ ತೆರೆಯಿರಿ →</a>
+        </div>
+        <div class="map-bottom">
+          <div class="map-nearby">
+            <span class="map-nearby-tag" data-en>Near Shankar Mutt</span>
+            <span class="map-nearby-tag" data-en>MCC Zonal Office</span>
+            <span class="map-nearby-tag" data-en>Krishnaraja Constituency</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Directions info -->
+      <div class="directions-info reveal-r">
+        <div class="eyebrow">
+          <div class="eyebrow-bar"></div>
+          <span class="eyebrow-text" data-en>How to Reach</span>
+          <span class="eyebrow-text kn-font" data-kn>ತಲುಪುವ ರೀತಿ</span>
+        </div>
+        <div class="dir-title" data-en>Getting to Kartavya Bhavan</div>
+        <div class="dir-title kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ ತಲುಪುವ ರೀತಿ</div>
+        <div class="dir-sub" data-en>MCC Zonal Office No. 1, Shankar Mutt Road, is centrally located in Mysuru and is accessible by all modes of transport.</div>
+        <div class="dir-sub kn-font" data-kn>ಎಂಸಿಸಿ ವಲಯ ಕಚೇರಿ ಸಂ. 1, ಶಂಕರ ಮಠ ರಸ್ತೆ ಮೈಸೂರು ಮಧ್ಯದಲ್ಲಿದ್ದು ಎಲ್ಲ ಸಾರಿಗೆ ಮಾರ್ಗದಿಂದ ಸುಲಭ ಪ್ರವೇಶ.</div>
+
+        <div class="direction-item">
+          <div class="direction-icon-wrap">🚗</div>
+          <div>
+            <div class="direction-mode" data-en>By Car / Auto-Rickshaw</div>
+            <div class="direction-mode kn-font" data-kn>ಕಾರ್ / ಆಟೊ-ರಿಕ್ಷಾ</div>
+            <div class="direction-desc" data-en>Search "MCC Zonal Office, Shankar Mutt Road, Mysuru" on Google Maps. Parking available near the office complex.</div>
+            <div class="direction-desc kn-font" data-kn>ಗೂಗಲ್ ಮ್ಯಾಪ್‌ನಲ್ಲಿ "MCC Zonal Office, Shankar Mutt Road, Mysuru" ಹುಡುಕಿ. ಕಚೇರಿ ಸಮೀಪ ಪಾರ್ಕಿಂಗ್ ಲಭ್ಯ.</div>
+            <div class="direction-sub" data-en>~10 min from Mysuru Palace, ~15 min from Mysuru Railway Station</div>
+            <div class="direction-sub kn-font" data-kn>ಮೈಸೂರು ಅರಮನೆಯಿಂದ ~10 ನಿಮಿಷ, ರೈಲ್ವೆ ನಿಲ್ದಾಣದಿಂದ ~15 ನಿಮಿಷ</div>
+          </div>
+        </div>
+
+        <div class="direction-item">
+          <div class="direction-icon-wrap">🚌</div>
+          <div>
+            <div class="direction-mode" data-en>By KSRTC City Bus</div>
+            <div class="direction-mode kn-font" data-kn>ಕೆಎಸ್ಆರ್‌ಟಿಸಿ ನಗರ ಬಸ್</div>
+            <div class="direction-desc" data-en>Multiple KSRTC city bus routes pass through or near Shankar Mutt Road. Alight at the Shankar Mutt stop.</div>
+            <div class="direction-desc kn-font" data-kn>ಹಲವು ಕೆಎಸ್ಆರ್‌ಟಿಸಿ ನಗರ ಬಸ್ ಶಂಕರ ಮಠ ರಸ್ತೆ ಮೂಲಕ ಹಾದು ಹೋಗುತ್ತವೆ. ಶಂಕರ ಮಠ ನಿಲ್ದಾಣದಲ್ಲಿ ಇಳಿಯಿರಿ.</div>
+            <div class="direction-sub" data-en>Check KSRTC city routes on the official KSRTC website or ask the conductor for Shankar Mutt Road</div>
+          </div>
+        </div>
+
+        <div class="direction-item">
+          <div class="direction-icon-wrap">🚂</div>
+          <div>
+            <div class="direction-mode" data-en>From Mysuru Railway Station</div>
+            <div class="direction-mode kn-font" data-kn>ಮೈಸೂರು ರೈಲ್ವೆ ನಿಲ್ದಾಣದಿಂದ</div>
+            <div class="direction-desc" data-en>Take a city bus or auto-rickshaw from Mysuru Junction. Ask the driver for MCC Zonal Office, Shankar Mutt Road.</div>
+            <div class="direction-desc kn-font" data-kn>ಮೈಸೂರು ಜಂಕ್ಷನ್‌ನಿಂದ ನಗರ ಬಸ್ ಅಥವಾ ಆಟೊ ತೆಗೆದುಕೊಳ್ಳಿ. ಎಂಸಿಸಿ ವಲಯ ಕಚೇರಿ, ಶಂಕರ ಮಠ ರಸ್ತೆ ಕೇಳಿ.</div>
+            <div class="direction-sub" data-en>Approximately 15–20 minutes by auto</div>
+            <div class="direction-sub kn-font" data-kn>ಆಟೊದಲ್ಲಿ ಸರಿಸುಮಾರು 15–20 ನಿಮಿಷ</div>
+          </div>
+        </div>
+
+        <div class="direction-item">
+          <div class="direction-icon-wrap">✈️</div>
+          <div>
+            <div class="direction-mode" data-en>From Mysuru Airport (Mandakalli)</div>
+            <div class="direction-mode kn-font" data-kn>ಮೈಸೂರು ವಿಮಾನ ನಿಲ್ದಾಣದಿಂದ</div>
+            <div class="direction-desc" data-en>Take a taxi or app-based cab from Mandakalli Airport directly to Shankar Mutt Road. Approximately 25–35 minutes depending on traffic.</div>
+            <div class="direction-desc kn-font" data-kn>ಮಂಡಕಳ್ಳಿ ವಿಮಾನ ನಿಲ್ದಾಣದಿಂದ ಟ್ಯಾಕ್ಸಿ ಅಥವಾ ಕ್ಯಾಬ್ ಶಂಕರ ಮಠ ರಸ್ತೆಗೆ.</div>
+            <div class="direction-sub" data-en>~25–35 minutes · Mysuru Airport serves Bengaluru–Mysuru air route</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  SOCIAL MEDIA (dark)
+══════════════════════════════════════ -->
+<section class="section-dark" id="social">
+  <div class="container">
+    <div class="reveal" style="max-width:560px;margin-bottom:20px;">
+      <div class="eyebrow">
+        <div class="eyebrow-bar"></div>
+        <span class="eyebrow-text-light" data-en>Social Media</span>
+        <span class="eyebrow-text-light kn-font" data-kn>ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ</span>
+      </div>
+      <h2 class="section-title section-title-light" data-en>Follow for Updates &amp;<br><em>Direct Statements</em></h2>
+      <h2 class="section-title section-title-light kn-font" data-kn>ಅಪ್ಡೇಟ್ ಮತ್ತು<br><em>ನೇರ ಹೇಳಿಕೆ</em> ಅನುಸರಿಸಿ</h2>
+    </div>
+    <div class="social-grid">
+      <a href="#" class="social-card reveal d1">
+        <span class="social-icon">𝕗</span>
+        <div class="social-name">Facebook</div>
+        <div class="social-handle">@TSSrivatsa.MLA</div>
+        <div class="social-follow" data-en>Follow Page →</div>
+        <div class="social-follow kn-font" data-kn>ಅನುಸರಿಸಿ →</div>
+      </a>
+      <a href="#" class="social-card reveal d2">
+        <span class="social-icon">𝕏</span>
+        <div class="social-name">X (Twitter)</div>
+        <div class="social-handle">@TSSrivatsa</div>
+        <div class="social-follow" data-en>Follow →</div>
+        <div class="social-follow kn-font" data-kn>ಅನುಸರಿಸಿ →</div>
+      </a>
+      <a href="#" class="social-card reveal d3">
+        <span class="social-icon">📸</span>
+        <div class="social-name">Instagram</div>
+        <div class="social-handle">@ts_srivatsa_mla</div>
+        <div class="social-follow" data-en>Follow →</div>
+        <div class="social-follow kn-font" data-kn>ಅನುಸರಿಸಿ →</div>
+      </a>
+      <a href="#" class="social-card reveal d4">
+        <span class="social-icon">▶</span>
+        <div class="social-name">YouTube</div>
+        <div class="social-handle">T. S. Srivatsa Official</div>
+        <div class="social-follow" data-en>Subscribe →</div>
+        <div class="social-follow kn-font" data-kn>ಚಂದಾದಾರಿ →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  FAQ
+══════════════════════════════════════ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="reveal" style="margin-bottom:20px;">
+      <div class="eyebrow">
+        <div class="eyebrow-bar"></div>
+        <span class="eyebrow-text" data-en>Frequently Asked</span>
+        <span class="eyebrow-text kn-font" data-kn>ಪದೇ ಪದೇ ಕೇಳಲಾಗುವ</span>
+      </div>
+      <h2 class="section-title" data-en>Common Questions About<br><em>Reaching the MLA's Office</em></h2>
+      <h2 class="section-title kn-font" data-kn>ಶಾಸಕ ಕಚೇರಿ ಸಂಪರ್ಕದ<br><em>ಸಾಮಾನ್ಯ ಪ್ರಶ್ನೆ</em></h2>
+    </div>
+    <div class="faq-grid">
+
+      <div class="faq-item reveal d1">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <div class="faq-q-text" data-en>Do I need to be a BJP voter or BJP member to raise a grievance?</div>
+          <div class="faq-q-text kn-font" data-kn>ದೂರು ಸಲ್ಲಿಸಲು ಬಿಜೆಪಿ ಮತದಾರ ಅಥವಾ ಸದಸ್ಯ ಆಗಿರಬೇಕೇ?</div>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner" data-en>No. Kartavya Bhavan is open to every resident of Krishnaraja — regardless of which party they voted for or whether they have any political affiliation at all. Srivatsa represents the entire constituency, not just BJP voters.</div>
+          <div class="faq-answer-inner kn-font" data-kn>ಇಲ್ಲ. ಕರ್ತವ್ಯ ಭವನ ಕೃಷ್ಣರಾಜದ ಎಲ್ಲ ನಿವಾಸಿಗಳಿಗೆ ಮುಕ್ತ — ಯಾವ ಪಕ್ಷಕ್ಕೆ ಮತ ನೀಡಿದರೂ, ರಾಜಕೀಯ ಸಂಬಂಧ ಇದ್ದರೂ ಇಲ್ಲದಿದ್ದರೂ. ಶ್ರೀವತ್ಸ ಇಡೀ ಕ್ಷೇತ್ರ ಪ್ರತಿನಿಧಿಸುತ್ತಾರೆ.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal d2">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <div class="faq-q-text" data-en>What happens after I submit a grievance online or visit Kartavya Bhavan?</div>
+          <div class="faq-q-text kn-font" data-kn>ಆನ್‌ಲೈನ್ ದೂರು ಅಥವಾ ಕರ್ತವ್ಯ ಭವನ ಭೇಟಿ ನಂತರ ಏನಾಗುತ್ತದೆ?</div>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner" data-en>Your issue is logged and assigned to the right channel — MCC, state government department, or MLA's office — depending on the type of problem. You will be contacted via your preferred method (phone/WhatsApp/email) within 2–3 working days with an update. Complex cases are tracked until resolution.</div>
+          <div class="faq-answer-inner kn-font" data-kn>ನಿಮ್ಮ ಸಮಸ್ಯೆ ದಾಖಲಿಸಿ ಸರಿಯಾದ ಚಾನೆಲ್ — ಎಂಸಿಸಿ, ರಾಜ್ಯ ಸರ್ಕಾರ ಇಲಾಖೆ, ಅಥವಾ ಶಾಸಕ ಕಚೇರಿ — ನಿಯೋಜಿಸಲಾಗುತ್ತದೆ. 2–3 ಕಾರ್ಯ ದಿನದಲ್ಲಿ ಅಪ್ಡೇಟ್ ಸಂಪರ್ಕ.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal d3">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <div class="faq-q-text" data-en>Can I contact Srivatsa directly, or does everything go through the office?</div>
+          <div class="faq-q-text kn-font" data-kn>ಶ್ರೀವತ್ಸ ನೇರ ಸಂಪರ್ಕಿಸಬಹುದೇ, ಅಥವಾ ಎಲ್ಲ ಕಚೇರಿ ಮೂಲಕ?</div>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner" data-en>For most grievances and requests, the office team at Kartavya Bhavan is the fastest and most reliable route. For serious matters — such as corruption complaints, urgent civic emergencies or matters requiring the MLA's personal attention — the team will escalate directly to Srivatsa. He is also accessible at his social media accounts for public issues.</div>
+          <div class="faq-answer-inner kn-font" data-kn>ಹೆಚ್ಚಿನ ದೂರು ಮತ್ತು ವಿನಂತಿಗೆ, ಕರ್ತವ್ಯ ಭವನ ಕಚೇರಿ ತಂಡ ತ್ವರಿತ ಮಾರ್ಗ. ಗಂಭೀರ ವಿಷಯ — ಭ್ರಷ್ಟಾಚಾರ ದೂರು, ತುರ್ತು ನಾಗರಿಕ ಸಮಸ್ಯೆ — ತಂಡ ನೇರ ಶ್ರೀವತ್ಸಗೆ ಎಸ್ಕಲೇಟ್ ಮಾಡುತ್ತದೆ.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal d4">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <div class="faq-q-text" data-en>Is there a fee for using Kartavya Bhavan's services?</div>
+          <div class="faq-q-text kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ ಸೇವೆಗೆ ಶುಲ್ಕ ಇದೆಯೇ?</div>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner" data-en>No. Kartavya Bhavan is completely free of charge for all Krishnaraja residents. There is no fee for submitting grievances, getting land record assistance, applying for welfare schemes or any other service provided through the office. If anyone asks you for money to access these services, report it immediately.</div>
+          <div class="faq-answer-inner kn-font" data-kn>ಇಲ್ಲ. ಕರ್ತವ್ಯ ಭವನ ಎಲ್ಲ ಕೃಷ್ಣರಾಜ ನಿವಾಸಿಗಳಿಗೆ ಸಂಪೂರ್ಣ ಉಚಿತ. ಯಾರಾದರೂ ಹಣ ಕೇಳಿದರೆ ತಕ್ಷಣ ವರದಿ ಮಾಡಿ.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal d1">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <div class="faq-q-text" data-en>I submitted a grievance a month ago and haven't heard back. What should I do?</div>
+          <div class="faq-q-text kn-font" data-kn>ತಿಂಗಳ ಹಿಂದೆ ದೂರು ಸಲ್ಲಿಸಿದ್ದೇನೆ, ಉತ್ತರ ಬಂದಿಲ್ಲ. ಏನು ಮಾಡಬೇಕು?</div>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner" data-en>Visit Kartavya Bhavan directly and mention your original submission. The team will pull up your case and provide a status update. For persistent cases, ask to have your matter escalated to MLA Srivatsa's direct attention. Walking in is often faster than waiting for a callback.</div>
+          <div class="faq-answer-inner kn-font" data-kn>ನೇರ ಕರ್ತವ್ಯ ಭವನ ಭೇಟಿ ಮಾಡಿ ಮೂಲ ಸಲ್ಲಿಕೆ ಹೇಳಿ. ತಂಡ ಪ್ರಕರಣ ತೆಗೆದು ಸ್ಥಿತಿ ಅಪ್ಡೇಟ್ ನೀಡುತ್ತದೆ. ನೇರ ಭೇಟಿ ಕಾಲ್ಬ್ಯಾಕ್ ನಿರೀಕ್ಷೆಗಿಂತ ತ್ವರಿತ.</div>
+        </div>
+      </div>
+
+      <div class="faq-item reveal d2">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <div class="faq-q-text" data-en>Can I contact the office for issues outside Krishnaraja constituency?</div>
+          <div class="faq-q-text kn-font" data-kn>ಕೃಷ್ಣರಾಜ ಕ್ಷೇತ್ರ ಹೊರಗಿನ ಸಮಸ್ಯೆಗೆ ಕಚೇರಿ ಸಂಪರ್ಕಿಸಬಹುದೇ?</div>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner" data-en>Kartavya Bhavan primarily serves residents of Krishnaraja constituency. However, as BJP Mysore City President, Srivatsa can sometimes provide guidance or refer issues from adjacent Mysuru constituencies. For issues clearly outside Krishnaraja, the team may direct you to the appropriate MLA's office.</div>
+          <div class="faq-answer-inner kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ ಮುಖ್ಯವಾಗಿ ಕೃಷ್ಣರಾಜ ಕ್ಷೇತ್ರ ನಿವಾಸಿ ಸೇವೆ. ಆದರೆ ಬಿಜೆಪಿ ಮೈಸೂರು ನಗರ ಅಧ್ಯಕ್ಷರಾಗಿ ಶ್ರೀವತ್ಸ ಕೆಲವೊಮ್ಮೆ ಪಕ್ಕದ ಕ್ಷೇತ್ರ ಸಮಸ್ಯೆ ಮಾರ್ಗದರ್ಶನ ನೀಡಬಹುದು.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  CTA BAND
+══════════════════════════════════════ -->
+<div class="cta-band">
+  <div class="cta-band-inner">
+    <h2 data-en>Krishnaraja's Door<br>Is Always Open.</h2>
+    <h2 class="kn-font" data-kn>ಕೃಷ್ಣರಾಜದ ಬಾಗಿಲು<br>ಯಾವಾಗಲೂ ತೆರೆದಿದೆ.</h2>
+    <p data-en>Walk into Kartavya Bhavan on Shankar Mutt Road — or send a message right now. No appointment. No middleman. Just direct access to your MLA's office.</p>
+    <p class="kn-font" data-kn>ಶಂಕರ ಮಠ ರಸ್ತೆ ಕರ್ತವ್ಯ ಭವನಕ್ಕೆ ಬನ್ನಿ — ಅಥವಾ ಈಗ ಸಂದೇಶ ಕಳುಹಿಸಿ. ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ಬೇಡ. ಮಧ್ಯಸ್ಥ ಬೇಡ. ಶಾಸಕ ಕಚೇರಿ ನೇರ ಪ್ರವೇಶ.</p>
+    <div class="cta-btns">
+      <a href="#contact-form" class="btn-white" data-en>Send a Message →</a>
+      <a href="#contact-form" class="btn-white kn-font" data-kn>ಸಂದೇಶ ಕಳುಹಿಸಿ →</a>
+      <a href="#directions" class="btn-white-outline" data-en>Get Directions</a>
+      <a href="#directions" class="btn-white-outline kn-font" data-kn>ದಾರಿ ನೋಡಿ</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  FOOTER
+══════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name" data-en>T. S. Srivatsa</div>
+        <div class="footer-brand-name kn-font" data-kn>ಟಿ. ಎಸ್. ಶ್ರೀವತ್ಸ</div>
+        <div class="footer-brand-role" data-en>MLA — Krishnaraja | BJP Mysuru City President</div>
+        <div class="footer-brand-role kn-font" data-kn>ಶಾಸಕರು — ಕೃಷ್ಣರಾಜ | ಬಿಜೆಪಿ ಮೈಸೂರು ನಗರ ಅಧ್ಯಕ್ಷ</div>
+        <p class="footer-brand-desc" data-en>Serving Krishnaraja with transparency, accountability, and an open door for every citizen.</p>
+        <p class="footer-brand-desc kn-font" data-kn>ಪಾರದರ್ಶಕತೆ, ಜವಾಬ್ದಾರಿ ಮತ್ತು ತೆರೆದ ಬಾಗಿಲಿನೊಂದಿಗೆ ಕೃಷ್ಣರಾಜ ಸೇವೆ.</p>
+        <div class="footer-tricolor"><span></span><span></span><span></span></div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-en>Pages</div>
+        <div class="footer-col-title kn-font" data-kn>ಪುಟಗಳು</div>
+        <ul class="footer-col-links">
+          <li><a href="index.html" data-en>→ Homepage</a><a href="index.html" class="kn-font" data-kn>→ ಮುಖಪುಟ</a></li>
+          <li><a href="about.html" data-en>→ About MLA</a><a href="about.html" class="kn-font" data-kn>→ ಶಾಸಕರ ಬಗ್ಗೆ</a></li>
+          <li><a href="constituency.html" data-en>→ Constituency</a><a href="constituency.html" class="kn-font" data-kn>→ ಕ್ಷೇತ್ರ</a></li>
+          <li><a href="work.html" data-en>→ Work Done</a><a href="work.html" class="kn-font" data-kn>→ ಕೆಲಸ</a></li>
+          <li><a href="get-involved.html" data-en>→ Get Involved</a><a href="get-involved.html" class="kn-font" data-kn>→ ಭಾಗವಹಿಸಿ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-en>On This Page</div>
+        <div class="footer-col-title kn-font" data-kn>ಈ ಪುಟ</div>
+        <ul class="footer-col-links">
+          <li><a href="#contact-form" data-en>→ Send a Message</a><a href="#contact-form" class="kn-font" data-kn>→ ಸಂದೇಶ</a></li>
+          <li><a href="#directions" data-en>→ How to Reach</a><a href="#directions" class="kn-font" data-kn>→ ತಲುಪುವ ರೀತಿ</a></li>
+          <li><a href="#social" data-en>→ Social Media</a><a href="#social" class="kn-font" data-kn>→ ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ</a></li>
+          <li><a href="#faq" data-en>→ FAQs</a><a href="#faq" class="kn-font" data-kn>→ ಪ್ರಶ್ನೆಗಳು</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-en>Connect</div>
+        <div class="footer-col-title kn-font" data-kn>ಸಂಪರ್ಕ</div>
+        <ul class="footer-col-links">
+          <li><a href="#contact-form" data-en>→ Send Message</a><a href="#contact-form" class="kn-font" data-kn>→ ಸಂದೇಶ</a></li>
+          <li><a href="#" data-en>→ Facebook</a></li>
+          <li><a href="#" data-en>→ X / Twitter</a></li>
+          <li><a href="#" data-en>→ Instagram</a></li>
+          <li><a href="#" data-en>→ YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div data-en>© 2025 T. S. Srivatsa, MLA Krishnaraja. Official Website. | <a href="#">Privacy</a></div>
+      <div class="kn-font" data-kn>© 2025 ಟಿ. ಎಸ್. ಶ್ರೀವತ್ಸ, ಶಾಸಕರು ಕೃಷ್ಣರಾಜ. ಅಧಿಕೃತ ವೆಬ್‌ಸೈಟ್.</div>
+      <div class="footer-social">
+        <a class="fsocial-btn" href="#">𝕗</a>
+        <a class="fsocial-btn" href="#">𝕏</a>
+        <a class="fsocial-btn" href="#">📸</a>
+        <a class="fsocial-btn" href="#">▶</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="#top" class="back-top" id="back-top">↑</a>
+
+<script>
+/* Language toggle */
+function setLang(lang) {
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-kn').classList.toggle('active', lang === 'kn');
+  document.body.classList.toggle('kn', lang === 'kn');
+}
+
+/* Sticky nav + back to top */
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+  document.getElementById('back-top').classList.toggle('visible', window.scrollY > 400);
+});
+
+/* Scroll reveal */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(el => observer.observe(el));
+
+/* Purpose tag selector — only one active at a time */
+function selectPurpose(btn) {
+  document.querySelectorAll('.purpose-tag').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+/* Contact form submit */
+function submitContact() {
+  const name = document.getElementById('c-name').value.trim();
+  const phone = document.getElementById('c-phone').value.trim();
+  const msg = document.getElementById('c-message').value.trim();
+  if (!name || !phone || !msg) {
+    alert('Please fill in your Name, Mobile Number, and Message before submitting.');
+    return;
+  }
+  document.getElementById('contact-form-inner').style.display = 'none';
+  document.getElementById('contact-success').style.display = 'block';
+}
+
+/* FAQ accordion */
+function toggleFaq(questionEl) {
+  const item = questionEl.parentElement;
+  const isOpen = item.classList.contains('open');
+  /* Close all */
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  /* Open clicked if it was closed */
+  if (!isOpen) item.classList.add('open');
+}
+</script>
+</body>
+</html>

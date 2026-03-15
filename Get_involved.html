@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Involved — T. S. Srivatsa MLA | BJP Krishnaraja Mysuru</title>
+<meta name="description" content="Join the movement — volunteer, donate, raise a grievance, or attend events for T. S. Srivatsa, BJP MLA for Krishnaraja constituency, Mysuru.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Kannada&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ══════════════════════════════════════════════
+   DESIGN TOKENS
+══════════════════════════════════════════════ */
+:root {
+  --saffron:      #FF6200;
+  --saffron-mid:  #E85500;
+  --saffron-deep: #C24400;
+  --saffron-pale: #FFF4ED;
+  --saffron-soft: #FFE8D6;
+  --green:        #0C7A07;
+  --green-light:  #128C0D;
+  --green-pale:   #EDF7EC;
+  --navy:         #0F1525;
+  --navy-mid:     #1A2540;
+  --white:        #FFFFFF;
+  --offwhite:     #F8F5F1;
+  --stone:        #EDE6DC;
+  --ink:          #1A1A1A;
+  --ink-mid:      #3D3D3D;
+  --muted:        #6B7280;
+  --muted-light:  #9CA3AF;
+  --gold:         #C9922A;
+  --blue:         #1565C0;
+  --blue-pale:    #E3EEFF;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--white);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+/* ══════════════════════════════════════════════
+   LANGUAGE SYSTEM
+══════════════════════════════════════════════ */
+[data-kn]                               { display: none !important; }
+body.kn [data-en]                       { display: none !important; }
+body.kn [data-kn]                       { display: block !important; }
+span[data-kn], a[data-kn]              { display: none; }
+span[data-en], a[data-en]              { display: inline; }
+body.kn span[data-en], body.kn a[data-en] { display: none; }
+body.kn span[data-kn], body.kn a[data-kn] { display: inline; font-family: 'Tiro Kannada', serif; }
+.kn-font { font-family: 'Tiro Kannada', serif; }
+
+/* ══════════════════════════════════════════════
+   NAVIGATION
+══════════════════════════════════════════════ */
+nav {
+  position: sticky; top: 0; z-index: 300;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--stone);
+  transition: box-shadow .3s;
+}
+nav.scrolled { box-shadow: 0 4px 28px rgba(0,0,0,0.08); }
+.nav-wrap {
+  max-width: 1280px; margin: 0 auto;
+  padding: 0 48px; height: 68px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand-lotus {
+  width: 40px; height: 40px; background: var(--saffron);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0; box-shadow: 0 4px 14px rgba(255,98,0,0.28);
+}
+.brand-name { font-size: 18px; font-weight: 700; color: var(--navy); line-height: 1.1; }
+.brand-role { font-size: 10px; font-weight: 600; color: var(--saffron); letter-spacing: 1.5px; text-transform: uppercase; }
+.nav-right { display: flex; align-items: center; gap: 6px; }
+.nav-links { list-style: none; display: flex; align-items: center; gap: 4px; }
+.nav-links li a {
+  text-decoration: none; font-size: 13.5px; font-weight: 500;
+  color: var(--ink-mid); padding: 6px 13px; border-radius: 6px; transition: all .2s;
+}
+.nav-links li a:hover { background: var(--saffron-pale); color: var(--saffron); }
+.nav-links li a.current { color: var(--saffron); font-weight: 600; }
+.nav-cta-link { background: var(--saffron) !important; color: white !important; font-weight: 600 !important; box-shadow: 0 3px 12px rgba(255,98,0,0.25); }
+.nav-cta-link:hover { background: var(--saffron-mid) !important; transform: translateY(-1px); }
+.lang-toggle {
+  display: flex; align-items: center; gap: 3px;
+  background: var(--offwhite); border: 1px solid var(--stone);
+  border-radius: 30px; padding: 3px; margin-left: 12px;
+}
+.lang-btn {
+  border: none; background: transparent; font-family: 'Poppins', sans-serif;
+  font-size: 12px; font-weight: 600; color: var(--muted);
+  padding: 4px 13px; border-radius: 20px; cursor: pointer; transition: all .22s;
+}
+.lang-btn.active { background: var(--saffron); color: white; }
+.lang-btn:hover:not(.active) { color: var(--saffron); }
+
+/* ══════════════════════════════════════════════
+   PAGE BANNER
+══════════════════════════════════════════════ */
+.page-banner {
+  background: linear-gradient(135deg, #0F1525 0%, #1a2a46 55%, #0F1525 100%);
+  padding: 52px 48px 0; position: relative; overflow: hidden;
+}
+.page-banner::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 80% 35%, rgba(255,98,0,0.14) 0%, transparent 52%),
+    radial-gradient(ellipse at 8% 65%, rgba(12,122,7,0.08) 0%, transparent 42%);
+  pointer-events: none;
+}
+.page-banner::after {
+  content: ''; position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.028) 1px, transparent 1px);
+  background-size: 28px 28px; pointer-events: none;
+}
+.page-banner-inner {
+  max-width: 1280px; margin: 0 auto; position: relative; z-index: 2;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: end;
+}
+.breadcrumb {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 22px;
+  font-size: 12px; font-weight: 500; color: rgba(255,255,255,0.38);
+}
+.breadcrumb a { color: rgba(255,255,255,0.38); text-decoration: none; transition: color .2s; }
+.breadcrumb a:hover { color: var(--saffron); }
+.breadcrumb-sep { color: rgba(255,255,255,0.18); }
+.banner-eyebrow {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: rgba(255,98,0,0.12); border: 1px solid rgba(255,98,0,0.28);
+  padding: 5px 16px; border-radius: 30px; margin-bottom: 18px;
+}
+.banner-eyebrow-dot {
+  width: 6px; height: 6px; border-radius: 50%; background: var(--saffron);
+  animation: pulse-dot 1.6s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%,100% { box-shadow: 0 0 0 0 rgba(255,98,0,.5); }
+  50%      { box-shadow: 0 0 0 5px rgba(255,98,0,0); }
+}
+.banner-eyebrow-text {
+  font-size: 10px; font-weight: 700; color: rgba(255,170,110,.9);
+  letter-spacing: 1.5px; text-transform: uppercase;
+}
+.banner-h1 {
+  font-size: clamp(34px, 5vw, 62px); font-weight: 800; color: white;
+  line-height: 1.08; margin-bottom: 14px; letter-spacing: -0.5px;
+}
+.banner-h1 em { font-style: normal; color: var(--saffron); }
+.banner-desc {
+  font-size: 16px; font-weight: 300; color: rgba(255,255,255,.62);
+  line-height: 1.8; max-width: 500px; margin-bottom: 40px;
+}
+.banner-desc strong { color: white; font-weight: 600; }
+.banner-sub {
+  font-size: 12px; font-weight: 600; color: rgba(255,255,255,.38);
+  letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0;
+}
+
+/* Quick-action cards in banner right */
+.banner-quickactions {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  padding-bottom: 52px;
+}
+.quick-action-tile {
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+  border-radius: 14px; padding: 22px 20px;
+  text-decoration: none; transition: all .28s; display: block;
+}
+.quick-action-tile:hover {
+  background: rgba(255,98,0,.12); border-color: rgba(255,98,0,.35);
+  transform: translateY(-3px);
+}
+.qa-icon { font-size: 26px; margin-bottom: 10px; display: block; }
+.qa-title {
+  font-size: 14px; font-weight: 700; color: white; margin-bottom: 4px; line-height: 1.3;
+}
+.qa-sub {
+  font-size: 11.5px; font-weight: 300; color: rgba(255,255,255,.45); line-height: 1.5;
+}
+.qa-arrow {
+  font-size: 11px; font-weight: 700; color: var(--saffron);
+  margin-top: 10px; display: block;
+}
+
+/* ══════════════════════════════════════════════
+   SECTION UTILITIES
+══════════════════════════════════════════════ */
+.section      { padding: 88px 48px; background: var(--white); }
+.section-alt  { padding: 88px 48px; background: var(--offwhite); }
+.section-dark { padding: 88px 48px; background: var(--navy); position: relative; overflow: hidden; }
+.section-dark::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 85% 20%, rgba(255,98,0,0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 8% 80%, rgba(12,122,7,0.05) 0%, transparent 40%);
+  pointer-events: none;
+}
+.container { max-width: 1280px; margin: 0 auto; position: relative; z-index: 1; }
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.eyebrow-bar { width: 28px; height: 3px; background: var(--saffron); border-radius: 2px; }
+.eyebrow-text { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--saffron); }
+.eyebrow-text-light { color: rgba(255,170,110,.85); }
+.section-title {
+  font-size: clamp(26px, 3.2vw, 44px); font-weight: 800; color: var(--navy);
+  line-height: 1.12; margin-bottom: 14px; letter-spacing: -0.3px;
+}
+.section-title em { font-style: italic; color: var(--saffron); }
+.section-title-light { color: white; }
+.section-body { font-size: 15.5px; font-weight: 300; color: #4a4a5a; line-height: 1.9; margin-bottom: 16px; }
+.section-body-light { color: rgba(255,255,255,.62); }
+.section-body strong { color: var(--ink); font-weight: 600; }
+.section-body-light strong { color: white; }
+
+/* Reveal */
+.reveal      { opacity: 0; transform: translateY(22px); transition: opacity .62s, transform .62s; }
+.reveal.in   { opacity: 1; transform: none; }
+.reveal-l    { opacity: 0; transform: translateX(-22px); transition: opacity .62s, transform .62s; }
+.reveal-l.in { opacity: 1; transform: none; }
+.reveal-r    { opacity: 0; transform: translateX(22px); transition: opacity .62s, transform .62s; }
+.reveal-r.in { opacity: 1; transform: none; }
+.d1 { transition-delay: .08s; }
+.d2 { transition-delay: .16s; }
+.d3 { transition-delay: .24s; }
+.d4 { transition-delay: .32s; }
+
+/* ══════════════════════════════════════════════
+   WAYS TO GET INVOLVED — large option cards
+══════════════════════════════════════════════ */
+.involve-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 48px;
+}
+.involve-card {
+  border: 1px solid var(--stone); border-radius: 20px; padding: 34px 30px;
+  transition: all .3s; position: relative; overflow: hidden;
+  background: white; display: flex; flex-direction: column;
+}
+.involve-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 4px; background: var(--saffron);
+  transform: scaleX(0); transform-origin: left; transition: transform .35s;
+}
+.involve-card:hover { transform: translateY(-5px); box-shadow: 0 20px 52px rgba(0,0,0,.09); border-color: transparent; }
+.involve-card:hover::before { transform: scaleX(1); }
+.involve-card.primary {
+  background: var(--navy); border-color: transparent;
+  grid-column: span 2;
+}
+.involve-card.primary::before { background: var(--saffron); }
+.involve-card.primary:hover { box-shadow: 0 20px 52px rgba(15,21,37,.35); }
+
+.involve-icon-wrap {
+  width: 56px; height: 56px; border-radius: 14px;
+  background: var(--saffron-pale);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; margin-bottom: 20px; flex-shrink: 0;
+  transition: background .3s;
+}
+.involve-card:hover .involve-icon-wrap { background: var(--saffron); }
+.involve-card.primary .involve-icon-wrap { background: rgba(255,98,0,.15); }
+.involve-card.primary:hover .involve-icon-wrap { background: var(--saffron); }
+
+.involve-label {
+  font-size: 9.5px; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--saffron); margin-bottom: 8px;
+}
+.involve-title {
+  font-size: 20px; font-weight: 800; color: var(--navy);
+  margin-bottom: 10px; line-height: 1.3;
+}
+.involve-card.primary .involve-title { color: white; font-size: 24px; }
+.involve-body {
+  font-size: 14px; font-weight: 300; color: var(--muted); line-height: 1.75; flex: 1;
+}
+.involve-card.primary .involve-body { color: rgba(255,255,255,.58); }
+.involve-card-footer {
+  margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--stone);
+  display: flex; gap: 10px; flex-wrap: wrap;
+}
+.involve-card.primary .involve-card-footer { border-top-color: rgba(255,255,255,.08); }
+.involve-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 10px 22px; border-radius: 8px;
+  font-family: 'Poppins', sans-serif; font-size: 13.5px; font-weight: 700;
+  text-decoration: none; cursor: pointer; border: none; transition: all .25s;
+}
+.involve-btn-primary {
+  background: var(--saffron); color: white;
+  box-shadow: 0 5px 18px rgba(255,98,0,.28);
+}
+.involve-btn-primary:hover { background: var(--saffron-mid); transform: translateY(-2px); }
+.involve-btn-outline {
+  background: transparent; color: var(--saffron);
+  border: 1.5px solid rgba(255,98,0,.3); background: var(--saffron-pale);
+}
+.involve-btn-outline:hover { background: var(--saffron); color: white; }
+.involve-btn-ghost {
+  background: rgba(255,255,255,.08); color: white;
+  border: 1px solid rgba(255,255,255,.15);
+}
+.involve-btn-ghost:hover { background: rgba(255,98,0,.2); border-color: rgba(255,98,0,.4); }
+
+/* ══════════════════════════════════════════════
+   GRIEVANCE FORM
+══════════════════════════════════════════════ */
+.grievance-section { padding: 88px 48px; background: var(--offwhite); }
+.grievance-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start;
+}
+.grievance-form-card {
+  background: white; border-radius: 20px; padding: 40px;
+  border: 1px solid var(--stone); box-shadow: 0 8px 36px rgba(0,0,0,.05);
+}
+.form-title { font-size: 22px; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+.form-sub { font-size: 13.5px; font-weight: 300; color: var(--muted); margin-bottom: 28px; line-height: 1.6; }
+.form-row { margin-bottom: 18px; }
+.form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
+.form-label {
+  display: block; font-size: 11.5px; font-weight: 700; color: var(--navy);
+  letter-spacing: 0.5px; margin-bottom: 7px;
+}
+.form-input, .form-select, .form-textarea {
+  width: 100%; padding: 11px 16px; border-radius: 9px;
+  border: 1.5px solid var(--stone); background: var(--offwhite);
+  font-family: 'Poppins', sans-serif; font-size: 14px; color: var(--ink);
+  outline: none; transition: border-color .2s, background .2s;
+  appearance: none;
+}
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: var(--saffron); background: white;
+}
+.form-textarea { min-height: 110px; resize: vertical; }
+.form-select { cursor: pointer; }
+.form-submit {
+  width: 100%; padding: 14px; border-radius: 9px;
+  background: var(--saffron); color: white;
+  font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 700;
+  border: none; cursor: pointer; transition: all .25s;
+  box-shadow: 0 6px 22px rgba(255,98,0,.28); margin-top: 6px;
+}
+.form-submit:hover { background: var(--saffron-mid); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(255,98,0,.35); }
+.form-note {
+  margin-top: 14px; font-size: 11.5px; color: var(--muted);
+  text-align: center; line-height: 1.55;
+}
+
+/* Form field success state */
+.form-success {
+  display: none; text-align: center; padding: 32px 24px;
+}
+.form-success-icon { font-size: 52px; margin-bottom: 14px; display: block; }
+.form-success-title { font-size: 20px; font-weight: 800; color: var(--green); margin-bottom: 8px; }
+.form-success-body { font-size: 14px; color: var(--muted); line-height: 1.65; }
+
+/* Info column */
+.grievance-info {}
+.info-step {
+  display: flex; gap: 18px; align-items: flex-start;
+  padding: 20px 0; border-bottom: 1px solid var(--stone); transition: padding-left .2s;
+}
+.info-step:last-child { border-bottom: none; }
+.info-step:hover { padding-left: 6px; }
+.step-num {
+  width: 38px; height: 38px; border-radius: 10px;
+  background: var(--saffron); color: white;
+  font-size: 14px; font-weight: 900;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 1px; box-shadow: 0 4px 14px rgba(255,98,0,.28);
+}
+.step-title { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.step-desc  { font-size: 13px; font-weight: 300; color: var(--muted); line-height: 1.65; }
+
+/* ══════════════════════════════════════════════
+   VOLUNTEER SECTION
+══════════════════════════════════════════════ */
+.volunteer-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 48px;
+}
+.volunteer-card {
+  background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.07);
+  border-radius: 16px; padding: 28px 24px; transition: all .3s;
+  display: flex; flex-direction: column;
+}
+.volunteer-card:hover {
+  background: rgba(255,98,0,.07); border-color: rgba(255,98,0,.25);
+  transform: translateY(-4px);
+}
+.volunteer-icon { font-size: 30px; margin-bottom: 14px; display: block; }
+.volunteer-title { font-size: 17px; font-weight: 700; color: white; margin-bottom: 10px; line-height: 1.3; }
+.volunteer-body { font-size: 13.5px; font-weight: 300; color: rgba(255,255,255,.55); line-height: 1.75; flex: 1; }
+.volunteer-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 16px; padding: 5px 12px; border-radius: 20px;
+  background: rgba(255,98,0,.1); border: 1px solid rgba(255,98,0,.22);
+  font-size: 10px; font-weight: 700; color: rgba(255,170,110,.9);
+  letter-spacing: 1px; text-transform: uppercase;
+}
+.volunteer-form-strip {
+  background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.07);
+  border-radius: 16px; padding: 32px 36px; margin-top: 40px;
+  display: flex; align-items: center; gap: 32px; flex-wrap: wrap;
+}
+.volunteer-form-content { flex: 1; min-width: 220px; }
+.volunteer-form-title { font-size: 20px; font-weight: 800; color: white; margin-bottom: 6px; }
+.volunteer-form-sub { font-size: 13.5px; color: rgba(255,255,255,.5); line-height: 1.6; }
+.volunteer-form-fields { display: flex; gap: 10px; flex-wrap: wrap; }
+.volunteer-input {
+  flex: 1; min-width: 180px; padding: 11px 16px; border-radius: 8px;
+  border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.06);
+  font-family: 'Poppins', sans-serif; font-size: 14px; color: white; outline: none;
+  transition: border-color .2s;
+}
+.volunteer-input::placeholder { color: rgba(255,255,255,.35); }
+.volunteer-input:focus { border-color: rgba(255,98,0,.5); background: rgba(255,98,0,.06); }
+.volunteer-submit {
+  padding: 11px 26px; border-radius: 8px; background: var(--saffron); color: white;
+  font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700;
+  border: none; cursor: pointer; white-space: nowrap; transition: all .25s;
+}
+.volunteer-submit:hover { background: var(--saffron-mid); transform: translateY(-2px); }
+
+/* ══════════════════════════════════════════════
+   JOIN BJP SECTION
+══════════════════════════════════════════════ */
+.bjp-join-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+}
+.bjp-card {
+  background: var(--navy); border-radius: 20px; padding: 44px;
+  position: relative; overflow: hidden;
+}
+.bjp-card::before {
+  content: ''; position: absolute; top: -60px; right: -60px;
+  width: 220px; height: 220px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,98,0,0.14) 0%, transparent 70%);
+}
+.bjp-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,98,0,0.12); border: 1px solid rgba(255,98,0,.28);
+  padding: 5px 14px; border-radius: 20px; margin-bottom: 22px;
+}
+.bjp-badge-text { font-size: 10px; font-weight: 700; color: rgba(255,170,110,.9); letter-spacing: 1.5px; text-transform: uppercase; }
+.bjp-title { font-size: 30px; font-weight: 900; color: white; margin-bottom: 8px; line-height: 1.2; }
+.bjp-title em { font-style: normal; color: var(--saffron); }
+.bjp-sub { font-size: 13.5px; color: rgba(255,255,255,.45); margin-bottom: 28px; line-height: 1.6; }
+.bjp-benefits { margin-bottom: 28px; }
+.bjp-benefit-row { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+.bjp-benefit-icon {
+  width: 32px; height: 32px; flex-shrink: 0; border-radius: 8px;
+  background: rgba(255,98,0,.12); display: flex; align-items: center; justify-content: center; font-size: 14px;
+}
+.bjp-benefit-text { font-size: 13.5px; font-weight: 500; color: white; line-height: 1.45; padding-top: 5px; }
+.bjp-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--saffron); color: white;
+  font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700;
+  padding: 13px 28px; border-radius: 9px; text-decoration: none; border: none;
+  cursor: pointer; transition: all .25s; box-shadow: 0 6px 22px rgba(255,98,0,.3);
+  position: relative; z-index: 1;
+}
+.bjp-btn:hover { background: var(--saffron-mid); transform: translateY(-3px); }
+
+/* BJP form */
+.bjp-form { background: white; border-radius: 16px; padding: 32px 30px; }
+.bjp-form-title { font-size: 18px; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+.bjp-form-sub { font-size: 13px; font-weight: 300; color: var(--muted); margin-bottom: 22px; line-height: 1.6; }
+.bjp-form-row { margin-bottom: 14px; }
+.bjp-form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+.bjp-label { display: block; font-size: 11px; font-weight: 700; color: var(--navy); letter-spacing: 0.5px; margin-bottom: 6px; }
+.bjp-input, .bjp-select {
+  width: 100%; padding: 10px 14px; border-radius: 8px;
+  border: 1.5px solid var(--stone); background: var(--offwhite);
+  font-family: 'Poppins', sans-serif; font-size: 13.5px; color: var(--ink);
+  outline: none; transition: border-color .2s;
+}
+.bjp-input:focus, .bjp-select:focus { border-color: var(--saffron); background: white; }
+.bjp-submit {
+  width: 100%; padding: 13px; border-radius: 8px;
+  background: var(--saffron); color: white;
+  font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700;
+  border: none; cursor: pointer; transition: all .25s;
+  box-shadow: 0 5px 18px rgba(255,98,0,.25); margin-top: 4px;
+}
+.bjp-submit:hover { background: var(--saffron-mid); transform: translateY(-2px); }
+
+/* ══════════════════════════════════════════════
+   EVENTS SECTION
+══════════════════════════════════════════════ */
+.events-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 48px; }
+.event-card {
+  background: white; border: 1px solid var(--stone); border-radius: 16px;
+  overflow: hidden; transition: all .3s;
+}
+.event-card:hover { transform: translateY(-4px); box-shadow: 0 16px 44px rgba(0,0,0,.09); border-color: rgba(255,98,0,.25); }
+.event-card-top {
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid var(--stone);
+  display: flex; align-items: center; gap: 16px;
+}
+.event-date-block {
+  background: var(--saffron); color: white; border-radius: 10px;
+  width: 52px; flex-shrink: 0; text-align: center; padding: 8px 0;
+}
+.event-date-day { font-size: 24px; font-weight: 900; line-height: 1; }
+.event-date-month { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: .85; }
+.event-type-badge {
+  padding: 3px 10px; border-radius: 20px; font-size: 10px; font-weight: 700;
+  letter-spacing: 1px; text-transform: uppercase;
+}
+.event-badge-open { background: var(--green-pale); color: var(--green); border: 1px solid rgba(12,122,7,.2); }
+.event-badge-party { background: var(--saffron-pale); color: var(--saffron); border: 1px solid rgba(255,98,0,.2); }
+.event-badge-assembly { background: var(--blue-pale); color: var(--blue); border: 1px solid rgba(21,101,192,.2); }
+.event-card-body { padding: 20px 24px; }
+.event-title { font-size: 15.5px; font-weight: 700; color: var(--navy); margin-bottom: 8px; line-height: 1.4; }
+.event-details { display: flex; flex-direction: column; gap: 5px; margin-bottom: 16px; }
+.event-detail { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--muted); }
+.event-detail-icon { font-size: 13px; flex-shrink: 0; }
+.event-rsvp {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 9px 20px; border-radius: 7px;
+  font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 700;
+  text-decoration: none; cursor: pointer; border: none; transition: all .25s;
+  background: var(--saffron); color: white; box-shadow: 0 4px 14px rgba(255,98,0,.25);
+}
+.event-rsvp:hover { background: var(--saffron-mid); transform: translateY(-2px); }
+.event-upcoming-tag {
+  display: inline-flex; align-items: center; gap: 5px;
+  margin-left: 10px; font-size: 10px; font-weight: 700;
+  color: var(--green); background: var(--green-pale);
+  padding: 3px 9px; border-radius: 20px;
+}
+
+/* ══════════════════════════════════════════════
+   DONATE / SUPPORT SECTION
+══════════════════════════════════════════════ */
+.donate-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.donate-card {
+  background: white; border: 1px solid var(--stone); border-radius: 20px;
+  padding: 40px; box-shadow: 0 8px 36px rgba(0,0,0,.05);
+}
+.donate-title { font-size: 22px; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+.donate-sub { font-size: 13.5px; font-weight: 300; color: var(--muted); margin-bottom: 28px; line-height: 1.65; }
+.donate-amounts { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+.amount-chip {
+  padding: 9px 20px; border-radius: 8px; font-family: 'Poppins', sans-serif;
+  font-size: 14px; font-weight: 700; cursor: pointer; transition: all .22s;
+  border: 1.5px solid var(--stone); background: var(--offwhite); color: var(--ink-mid);
+}
+.amount-chip.active, .amount-chip:hover { background: var(--saffron); color: white; border-color: var(--saffron); }
+.donate-custom { display: flex; gap: 10px; margin-bottom: 18px; }
+.donate-custom-input {
+  flex: 1; padding: 11px 16px; border-radius: 8px;
+  border: 1.5px solid var(--stone); background: var(--offwhite);
+  font-family: 'Poppins', sans-serif; font-size: 14px; color: var(--ink); outline: none;
+  transition: border-color .2s;
+}
+.donate-custom-input:focus { border-color: var(--saffron); background: white; }
+.donate-btn {
+  width: 100%; padding: 14px; border-radius: 9px;
+  background: var(--saffron); color: white;
+  font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 700;
+  border: none; cursor: pointer; transition: all .25s;
+  box-shadow: 0 6px 22px rgba(255,98,0,.28);
+}
+.donate-btn:hover { background: var(--saffron-mid); transform: translateY(-2px); }
+.donate-note { font-size: 11px; color: var(--muted); text-align: center; margin-top: 12px; line-height: 1.55; }
+.donate-ways { margin-top: 6px; }
+.donate-way { display: flex; gap: 14px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid var(--stone); }
+.donate-way:last-child { border-bottom: none; }
+.donate-way-icon {
+  width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0;
+  background: var(--saffron-pale); display: flex; align-items: center; justify-content: center; font-size: 18px;
+}
+.donate-way-title { font-size: 14.5px; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+.donate-way-desc { font-size: 12.5px; font-weight: 300; color: var(--muted); line-height: 1.6; }
+
+/* ══════════════════════════════════════════════
+   IMPACT / COMMUNITY STATS
+══════════════════════════════════════════════ */
+.community-strip {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+  margin-top: 60px;
+  background: var(--navy); border-radius: 20px; overflow: hidden;
+}
+.community-stat {
+  padding: 34px 28px; border-right: 1px solid rgba(255,255,255,.07);
+  transition: background .3s; position: relative;
+}
+.community-stat:last-child { border-right: none; }
+.community-stat::after {
+  content: ''; position: absolute; bottom: 0; left: 28px; right: 28px;
+  height: 3px; background: var(--saffron);
+  transform: scaleX(0); transform-origin: left; transition: transform .35s;
+}
+.community-stat:hover::after { transform: scaleX(1); }
+.community-num { font-size: 42px; font-weight: 900; color: var(--saffron); line-height: 1; margin-bottom: 5px; }
+.community-lbl { font-size: 13px; font-weight: 600; color: white; margin-bottom: 3px; }
+.community-sub { font-size: 12px; font-weight: 300; color: rgba(255,255,255,.38); line-height: 1.5; }
+
+/* ══════════════════════════════════════════════
+   CTA BAND
+══════════════════════════════════════════════ */
+.cta-band {
+  background: var(--saffron); padding: 72px 48px; text-align: center;
+  position: relative; overflow: hidden;
+}
+.cta-band::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 18% 50%, rgba(255,255,255,.07) 0%, transparent 50%),
+    radial-gradient(circle at 82% 50%, rgba(0,0,0,.07) 0%, transparent 50%);
+  pointer-events: none;
+}
+.cta-band-inner { position: relative; z-index: 1; }
+.cta-band h2 { font-size: clamp(24px, 3.2vw, 42px); font-weight: 800; color: white; margin-bottom: 12px; line-height: 1.2; }
+.cta-band p { font-size: 16px; font-weight: 300; color: rgba(255,255,255,.82); max-width: 520px; margin: 0 auto 34px; line-height: 1.7; }
+.cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.btn-white {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: white; color: var(--saffron); font-family: 'Poppins', sans-serif;
+  font-size: 14px; font-weight: 700; padding: 13px 30px; border-radius: 8px;
+  text-decoration: none; border: none; cursor: pointer; transition: all .25s;
+  box-shadow: 0 6px 22px rgba(0,0,0,.18);
+}
+.btn-white:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,.25); }
+.btn-white-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent; color: white; font-family: 'Poppins', sans-serif;
+  font-size: 14px; font-weight: 600; padding: 12px 26px; border-radius: 8px;
+  text-decoration: none; border: 2px solid rgba(255,255,255,.5); cursor: pointer; transition: all .25s;
+}
+.btn-white-outline:hover { border-color: white; background: rgba(255,255,255,.1); }
+
+/* ══════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════ */
+footer { background: #090E1A; padding: 60px 48px 30px; }
+.footer-inner { max-width: 1280px; margin: 0 auto; }
+.footer-top {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px;
+  margin-bottom: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.footer-brand-name { font-size: 20px; font-weight: 700; color: white; margin-bottom: 3px; }
+.footer-brand-role { font-size: 11px; font-weight: 600; color: var(--saffron); margin-bottom: 14px; }
+.footer-brand-desc { font-size: 13px; font-weight: 300; color: rgba(255,255,255,.38); line-height: 1.75; }
+.footer-tricolor { display: flex; height: 3px; border-radius: 2px; overflow: hidden; width: 55px; margin-top: 16px; }
+.footer-tricolor span:nth-child(1) { flex:1; background: var(--saffron); }
+.footer-tricolor span:nth-child(2) { flex:1; background: white; opacity:.45; }
+.footer-tricolor span:nth-child(3) { flex:1; background: var(--green); }
+.footer-col-title { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.6); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 16px; }
+.footer-col-links { list-style: none; }
+.footer-col-links li { margin-bottom: 10px; }
+.footer-col-links a { font-size: 13px; font-weight: 300; color: rgba(255,255,255,.38); text-decoration: none; transition: color .2s; }
+.footer-col-links a:hover { color: var(--saffron); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: rgba(255,255,255,.22); }
+.footer-bottom a { color: rgba(255,255,255,.3); text-decoration: none; }
+.footer-bottom a:hover { color: var(--saffron); }
+.footer-social { display: flex; gap: 8px; }
+.social-btn {
+  width: 34px; height: 34px; border-radius: 8px; background: rgba(255,255,255,.06);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; text-decoration: none; transition: all .2s; cursor: pointer;
+}
+.social-btn:hover { background: var(--saffron); transform: translateY(-2px); }
+.back-top {
+  position: fixed; bottom: 28px; right: 28px; width: 44px; height: 44px;
+  background: var(--saffron); color: white; border: none; border-radius: 50%;
+  font-size: 18px; cursor: pointer; box-shadow: 0 5px 18px rgba(255,98,0,.4);
+  display: flex; align-items: center; justify-content: center; text-decoration: none;
+  z-index: 100; opacity: 0; transform: translateY(10px); transition: all .3s;
+}
+.back-top.visible { opacity: 1; transform: translateY(0); }
+.back-top:hover { transform: translateY(-3px); }
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+@media (max-width: 1100px) {
+  .page-banner-inner { grid-template-columns: 1fr; }
+  .banner-quickactions { display: grid; grid-template-columns: repeat(4, 1fr); padding-bottom: 40px; }
+  .involve-grid { grid-template-columns: 1fr 1fr; }
+  .involve-card.primary { grid-column: span 2; }
+  .grievance-grid, .bjp-join-grid, .donate-grid { grid-template-columns: 1fr; gap: 44px; }
+  .volunteer-grid { grid-template-columns: 1fr 1fr; }
+  .events-grid { grid-template-columns: 1fr 1fr; }
+  .community-strip { grid-template-columns: 1fr 1fr; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .nav-wrap { padding: 0 16px; height: 60px; }
+  .nav-links { display: none; }
+  .page-banner { padding: 32px 16px 0; }
+  .page-banner-inner { gap: 32px; }
+  .banner-quickactions { grid-template-columns: 1fr 1fr; gap: 10px; padding-bottom: 32px; }
+  .section, .section-alt, .section-dark, .grievance-section { padding: 56px 16px; }
+  .cta-band { padding: 56px 16px; }
+  footer { padding: 44px 16px 24px; }
+  .banner-h1 { font-size: clamp(28px, 8vw, 42px); }
+  .banner-desc { font-size: 14.5px; }
+  .involve-grid { grid-template-columns: 1fr; }
+  .involve-card.primary { grid-column: span 1; }
+  .volunteer-grid { grid-template-columns: 1fr; }
+  .events-grid { grid-template-columns: 1fr; }
+  .community-strip { grid-template-columns: 1fr 1fr; }
+  .form-row-2, .bjp-form-row-2 { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  .cta-btns { flex-direction: column; align-items: center; }
+  .btn-white, .btn-white-outline { width: 100%; max-width: 280px; justify-content: center; }
+}
+@media (max-width: 480px) {
+  .page-banner { padding: 24px 12px 0; }
+  .section, .section-alt, .section-dark, .grievance-section { padding: 44px 12px; }
+  .banner-quickactions { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .community-strip { grid-template-columns: 1fr; }
+  .community-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,.07); }
+  .community-stat:last-child { border-bottom: none; }
+  .donate-amounts { gap: 8px; }
+  .amount-chip { padding: 8px 14px; font-size: 13px; }
+}
+</style>
+</head>
+<body id="top">
+
+<!-- ══════════════════════════════════════
+  NAVIGATION
+══════════════════════════════════════ -->
+<nav id="main-nav">
+  <div class="nav-wrap">
+    <a href="index.html" class="nav-brand">
+      <div class="brand-lotus">🪷</div>
+      <div>
+        <div class="brand-name" data-en>T. S. Srivatsa</div>
+        <div class="brand-name kn-font" data-kn>ಟಿ. ಎಸ್. ಶ್ರೀವತ್ಸ</div>
+        <div class="brand-role" data-en>MLA · Krishnaraja · BJP</div>
+        <div class="brand-role kn-font" data-kn>ಶಾಸಕರು · ಕೃಷ್ಣರಾಜ · ಬಿಜೆಪಿ</div>
+      </div>
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html" data-en>Home</a><a href="index.html" class="kn-font" data-kn>ಮುಖಪುಟ</a></li>
+        <li><a href="about.html" data-en>About</a><a href="about.html" class="kn-font" data-kn>ಪರಿಚಯ</a></li>
+        <li><a href="constituency.html" data-en>Constituency</a><a href="constituency.html" class="kn-font" data-kn>ಕ್ಷೇತ್ರ</a></li>
+        <li><a href="work.html" data-en>Work Done</a><a href="work.html" class="kn-font" data-kn>ಕೆಲಸ</a></li>
+        <li><a href="news.html" data-en>News</a><a href="news.html" class="kn-font" data-kn>ಸುದ್ದಿ</a></li>
+        <li><a href="get-involved.html" class="current" data-en>Get Involved</a><a href="get-involved.html" class="current kn-font" data-kn>ಭಾಗವಹಿಸಿ</a></li>
+        <li><a href="#grievance" class="nav-cta-link" data-en>Raise Grievance</a><a href="#grievance" class="nav-cta-link kn-font" data-kn>ದೂರು ಸಲ್ಲಿಸಿ</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="btn-kn" onclick="setLang('kn')">ಕನ್ನಡ</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════
+  PAGE BANNER
+══════════════════════════════════════ -->
+<div class="page-banner">
+  <div class="page-banner-inner">
+    <!-- Left: headline + description -->
+    <div class="banner-left">
+      <div class="breadcrumb">
+        <a href="index.html" data-en>Home</a><a href="index.html" class="kn-font" data-kn>ಮುಖಪುಟ</a>
+        <span class="breadcrumb-sep">›</span>
+        <span data-en>Get Involved</span><span class="kn-font" data-kn>ಭಾಗವಹಿಸಿ</span>
+      </div>
+      <div class="banner-eyebrow">
+        <div class="banner-eyebrow-dot"></div>
+        <span class="banner-eyebrow-text" data-en>Join the Movement</span>
+        <span class="banner-eyebrow-text kn-font" data-kn>ಚಳವಳಿಯಲ್ಲಿ ಭಾಗವಹಿಸಿ</span>
+      </div>
+      <h1 class="banner-h1" data-en>Get<br><em>Involved</em></h1>
+      <h1 class="banner-h1 kn-font" data-kn><em>ಭಾಗವಹಿಸಿ</em></h1>
+      <p class="banner-desc" data-en>
+        Krishnaraja's progress is not Srivatsa's work alone. It is built by <strong>every resident who raises a grievance</strong>, every volunteer who shows up at a booth, every citizen who holds their MLA accountable. This page is your starting point.
+      </p>
+      <p class="banner-desc kn-font" data-kn>
+        ಕೃಷ್ಣರಾಜದ ಪ್ರಗತಿ ಕೇವಲ ಶ್ರೀವತ್ಸ ಕೆಲಸ ಅಲ್ಲ. ಪ್ರತಿ ದೂರು ಸಲ್ಲಿಸಿದ ನಿವಾಸಿ, <strong>ಮತಗಟ್ಟೆ ಹಾಜರಾದ ಸ್ವಯಂಸೇವಕ</strong>, ಜವಾಬ್ದಾರಿ ಕೇಳುವ ನಾಗರಿಕ — ಎಲ್ಲರ ಕೊಡುಗೆ. ಇದು ನಿಮ್ಮ ಆರಂಭ ಬಿಂದು.
+      </p>
+      <div class="banner-sub" data-en>Krishnaraja · Mysuru · Karnataka · BJP</div>
+      <div class="banner-sub kn-font" data-kn>ಕೃಷ್ಣರಾಜ · ಮೈಸೂರು · ಕರ್ನಾಟಕ · ಬಿಜೆಪಿ</div>
+    </div>
+    <!-- Right: quick-action tiles -->
+    <div class="banner-quickactions">
+      <a href="#grievance" class="quick-action-tile">
+        <span class="qa-icon">📋</span>
+        <div class="qa-title" data-en>Raise a Grievance</div>
+        <div class="qa-title kn-font" data-kn>ದೂರು ಸಲ್ಲಿಸಿ</div>
+        <div class="qa-sub" data-en>Land records, civic issues, welfare schemes</div>
+        <div class="qa-sub kn-font" data-kn>ಭೂ ದಾಖಲೆ, ನಾಗರಿಕ ಸಮಸ್ಯೆ</div>
+        <span class="qa-arrow">Go →</span>
+      </a>
+      <a href="#volunteer" class="quick-action-tile">
+        <span class="qa-icon">🤝</span>
+        <div class="qa-title" data-en>Volunteer</div>
+        <div class="qa-title kn-font" data-kn>ಸ್ವಯಂಸೇವಕ</div>
+        <div class="qa-sub" data-en>Give your time to constituency work</div>
+        <div class="qa-sub kn-font" data-kn>ಕ್ಷೇತ್ರ ಕಾರ್ಯಕ್ಕೆ ಸಮಯ ನೀಡಿ</div>
+        <span class="qa-arrow">Go →</span>
+      </a>
+      <a href="#join-bjp" class="quick-action-tile">
+        <span class="qa-icon">🪷</span>
+        <div class="qa-title" data-en>Join BJP</div>
+        <div class="qa-title kn-font" data-kn>ಬಿಜೆಪಿ ಸೇರಿ</div>
+        <div class="qa-sub" data-en>Become a party member in Krishnaraja</div>
+        <div class="qa-sub kn-font" data-kn>ಕೃಷ್ಣರಾಜದಲ್ಲಿ ಪಕ್ಷ ಸದಸ್ಯ</div>
+        <span class="qa-arrow">Go →</span>
+      </a>
+      <a href="#events" class="quick-action-tile">
+        <span class="qa-icon">📅</span>
+        <div class="qa-title" data-en>Upcoming Events</div>
+        <div class="qa-title kn-font" data-kn>ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮ</div>
+        <div class="qa-sub" data-en>Attend open public meetings and programmes</div>
+        <div class="qa-sub kn-font" data-kn>ಸಾರ್ವಜನಿಕ ಸಭೆ ಮತ್ತು ಕಾರ್ಯಕ್ರಮ</div>
+        <span class="qa-arrow">Go →</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  WAYS TO GET INVOLVED
+══════════════════════════════════════ -->
+<section class="section" id="ways">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">
+        <div class="eyebrow-bar"></div>
+        <span class="eyebrow-text" data-en>Five Ways to Participate</span>
+        <span class="eyebrow-text kn-font" data-kn>ಭಾಗವಹಿಸಲು ಐದು ಮಾರ್ಗ</span>
+      </div>
+      <h2 class="section-title" data-en>Your Role in<br><em>Krishnaraja's Progress</em></h2>
+      <h2 class="section-title kn-font" data-kn>ಕೃಷ್ಣರಾಜ ಪ್ರಗತಿಯಲ್ಲಿ<br><em>ನಿಮ್ಮ ಪಾತ್ರ</em></h2>
+      <p class="section-body" style="max-width:580px;" data-en>Every form of engagement — whether raising a complaint, volunteering time or simply attending a meeting — contributes to a better-governed Krishnaraja. Choose what fits your availability and commitment.</p>
+      <p class="section-body kn-font" style="max-width:580px;" data-kn>ದೂರು ಸಲ್ಲಿಸಿ, ಸ್ವಯಂಸೇವಕ, ಅಥವಾ ಸಭೆ ಹಾಜರಾಗಿ — ಯಾವ ರೀತಿ ಭಾಗವಹಿಸಿದರೂ ಕೃಷ್ಣರಾಜ ಉತ್ತಮ ಆಡಳಿತಕ್ಕೆ ಕೊಡುಗೆ. ನಿಮ್ಮ ಸಮಯ ಮತ್ತು ಬದ್ಧತೆಗೆ ತಕ್ಕ ಮಾರ್ಗ ಆರಿಸಿ.</p>
+    </div>
+
+    <div class="involve-grid">
+      <!-- Primary card: Raise Grievance -->
+      <div class="involve-card primary reveal d1">
+        <div class="involve-icon-wrap">📋</div>
+        <div class="involve-label" data-en>Most Important</div>
+        <div class="involve-label kn-font" data-kn>ಅತ್ಯಂತ ಮಹತ್ವ</div>
+        <div class="involve-title" data-en>Raise a Grievance — Every Issue Matters</div>
+        <div class="involve-title kn-font" data-kn>ದೂರು ಸಲ್ಲಿಸಿ — ಪ್ರತಿ ಸಮಸ್ಯೆ ಮುಖ್ಯ</div>
+        <div class="involve-body" data-en>Whether it is a pending e-Khata application, a pothole that has been ignored for months, a welfare scheme you are entitled to but haven't received, or a civic complaint that has gone unanswered — Kartavya Bhavan exists to resolve it. No appointment needed. No intermediary required. Walk in or submit online.</div>
+        <div class="involve-body kn-font" data-kn>ಬಾಕಿ ಇ-ಖಾತಾ ಅರ್ಜಿ, ತಿಂಗಳಿಂದ ನಿರ್ಲಕ್ಷಿಸಿದ ಗುಂಡಿ, ಅರ್ಹ ಕಲ್ಯಾಣ ಯೋಜನೆ ತಲುಪದ, ಅಥವಾ ಉತ್ತರ ಬಾರದ ದೂರು — ಕರ್ತವ್ಯ ಭವನ ಪರಿಹರಿಸಲಿದೆ. ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ಬೇಡ. ಮಧ್ಯಸ್ಥ ಬೇಡ.</div>
+        <div class="involve-card-footer">
+          <a href="#grievance" class="involve-btn involve-btn-ghost" data-en>Submit Online →</a>
+          <a href="#grievance" class="involve-btn involve-btn-ghost kn-font" data-kn>ಆನ್‌ಲೈನ್ ಸಲ್ಲಿಸಿ →</a>
+          <a href="#kartavya" class="involve-btn involve-btn-ghost" data-en>Visit Kartavya Bhavan</a>
+          <a href="#kartavya" class="involve-btn involve-btn-ghost kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ ಭೇಟಿ</a>
+        </div>
+      </div>
+
+      <!-- Volunteer -->
+      <div class="involve-card reveal d2">
+        <div class="involve-icon-wrap">🤝</div>
+        <div class="involve-label" data-en>Volunteer</div>
+        <div class="involve-label kn-font" data-kn>ಸ್ವಯಂಸೇವಕ</div>
+        <div class="involve-title" data-en>Give Your Time</div>
+        <div class="involve-title kn-font" data-kn>ನಿಮ್ಮ ಸಮಯ ನೀಡಿ</div>
+        <div class="involve-body" data-en>Help with constituency outreach, ward-level support, event organisation, door-to-door surveys, or digital communication. Every hour you give strengthens the work at ground level.</div>
+        <div class="involve-body kn-font" data-kn>ಕ್ಷೇತ್ರ ಸಂಪರ್ಕ, ವಾರ್ಡ್ ಬೆಂಬಲ, ಕಾರ್ಯಕ್ರಮ ಸಂಘಟನೆ ಅಥವಾ ಡಿಜಿಟಲ್ ಸಂವಹನ. ನಿಮ್ಮ ಪ್ರತಿ ಗಂಟೆ ತಳಮಟ್ಟ ಕಾರ್ಯ ಬಲಪಡಿಸುತ್ತದೆ.</div>
+        <div class="involve-card-footer">
+          <a href="#volunteer" class="involve-btn involve-btn-primary" data-en>Volunteer Now</a>
+          <a href="#volunteer" class="involve-btn involve-btn-primary kn-font" data-kn>ಈಗ ಸ್ವಯಂಸೇವಕ</a>
+        </div>
+      </div>
+
+      <!-- Join BJP -->
+      <div class="involve-card reveal d3">
+        <div class="involve-icon-wrap">🪷</div>
+        <div class="involve-label" data-en>Party Membership</div>
+        <div class="involve-label kn-font" data-kn>ಪಕ್ಷ ಸದಸ್ಯತ್ವ</div>
+        <div class="involve-title" data-en>Join the BJP</div>
+        <div class="involve-title kn-font" data-kn>ಬಿಜೆಪಿ ಸೇರಿ</div>
+        <div class="involve-body" data-en>Become a formal BJP member in Krishnaraja. Whether at booth level, ward level or the city unit — the party's work requires committed people. Membership connects you to a city-wide network of action.</div>
+        <div class="involve-body kn-font" data-kn>ಕೃಷ್ಣರಾಜದಲ್ಲಿ ಅಧಿಕೃತ ಬಿಜೆಪಿ ಸದಸ್ಯ. ಮತಗಟ್ಟೆ, ವಾರ್ಡ್ ಅಥವಾ ನಗರ ಘಟಕ — ಪಕ್ಷ ಕಾರ್ಯಕ್ಕೆ ಬದ್ಧ ವ್ಯಕ್ತಿ ಬೇಕು.</div>
+        <div class="involve-card-footer">
+          <a href="#join-bjp" class="involve-btn involve-btn-primary" data-en>Apply for Membership</a>
+          <a href="#join-bjp" class="involve-btn involve-btn-primary kn-font" data-kn>ಸದಸ್ಯತ್ವ ಅರ್ಜಿ</a>
+        </div>
+      </div>
+
+      <!-- Donate -->
+      <div class="involve-card reveal d1">
+        <div class="involve-icon-wrap">💛</div>
+        <div class="involve-label" data-en>Support</div>
+        <div class="involve-label kn-font" data-kn>ಬೆಂಬಲ</div>
+        <div class="involve-title" data-en>Donate to the Movement</div>
+        <div class="involve-title kn-font" data-kn>ಚಳವಳಿಗೆ ದೇಣಿಗೆ</div>
+        <div class="involve-body" data-en>Financial support — of any amount — funds constituency outreach, ward-level activities, civic awareness campaigns and the running costs of Kartavya Bhavan's services for residents.</div>
+        <div class="involve-body kn-font" data-kn>ಯಾವ ಮೊತ್ತದ ಆರ್ಥಿಕ ಬೆಂಬಲ ಕ್ಷೇತ್ರ ಸಂಪರ್ಕ, ವಾರ್ಡ್ ಚಟುವಟಿಕೆ, ನಾಗರಿಕ ಅರಿವು ಅಭಿಯಾನ ಮತ್ತು ಕರ್ತವ್ಯ ಭವನ ನಿರ್ವಹಣೆ ಖರ್ಚು ನಿರ್ವಹಿಸುತ್ತದೆ.</div>
+        <div class="involve-card-footer">
+          <a href="#donate" class="involve-btn involve-btn-primary" data-en>Contribute →</a>
+          <a href="#donate" class="involve-btn involve-btn-primary kn-font" data-kn>ದೇಣಿಗೆ →</a>
+        </div>
+      </div>
+
+      <!-- Attend events -->
+      <div class="involve-card reveal d2">
+        <div class="involve-icon-wrap">📅</div>
+        <div class="involve-label" data-en>Events</div>
+        <div class="involve-label kn-font" data-kn>ಕಾರ್ಯಕ್ರಮ</div>
+        <div class="involve-title" data-en>Attend Events &amp; Meetings</div>
+        <div class="involve-title kn-font" data-kn>ಕಾರ್ಯಕ್ರಮ ಮತ್ತು ಸಭೆ ಹಾಜರಾಗಿ</div>
+        <div class="involve-body" data-en>Public constituency meetings, ward-level sabhas, Kartavya Bhavan open days and BJP party events are open to all Krishnaraja residents. Showing up and asking questions is itself a form of civic participation.</div>
+        <div class="involve-body kn-font" data-kn>ಸಾರ್ವಜನಿಕ ಕ್ಷೇತ್ರ ಸಭೆ, ವಾರ್ಡ್ ಸಭೆ, ಕರ್ತವ್ಯ ಭವನ ತೆರೆದ ದಿನ ಮತ್ತು ಬಿಜೆಪಿ ಕಾರ್ಯಕ್ರಮ. ಹಾಜರಾಗಿ ಪ್ರಶ್ನೆ ಕೇಳುವುದು ಸ್ವತಃ ನಾಗರಿಕ ಭಾಗವಹಿಸುವಿಕೆ.</div>
+        <div class="involve-card-footer">
+          <a href="#events" class="involve-btn involve-btn-primary" data-en>See Events →</a>
+          <a href="#events" class="involve-btn involve-btn-primary kn-font" data-kn>ಕಾರ್ಯಕ್ರಮ ನೋಡಿ →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Community stats -->
+    <div class="community-strip reveal">
+      <div class="community-stat">
+        <div class="community-num">266</div>
+        <div class="community-lbl" data-en>Polling Booths in Krishnaraja</div>
+        <div class="community-lbl kn-font" data-kn>ಕೃಷ್ಣರಾಜ ಮತಗಟ್ಟೆ</div>
+        <div class="community-sub" data-en>Each one needs active workers</div>
+        <div class="community-sub kn-font" data-kn>ಪ್ರತಿಯೊಂದಕ್ಕೂ ಸಕ್ರಿಯ ಕಾರ್ಯಕರ್ತ ಬೇಕು</div>
+      </div>
+      <div class="community-stat">
+        <div class="community-num">~2.8L</div>
+        <div class="community-lbl" data-en>Registered Voters</div>
+        <div class="community-lbl kn-font" data-kn>ನೋಂದಾಯಿತ ಮತದಾರರು</div>
+        <div class="community-sub" data-en>Every voice counts in Krishnaraja</div>
+        <div class="community-sub kn-font" data-kn>ಕೃಷ್ಣರಾಜದಲ್ಲಿ ಪ್ರತಿ ದನಿ ಮುಖ್ಯ</div>
+      </div>
+      <div class="community-stat">
+        <div class="community-num">12</div>
+        <div class="community-lbl" data-en>Wards Covered</div>
+        <div class="community-lbl kn-font" data-kn>ವಾರ್ಡ್ ಕವರೇಜ್</div>
+        <div class="community-sub" data-en>Across Krishnaraja constituency</div>
+        <div class="community-sub kn-font" data-kn>ಕೃಷ್ಣರಾಜ ಕ್ಷೇತ್ರ ತುಂಬ</div>
+      </div>
+      <div class="community-stat">
+        <div class="community-num">1</div>
+        <div class="community-lbl" data-en>Walk-In Citizen Office</div>
+        <div class="community-lbl kn-font" data-kn>ವಾಕ್-ಇನ್ ನಾಗರಿಕ ಕಚೇರಿ</div>
+        <div class="community-sub" data-en>Kartavya Bhavan — no appointment needed</div>
+        <div class="community-sub kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ — ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ಬೇಡ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  GRIEVANCE FORM
+══════════════════════════════════════ -->
+<div class="grievance-section" id="grievance">
+  <div class="container">
+    <div class="grievance-grid">
+
+      <!-- Form -->
+      <div class="grievance-form-card reveal-l">
+        <!-- Default form view -->
+        <div id="grievance-form-inner">
+          <div class="form-title" data-en>Submit a Grievance</div>
+          <div class="form-title kn-font" data-kn>ದೂರು ಸಲ್ಲಿಸಿ</div>
+          <div class="form-sub" data-en>Use this form to report a civic issue, request a land record follow-up, or flag any problem in Krishnaraja that needs the MLA's attention.</div>
+          <div class="form-sub kn-font" data-kn>ನಾಗರಿಕ ಸಮಸ್ಯೆ ವರದಿ, ಭೂ ದಾಖಲೆ ಅನುಸರಣೆ ಕೇಳಿಕೆ, ಅಥವಾ ಶಾಸಕರ ಗಮನ ಅಗತ್ಯ ಯಾವ ಸಮಸ್ಯೆಯೂ ಈ ಫಾರ್ಮ್ ಮೂಲಕ.</div>
+          <div class="form-row-2">
+            <div>
+              <label class="form-label" data-en>Full Name *</label>
+              <label class="form-label kn-font" data-kn>ಪೂರ್ಣ ಹೆಸರು *</label>
+              <input class="form-input" type="text" id="g-name" placeholder="Your full name">
+            </div>
+            <div>
+              <label class="form-label" data-en>Mobile Number *</label>
+              <label class="form-label kn-font" data-kn>ಮೊಬೈಲ್ ಸಂಖ್ಯೆ *</label>
+              <input class="form-input" type="tel" id="g-phone" placeholder="10-digit mobile">
+            </div>
+          </div>
+          <div class="form-row">
+            <label class="form-label" data-en>Ward / Area in Krishnaraja *</label>
+            <label class="form-label kn-font" data-kn>ಕೃಷ್ಣರಾಜದ ವಾರ್ಡ್ / ಪ್ರದೇಶ *</label>
+            <select class="form-select" id="g-ward">
+              <option value="" data-en>-- Select your ward --</option>
+              <option value="" class="kn-font" data-kn>-- ವಾರ್ಡ್ ಆರಿಸಿ --</option>
+              <option>T.K. Layout</option>
+              <option>Kuvempunagar</option>
+              <option>Vidyaranyapuram</option>
+              <option>Ashokapuram</option>
+              <option>Jayanagar</option>
+              <option>Chamarajapuram</option>
+              <option>Shankar Mutt Road</option>
+              <option>Gandhinagar</option>
+              <option>Lakshmipuram</option>
+              <option>New Kantharaj Urs Road</option>
+              <option>Kurubarahalli</option>
+              <option>Ramakrishnanagar</option>
+              <option data-en>Other area in Krishnaraja</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label class="form-label" data-en>Type of Issue *</label>
+            <label class="form-label kn-font" data-kn>ಸಮಸ್ಯೆ ವಿಧ *</label>
+            <select class="form-select" id="g-type">
+              <option value="" data-en>-- Select issue type --</option>
+              <option value="" class="kn-font" data-kn>-- ಸಮಸ್ಯೆ ವಿಧ ಆರಿಸಿ --</option>
+              <option data-en>e-Khata / Land Record</option>
+              <option data-en>Group Housing Title Deed</option>
+              <option data-en>Road / Drainage / Infrastructure</option>
+              <option data-en>Streetlight / Public Space</option>
+              <option data-en>Welfare Scheme / Government Entitlement</option>
+              <option data-en>Corruption / Irregularity</option>
+              <option data-en>School / Healthcare Infrastructure</option>
+              <option data-en>Water Supply / Sanitation</option>
+              <option data-en>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label class="form-label" data-en>Describe Your Issue *</label>
+            <label class="form-label kn-font" data-kn>ಸಮಸ್ಯೆ ವಿವರಿಸಿ *</label>
+            <textarea class="form-textarea" id="g-desc" placeholder="Please describe the issue in detail — location, what has been tried so far, and what you need."></textarea>
+          </div>
+          <div class="form-row">
+            <label class="form-label" data-en>How Should We Reach You?</label>
+            <label class="form-label kn-font" data-kn>ನಿಮ್ಮನ್ನು ಹೇಗೆ ತಲುಪಬೇಕು?</label>
+            <select class="form-select" id="g-contact">
+              <option data-en>Phone call</option>
+              <option data-en>WhatsApp</option>
+              <option data-en>Visit Kartavya Bhavan in person</option>
+              <option data-en>Email</option>
+            </select>
+          </div>
+          <button class="form-submit" onclick="submitGrievance()" data-en>Submit Grievance →</button>
+          <button class="form-submit kn-font" onclick="submitGrievance()" data-kn>ದೂರು ಸಲ್ಲಿಸಿ →</button>
+          <p class="form-note" data-en>All submissions are received by Srivatsa's office team at Kartavya Bhavan. You will be contacted within 2–3 working days.</p>
+          <p class="form-note kn-font" data-kn>ಎಲ್ಲ ದೂರು ಕರ್ತವ್ಯ ಭವನ ತಂಡ ಸ್ವೀಕರಿಸುತ್ತದೆ. 2–3 ಕಾರ್ಯ ದಿನದಲ್ಲಿ ಸಂಪರ್ಕಿಸಲಾಗುತ್ತದೆ.</p>
+        </div>
+        <!-- Success state -->
+        <div class="form-success" id="grievance-success">
+          <span class="form-success-icon">✅</span>
+          <div class="form-success-title" data-en>Grievance Submitted</div>
+          <div class="form-success-title kn-font" data-kn>ದೂರು ಸಲ್ಲಿಸಲಾಗಿದೆ</div>
+          <div class="form-success-body" data-en>Your issue has been received by the Kartavya Bhavan team. You will be contacted within 2–3 working days. If your matter is urgent, please visit Kartavya Bhavan directly at Shankar Mutt Road, Mysuru.</div>
+          <div class="form-success-body kn-font" data-kn>ನಿಮ್ಮ ಸಮಸ್ಯೆ ಕರ್ತವ್ಯ ಭವನ ತಂಡ ಸ್ವೀಕರಿಸಿದೆ. 2–3 ಕಾರ್ಯ ದಿನದಲ್ಲಿ ಸಂಪರ್ಕಿಸಲಾಗುತ್ತದೆ. ತುರ್ತಾದರೆ ಶಂಕರ ಮಠ ರಸ್ತೆ ಕರ್ತವ್ಯ ಭವನ ನೇರ ಭೇಟಿ.</div>
+        </div>
+      </div>
+
+      <!-- Info column -->
+      <div class="reveal-r" id="kartavya">
+        <div class="eyebrow">
+          <div class="eyebrow-bar"></div>
+          <span class="eyebrow-text" data-en>Kartavya Bhavan</span>
+          <span class="eyebrow-text kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ</span>
+        </div>
+        <h2 class="section-title" data-en>Prefer to<br><em>Walk In?</em></h2>
+        <h2 class="section-title kn-font" data-kn>ನೇರ<br><em>ಭೇಟಿ ಬೇಕೇ?</em></h2>
+        <p class="section-body" data-en>Kartavya Bhavan is open to every resident of Krishnaraja — no appointment, no queue, no middleman. Walk in and leave with a response.</p>
+        <p class="section-body kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ ಕೃಷ್ಣರಾಜ ಪ್ರತಿ ನಿವಾಸಿಗೆ ಮುಕ್ತ — ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ಬೇಡ, ಸರದಿ ಬೇಡ, ಮಧ್ಯಸ್ಥ ಬೇಡ. ಬಂದು ಉತ್ತರ ಪಡೆಯಿರಿ.</p>
+
+        <div style="margin:28px 0;display:flex;flex-direction:column;gap:0;">
+          <div class="info-step">
+            <div class="step-num">1</div>
+            <div>
+              <div class="step-title" data-en>Walk into Kartavya Bhavan</div>
+              <div class="step-title kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನಕ್ಕೆ ನೇರ ಬನ್ನಿ</div>
+              <div class="step-desc" data-en>MCC Zonal Office No. 1, Shankar Mutt Road, Mysuru. No appointment required. Mon–Sat, 10 AM to 5 PM.</div>
+              <div class="step-desc kn-font" data-kn>ಎಂಸಿಸಿ ವಲಯ ಕಚೇರಿ ಸಂ. 1, ಶಂಕರ ಮಠ ರಸ್ತೆ, ಮೈಸೂರು. ಅಪಾಯಿಂಟ್ಮೆಂಟ್ ಬೇಡ. ಸೋಮ–ಶನಿ, 10 AM–5 PM.</div>
+            </div>
+          </div>
+          <div class="info-step">
+            <div class="step-num">2</div>
+            <div>
+              <div class="step-title" data-en>Explain your issue to the team</div>
+              <div class="step-title kn-font" data-kn>ತಂಡಕ್ಕೆ ಸಮಸ್ಯೆ ವಿವರಿಸಿ</div>
+              <div class="step-desc" data-en>The Kartavya Bhavan team will log your issue, assign it to the right channel and escalate to MCC, state government or the MLA's office as required.</div>
+              <div class="step-desc kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ ತಂಡ ದೂರು ದಾಖಲಿಸಿ ಸರಿಯಾದ ಚಾನೆಲ್‌ಗೆ ನಿಯೋಜಿಸಿ ಎಂಸಿಸಿ, ರಾಜ್ಯ ಸರ್ಕಾರ ಅಥವಾ ಶಾಸಕ ಕಚೇರಿಗೆ ಎಸ್ಕಲೇಟ್ ಮಾಡುತ್ತದೆ.</div>
+            </div>
+          </div>
+          <div class="info-step">
+            <div class="step-num">3</div>
+            <div>
+              <div class="step-title" data-en>Receive a follow-up</div>
+              <div class="step-title kn-font" data-kn>ಅನುಸರಣೆ ಪಡೆಯಿರಿ</div>
+              <div class="step-desc" data-en>All logged grievances receive a follow-up within 2–3 working days. Complex cases are tracked until resolution and flagged to MLA Srivatsa directly if needed.</div>
+              <div class="step-desc kn-font" data-kn>ಎಲ್ಲ ದಾಖಲಿತ ದೂರು 2–3 ಕಾರ್ಯ ದಿನದಲ್ಲಿ ಅನುಸರಣೆ ಪಡೆಯುತ್ತದೆ. ಸಂಕೀರ್ಣ ಪ್ರಕರಣ ಅಗತ್ಯಬಿದ್ದರೆ ನೇರ ಶಾಸಕ ಶ್ರೀವತ್ಸ ಗಮನಕ್ಕೆ.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Address card -->
+        <div style="background:var(--navy);border-radius:14px;padding:24px 26px;position:relative;overflow:hidden;">
+          <div style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(255,98,0,0.12),transparent 70%);"></div>
+          <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--saffron);margin-bottom:14px;position:relative;z-index:1;" data-en>Kartavya Bhavan Address</div>
+          <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--saffron);margin-bottom:14px;position:relative;z-index:1;" class="kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ ವಿಳಾಸ</div>
+          <div style="font-size:15px;font-weight:700;color:white;margin-bottom:4px;position:relative;z-index:1;" data-en>MCC Zonal Office No. 1</div>
+          <div style="font-size:15px;font-weight:700;color:white;margin-bottom:4px;position:relative;z-index:1;" class="kn-font" data-kn>ಎಂಸಿಸಿ ವಲಯ ಕಚೇರಿ ಸಂ. 1</div>
+          <div style="font-size:13.5px;color:rgba(255,255,255,.5);margin-bottom:14px;position:relative;z-index:1;" data-en>Shankar Mutt Road, Mysuru — Karnataka</div>
+          <div style="font-size:13.5px;color:rgba(255,255,255,.5);margin-bottom:14px;position:relative;z-index:1;" class="kn-font" data-kn>ಶಂಕರ ಮಠ ರಸ್ತೆ, ಮೈಸೂರು — ಕರ್ನಾಟಕ</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;position:relative;z-index:1;">
+            <div style="background:rgba(12,122,7,.15);border:1px solid rgba(12,122,7,.25);padding:5px 12px;border-radius:6px;font-size:11.5px;font-weight:600;color:#4ade80;" data-en>✓ Open Mon–Sat</div>
+            <div style="background:rgba(12,122,7,.15);border:1px solid rgba(12,122,7,.25);padding:5px 12px;border-radius:6px;font-size:11.5px;font-weight:600;color:#4ade80;" data-en>✓ No appointment</div>
+            <div style="background:rgba(12,122,7,.15);border:1px solid rgba(12,122,7,.25);padding:5px 12px;border-radius:6px;font-size:11.5px;font-weight:600;color:#4ade80;" data-en>✓ Free of charge</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  VOLUNTEER SECTION (dark)
+══════════════════════════════════════ -->
+<section class="section-dark" id="volunteer">
+  <div class="container">
+    <div class="reveal" style="max-width:580px;margin-bottom:52px;">
+      <div class="eyebrow">
+        <div class="eyebrow-bar"></div>
+        <span class="eyebrow-text-light" data-en>Volunteer Opportunities</span>
+        <span class="eyebrow-text-light kn-font" data-kn>ಸ್ವಯಂಸೇವಕ ಅವಕಾಶ</span>
+      </div>
+      <h2 class="section-title section-title-light" data-en>How You Can<br><em>Give Your Time</em></h2>
+      <h2 class="section-title section-title-light kn-font" data-kn>ನಿಮ್ಮ ಸಮಯ<br><em>ಹೇಗೆ ನೀಡಬಹುದು</em></h2>
+      <p class="section-body section-body-light" data-en>Volunteering for Krishnaraja does not require full-time commitment. Whether you have two hours a week or two days a month, there is a role that fits your life.</p>
+      <p class="section-body section-body-light kn-font" data-kn>ಕೃಷ್ಣರಾಜ ಸ್ವಯಂಸೇವಕಕ್ಕೆ ಪೂರ್ಣ ಕಾಲ ಬದ್ಧತೆ ಅಗತ್ಯ ಇಲ್ಲ. ವಾರದಲ್ಲಿ ಎರಡು ಗಂಟೆ ಅಥವಾ ತಿಂಗಳಲ್ಲಿ ಎರಡು ದಿನ — ನಿಮ್ಮ ಜೀವನಕ್ಕೆ ಹೊಂದುವ ಪಾತ್ರ ಇದೆ.</p>
+    </div>
+    <div class="volunteer-grid">
+      <div class="volunteer-card reveal d1">
+        <span class="volunteer-icon">🗣️</span>
+        <div class="volunteer-title" data-en>Ward-Level Outreach</div>
+        <div class="volunteer-title kn-font" data-kn>ವಾರ್ಡ್ ಮಟ್ಟ ಸಂಪರ್ಕ</div>
+        <div class="volunteer-body" data-en>Door-to-door engagement in your ward — sharing information about Kartavya Bhavan, upcoming events, and how residents can raise grievances. No political experience needed.</div>
+        <div class="volunteer-body kn-font" data-kn>ನಿಮ್ಮ ವಾರ್ಡ್‌ನಲ್ಲಿ ಮನೆ-ಮನೆ ಸಂಪರ್ಕ. ಕರ್ತವ್ಯ ಭವನ, ಕಾರ್ಯಕ್ರಮ, ದೂರು ಸಲ್ಲಿಸುವ ಮಾಹಿತಿ. ರಾಜಕೀಯ ಅನುಭವ ಅಗತ್ಯ ಇಲ್ಲ.</div>
+        <div class="volunteer-tag" data-en>⏱ 2–4 hrs/week</div>
+        <div class="volunteer-tag kn-font" data-kn>⏱ ವಾರ 2–4 ಗಂಟೆ</div>
+      </div>
+      <div class="volunteer-card reveal d2">
+        <span class="volunteer-icon">📱</span>
+        <div class="volunteer-title" data-en>Digital &amp; Social Media</div>
+        <div class="volunteer-title kn-font" data-kn>ಡಿಜಿಟಲ್ ಮತ್ತು ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ</div>
+        <div class="volunteer-body" data-en>Help share Srivatsa's work, news and updates across Facebook, WhatsApp groups, Instagram and X. Translate content into Kannada. Create short posts about constituency developments.</div>
+        <div class="volunteer-body kn-font" data-kn>ಶ್ರೀವತ್ಸ ಕಾರ್ಯ, ಸುದ್ದಿ ಮತ್ತು ಅಪ್ಡೇಟ್ ಹಂಚಿಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡಿ. ಕನ್ನಡ ಭಾಷಾಂತರ. ಕ್ಷೇತ್ರ ಅಭಿವೃದ್ಧಿ ಶಾರ್ಟ್ ಪೋಸ್ಟ್.</div>
+        <div class="volunteer-tag" data-en>⏱ Flexible hours</div>
+        <div class="volunteer-tag kn-font" data-kn>⏱ ಹೊಂದಿಕೊಳ್ಳುವ ಸಮಯ</div>
+      </div>
+      <div class="volunteer-card reveal d3">
+        <span class="volunteer-icon">🏛️</span>
+        <div class="volunteer-title" data-en>Kartavya Bhavan Support</div>
+        <div class="volunteer-title kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ ಬೆಂಬಲ</div>
+        <div class="volunteer-body" data-en>Assist residents at Kartavya Bhavan — helping them fill forms, understand processes, or navigate welfare scheme applications. Bilingual ability in Kannada and English is an asset.</div>
+        <div class="volunteer-body kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ ನಿವಾಸಿಗಳಿಗೆ ಸಹಾಯ — ಫಾರ್ಮ್ ತುಂಬಲು, ಪ್ರಕ್ರಿಯೆ ಅರ್ಥ ಮಾಡಿಸಲು. ಕನ್ನಡ-ಇಂಗ್ಲಿಷ್ ದ್ವಿಭಾಷಾ ಸಾಮರ್ಥ್ಯ ಹೆಚ್ಚಳ.</div>
+        <div class="volunteer-tag" data-en>⏱ Sat mornings</div>
+        <div class="volunteer-tag kn-font" data-kn>⏱ ಶನಿ ಬೆಳಿಗ್ಗೆ</div>
+      </div>
+      <div class="volunteer-card reveal d1">
+        <span class="volunteer-icon">📊</span>
+        <div class="volunteer-title" data-en>Ward Surveys &amp; Data Collection</div>
+        <div class="volunteer-title kn-font" data-kn>ವಾರ್ಡ್ ಸಮೀಕ್ಷೆ ಮತ್ತು ಡೇಟಾ ಸಂಗ್ರಹ</div>
+        <div class="volunteer-body" data-en>Map local infrastructure problems — potholes, broken lights, drainage blockages — using a simple survey form. Data collected goes directly to Kartavya Bhavan for escalation.</div>
+        <div class="volunteer-body kn-font" data-kn>ಗುಂಡಿ, ಮುರಿದ ದೀಪ, ಚರಂಡಿ ಅಡಚಣೆ — ಸರಳ ಸಮೀಕ್ಷೆ ಫಾರ್ಮ್ ಮೂಲಕ ನಕ್ಷೆ. ಡೇಟಾ ನೇರ ಕರ್ತವ್ಯ ಭವನಕ್ಕೆ ಎಸ್ಕಲೇಟ್.</div>
+        <div class="volunteer-tag" data-en>⏱ 2 hrs once/month</div>
+        <div class="volunteer-tag kn-font" data-kn>⏱ ತಿಂಗಳಲ್ಲಿ 2 ಗಂಟೆ</div>
+      </div>
+      <div class="volunteer-card reveal d2">
+        <span class="volunteer-icon">🎤</span>
+        <div class="volunteer-title" data-en>Event &amp; Meeting Support</div>
+        <div class="volunteer-title kn-font" data-kn>ಕಾರ್ಯಕ್ರಮ ಮತ್ತು ಸಭೆ ಬೆಂಬಲ</div>
+        <div class="volunteer-body" data-en>Help organise and run ward sabhas, public meetings and constituency events — logistics, venue coordination, photography and documentation.</div>
+        <div class="volunteer-body kn-font" data-kn>ವಾರ್ಡ್ ಸಭೆ, ಸಾರ್ವಜನಿಕ ಸಭೆ ಮತ್ತು ಕ್ಷೇತ್ರ ಕಾರ್ಯಕ್ರಮ ಸಂಘಟನೆ — ಲಾಜಿಸ್ಟಿಕ್ಸ್, ಸ್ಥಳ ಸಮನ್ವಯ, ಫೋಟೋಗ್ರಫಿ.</div>
+        <div class="volunteer-tag" data-en>⏱ As needed</div>
+        <div class="volunteer-tag kn-font" data-kn>⏱ ಅಗತ್ಯ ಬಿದ್ದಾಗ</div>
+      </div>
+      <div class="volunteer-card reveal d3">
+        <span class="volunteer-icon">🔍</span>
+        <div class="volunteer-title" data-en>Citizen Monitoring</div>
+        <div class="volunteer-title kn-font" data-kn>ನಾಗರಿಕ ಮೇಲ್ವಿಚಾರಣೆ</div>
+        <div class="volunteer-body" data-en>Track the progress of government works in your area — whether road repairs have been done as promised, whether sanctioned funds have been used, whether promises are being kept.</div>
+        <div class="volunteer-body kn-font" data-kn>ನಿಮ್ಮ ಪ್ರದೇಶ ಸರ್ಕಾರಿ ಕಾಮಗಾರಿ ಪ್ರಗತಿ ಟ್ರ್ಯಾಕ್ — ರಸ್ತೆ ದುರಸ್ತಿ ಭರವಸೆ ನಡೆಯಿತೇ, ಅನುದಾನ ಬಳಕೆ, ಭರವಸೆ ಪಾಲನೆ.</div>
+        <div class="volunteer-tag" data-en>⏱ Ongoing</div>
+        <div class="volunteer-tag kn-font" data-kn>⏱ ನಿರಂತರ</div>
+      </div>
+    </div>
+
+    <!-- Volunteer sign-up form strip -->
+    <div class="volunteer-form-strip reveal">
+      <div class="volunteer-form-content">
+        <div class="volunteer-form-title" data-en>Ready to Volunteer?</div>
+        <div class="volunteer-form-title kn-font" data-kn>ಸ್ವಯಂಸೇವಕಕ್ಕೆ ಸಿದ್ಧವೇ?</div>
+        <div class="volunteer-form-sub" data-en>Leave your name and number — the volunteer coordinator will reach out within 48 hours.</div>
+        <div class="volunteer-form-sub kn-font" data-kn>ಹೆಸರು ಮತ್ತು ಸಂಖ್ಯೆ ಬಿಡಿ — ಸ್ವಯಂಸೇವಕ ಸಮನ್ವಯಕ 48 ಗಂಟೆಯಲ್ಲಿ ಸಂಪರ್ಕಿಸುತ್ತಾರೆ.</div>
+      </div>
+      <div class="volunteer-form-fields">
+        <input class="volunteer-input" type="text" id="vol-name" placeholder="Your name">
+        <input class="volunteer-input" type="tel" id="vol-phone" placeholder="Mobile number">
+        <button class="volunteer-submit" onclick="submitVolunteer()" data-en>Sign Up →</button>
+        <button class="volunteer-submit kn-font" onclick="submitVolunteer()" data-kn>ನೋಂದಾಯಿಸಿ →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  JOIN BJP SECTION
+══════════════════════════════════════ -->
+<section class="section-alt" id="join-bjp">
+  <div class="container">
+    <div class="bjp-join-grid">
+      <!-- Info card -->
+      <div class="bjp-card reveal-l">
+        <div class="bjp-badge">
+          <span class="bjp-badge-text" data-en>Bharatiya Janata Party</span>
+          <span class="bjp-badge-text kn-font" data-kn>ಭಾರತೀಯ ಜನತಾ ಪಕ್ಷ</span>
+        </div>
+        <div class="bjp-title" data-en>Join the <em>BJP</em><br>in Krishnaraja</div>
+        <div class="bjp-title kn-font" data-kn>ಕೃಷ್ಣರಾಜದಲ್ಲಿ<br><em>ಬಿಜೆಪಿ</em> ಸೇರಿ</div>
+        <div class="bjp-sub" data-en>Formal membership connects you to the party's booth, ward and city network — and gives you a direct role in shaping BJP's work in Mysuru.</div>
+        <div class="bjp-sub kn-font" data-kn>ಅಧಿಕೃತ ಸದಸ್ಯತ್ವ ಪಕ್ಷದ ಮತಗಟ್ಟೆ, ವಾರ್ಡ್ ಮತ್ತು ನಗರ ಜಾಲಕ್ಕೆ ಸಂಪರ್ಕಿಸುತ್ತದೆ.</div>
+        <div class="bjp-benefits">
+          <div class="bjp-benefit-row">
+            <div class="bjp-benefit-icon">🗳️</div>
+            <div class="bjp-benefit-text" data-en>Booth-level membership with direct participation in party activities and meetings</div>
+            <div class="bjp-benefit-text kn-font" data-kn>ಮತಗಟ್ಟೆ ಮಟ್ಟ ಸದಸ್ಯತ್ವ ಪಕ್ಷ ಚಟುವಟಿಕೆ ಮತ್ತು ಸಭೆ ನೇರ ಭಾಗವಹಿಸುವಿಕೆ</div>
+          </div>
+          <div class="bjp-benefit-row">
+            <div class="bjp-benefit-icon">🌐</div>
+            <div class="bjp-benefit-text" data-en>City-level BJP network across all three Mysuru assembly constituencies</div>
+            <div class="bjp-benefit-text kn-font" data-kn>ಮೂರು ಮೈಸೂರು ವಿಧಾನಸಭಾ ಕ್ಷೇತ್ರ ಬಿಜೆಪಿ ನಗರ ಜಾಲ</div>
+          </div>
+          <div class="bjp-benefit-row">
+            <div class="bjp-benefit-icon">📢</div>
+            <div class="bjp-benefit-text" data-en>Direct voice in party decisions, candidate selection and local governance advocacy</div>
+            <div class="bjp-benefit-text kn-font" data-kn>ಪಕ್ಷ ನಿರ್ಧಾರ, ಅಭ್ಯರ್ಥಿ ಆಯ್ಕೆ ಮತ್ತು ಸ್ಥಳೀಯ ಆಡಳಿತ ನೇರ ದನಿ</div>
+          </div>
+        </div>
+        <a href="#" class="bjp-btn" data-en>🪷 Apply for Membership →</a>
+        <a href="#" class="bjp-btn kn-font" data-kn>🪷 ಸದಸ್ಯತ್ವ ಅರ್ಜಿ →</a>
+      </div>
+
+      <!-- Membership form -->
+      <div class="bjp-form reveal-r">
+        <div class="bjp-form-title" data-en>Membership Application</div>
+        <div class="bjp-form-title kn-font" data-kn>ಸದಸ್ಯತ್ವ ಅರ್ಜಿ</div>
+        <div class="bjp-form-sub" data-en>Fill this form to apply for BJP membership in Krishnaraja. Our volunteer coordinator will contact you with next steps.</div>
+        <div class="bjp-form-sub kn-font" data-kn>ಕೃಷ್ಣರಾಜ ಬಿಜೆಪಿ ಸದಸ್ಯತ್ವ ಅರ್ಜಿ. ಸ್ವಯಂಸೇವಕ ಸಮನ್ವಯಕ ಮುಂದಿನ ಹಂತ ಸಂಪರ್ಕಿಸುತ್ತಾರೆ.</div>
+        <div class="bjp-form-row-2">
+          <div>
+            <label class="bjp-label" data-en>Full Name *</label>
+            <label class="bjp-label kn-font" data-kn>ಪೂರ್ಣ ಹೆಸರು *</label>
+            <input class="bjp-input" type="text" placeholder="Your full name">
+          </div>
+          <div>
+            <label class="bjp-label" data-en>Age</label>
+            <label class="bjp-label kn-font" data-kn>ವಯಸ್ಸು</label>
+            <input class="bjp-input" type="number" placeholder="Age">
+          </div>
+        </div>
+        <div class="bjp-form-row">
+          <label class="bjp-label" data-en>Mobile Number *</label>
+          <label class="bjp-label kn-font" data-kn>ಮೊಬೈಲ್ ಸಂಖ್ಯೆ *</label>
+          <input class="bjp-input" type="tel" placeholder="10-digit mobile number">
+        </div>
+        <div class="bjp-form-row">
+          <label class="bjp-label" data-en>Ward / Area</label>
+          <label class="bjp-label kn-font" data-kn>ವಾರ್ಡ್ / ಪ್ರದೇಶ</label>
+          <select class="bjp-select">
+            <option data-en>-- Select your ward --</option>
+            <option>T.K. Layout</option>
+            <option>Kuvempunagar</option>
+            <option>Vidyaranyapuram</option>
+            <option>Ashokapuram</option>
+            <option>Jayanagar</option>
+            <option>Chamarajapuram</option>
+            <option>Shankar Mutt Road</option>
+            <option>Gandhinagar</option>
+            <option>Lakshmipuram</option>
+            <option>New Kantharaj Urs Road</option>
+            <option>Kurubarahalli</option>
+            <option>Ramakrishnanagar</option>
+          </select>
+        </div>
+        <div class="bjp-form-row">
+          <label class="bjp-label" data-en>Profession / Occupation</label>
+          <label class="bjp-label kn-font" data-kn>ವೃತ್ತಿ</label>
+          <select class="bjp-select">
+            <option data-en>-- Select --</option>
+            <option data-en>Government Employee</option>
+            <option data-en>Private Sector</option>
+            <option data-en>Business / Trade</option>
+            <option data-en>Teacher / Educator</option>
+            <option data-en>Student</option>
+            <option data-en>Retired</option>
+            <option data-en>Self-Employed / Freelancer</option>
+            <option data-en>Other</option>
+          </select>
+        </div>
+        <button class="bjp-submit" onclick="submitBJP(this)" data-en>🪷 Submit Application →</button>
+        <button class="bjp-submit kn-font" onclick="submitBJP(this)" data-kn>🪷 ಅರ್ಜಿ ಸಲ್ಲಿಸಿ →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  EVENTS
+══════════════════════════════════════ -->
+<section class="section" id="events">
+  <div class="container">
+    <div class="reveal" style="margin-bottom: 20px;">
+      <div class="eyebrow">
+        <div class="eyebrow-bar"></div>
+        <span class="eyebrow-text" data-en>Upcoming Events</span>
+        <span class="eyebrow-text kn-font" data-kn>ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮ</span>
+      </div>
+      <h2 class="section-title" data-en>Open to All<br><em>Krishnaraja Residents</em></h2>
+      <h2 class="section-title kn-font" data-kn>ಎಲ್ಲ<em>ಕೃಷ್ಣರಾಜ ನಿವಾಸಿ</em>ಗೆ ಮುಕ್ತ</h2>
+      <p class="section-body" style="max-width:560px;" data-en>All public events are open to residents regardless of political affiliation. Showing up and asking questions is the most valuable form of civic participation.</p>
+      <p class="section-body kn-font" style="max-width:560px;" data-kn>ಎಲ್ಲ ಸಾರ್ವಜನಿಕ ಕಾರ್ಯಕ್ರಮ ರಾಜಕೀಯ ಒಲವು ಲೆಕ್ಕಿಸದೆ ನಿವಾಸಿಗಳಿಗೆ ಮುಕ್ತ.</p>
+    </div>
+    <div class="events-grid">
+
+      <div class="event-card reveal d1">
+        <div class="event-card-top">
+          <div class="event-date-block">
+            <div class="event-date-day">15</div>
+            <div class="event-date-month">Every Month</div>
+          </div>
+          <div>
+            <span class="event-type-badge event-badge-open" data-en>Open to All</span>
+            <span class="event-type-badge event-badge-open kn-font" data-kn>ಎಲ್ಲರಿಗೂ ಮುಕ್ತ</span>
+            <span class="event-upcoming-tag">📍 Recurring</span>
+          </div>
+        </div>
+        <div class="event-card-body">
+          <div class="event-title" data-en>Kartavya Bhavan Monthly Open Day</div>
+          <div class="event-title kn-font" data-kn>ಕರ್ತವ್ಯ ಭವನ ಮಾಸಿಕ ತೆರೆದ ದಿನ</div>
+          <div class="event-details">
+            <div class="event-detail"><span class="event-detail-icon">📍</span><span data-en>MCC Zonal Office No. 1, Shankar Mutt Road</span><span class="kn-font" data-kn>ಎಂಸಿಸಿ ವಲಯ ಕಚೇರಿ, ಶಂಕರ ಮಠ ರಸ್ತೆ</span></div>
+            <div class="event-detail"><span class="event-detail-icon">🕐</span><span data-en>10 AM – 1 PM</span></div>
+            <div class="event-detail"><span class="event-detail-icon">👥</span><span data-en>All Krishnaraja residents welcome</span><span class="kn-font" data-kn>ಎಲ್ಲ ಕೃಷ್ಣರಾಜ ನಿವಾಸಿ ಸ್ವಾಗತ</span></div>
+          </div>
+          <a href="#grievance" class="event-rsvp" data-en>Register →</a>
+          <a href="#grievance" class="event-rsvp kn-font" data-kn>ನೋಂದಾಯಿಸಿ →</a>
+        </div>
+      </div>
+
+      <div class="event-card reveal d2">
+        <div class="event-card-top">
+          <div class="event-date-block">
+            <div class="event-date-day">TBA</div>
+            <div class="event-date-month">Upcoming</div>
+          </div>
+          <div>
+            <span class="event-type-badge event-badge-open" data-en>Ward Sabha</span>
+            <span class="event-type-badge event-badge-open kn-font" data-kn>ವಾರ್ಡ್ ಸಭೆ</span>
+            <span class="event-upcoming-tag">🗓 Announced Soon</span>
+          </div>
+        </div>
+        <div class="event-card-body">
+          <div class="event-title" data-en>Constituency Town Hall — Krishnaraja Residents</div>
+          <div class="event-title kn-font" data-kn>ಕ್ಷೇತ್ರ ಟೌನ್ ಹಾಲ್ — ಕೃಷ್ಣರಾಜ ನಿವಾಸಿ</div>
+          <div class="event-details">
+            <div class="event-detail"><span class="event-detail-icon">📍</span><span data-en>Venue announced closer to date</span><span class="kn-font" data-kn>ಸ್ಥಳ ದಿನ ಹತ್ತಿರ ಪ್ರಕಟ</span></div>
+            <div class="event-detail"><span class="event-detail-icon">🕐</span><span data-en>4 PM – 7 PM</span></div>
+            <div class="event-detail"><span class="event-detail-icon">👥</span><span data-en>Open public forum — questions welcome</span><span class="kn-font" data-kn>ಮುಕ್ತ ಸಾರ್ವಜನಿಕ ವೇದಿಕೆ</span></div>
+          </div>
+          <a href="#" class="event-rsvp" data-en>Notify Me →</a>
+          <a href="#" class="event-rsvp kn-font" data-kn>ತಿಳಿಸಿ →</a>
+        </div>
+      </div>
+
+      <div class="event-card reveal d3">
+        <div class="event-card-top">
+          <div class="event-date-block" style="background:var(--green);">
+            <div class="event-date-day">SAT</div>
+            <div class="event-date-month">Weekly</div>
+          </div>
+          <div>
+            <span class="event-type-badge event-badge-open" data-en>Open Day</span>
+            <span class="event-type-badge event-badge-open kn-font" data-kn>ತೆರೆದ ದಿನ</span>
+            <span class="event-upcoming-tag">✅ Every Week</span>
+          </div>
+        </div>
+        <div class="event-card-body">
+          <div class="event-title" data-en>Saturday Walk-In at Kartavya Bhavan</div>
+          <div class="event-title kn-font" data-kn>ಶನಿವಾರ ಕರ್ತವ್ಯ ಭವನ ವಾಕ್-ಇನ್</div>
+          <div class="event-details">
+            <div class="event-detail"><span class="event-detail-icon">📍</span><span data-en>Shankar Mutt Road, Mysuru</span><span class="kn-font" data-kn>ಶಂಕರ ಮಠ ರಸ್ತೆ, ಮೈಸೂರು</span></div>
+            <div class="event-detail"><span class="event-detail-icon">🕐</span><span data-en>10 AM – 1 PM</span></div>
+            <div class="event-detail"><span class="event-detail-icon">👥</span><span data-en>Priority: Land records &amp; pending applications</span><span class="kn-font" data-kn>ಆದ್ಯತೆ: ಭೂ ದಾಖಲೆ ಮತ್ತು ಬಾಕಿ ಅರ್ಜಿ</span></div>
+          </div>
+          <a href="#kartavya" class="event-rsvp" data-en>Walk In →</a>
+          <a href="#kartavya" class="event-rsvp kn-font" data-kn>ಬನ್ನಿ →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  DONATE / SUPPORT
+══════════════════════════════════════ -->
+<section class="section-alt" id="donate">
+  <div class="container">
+    <div class="donate-grid">
+      <!-- Donate card -->
+      <div class="donate-card reveal-l">
+        <div class="donate-title" data-en>Support the Movement</div>
+        <div class="donate-title kn-font" data-kn>ಚಳವಳಿಗೆ ಬೆಂಬಲ</div>
+        <div class="donate-sub" data-en>Your contribution — however small — funds the constituency's outreach, civic campaigns and the ongoing operation of Kartavya Bhavan. Every rupee goes to direct constituency work.</div>
+        <div class="donate-sub kn-font" data-kn>ನಿಮ್ಮ ಕೊಡುಗೆ ಕ್ಷೇತ್ರ ಸಂಪರ್ಕ, ನಾಗರಿಕ ಅಭಿಯಾನ ಮತ್ತು ಕರ್ತವ್ಯ ಭವನ ಕಾರ್ಯಾಚರಣೆ ನಿಧಿ ಒದಗಿಸುತ್ತದೆ. ಪ್ರತಿ ರೂಪಾಯಿ ನೇರ ಕ್ಷೇತ್ರ ಕಾರ್ಯ.</div>
+        <div class="donate-amounts">
+          <button class="amount-chip" onclick="selectAmount(this)">₹ 100</button>
+          <button class="amount-chip active" onclick="selectAmount(this)">₹ 500</button>
+          <button class="amount-chip" onclick="selectAmount(this)">₹ 1,000</button>
+          <button class="amount-chip" onclick="selectAmount(this)">₹ 2,500</button>
+        </div>
+        <div class="donate-custom">
+          <input class="donate-custom-input" type="text" placeholder="Or enter custom amount (₹)">
+        </div>
+        <button class="donate-btn" data-en>Contribute ₹ 500 →</button>
+        <button class="donate-btn kn-font" data-kn>₹ 500 ನೀಡಿ →</button>
+        <p class="donate-note" data-en>All donations are processed securely. Receipts available on request. Contributions are made in accordance with FCRA and ECI guidelines.</p>
+        <p class="donate-note kn-font" data-kn>ಎಲ್ಲ ದೇಣಿಗೆ ಸುರಕ್ಷಿತ ಪ್ರಕ್ರಿಯೆ. ರಶೀದಿ ಲಭ್ಯ. FCRA ಮತ್ತು ECI ಮಾರ್ಗಸೂಚಿ ಅನ್ವಯ.</p>
+      </div>
+
+      <!-- Ways to support -->
+      <div class="reveal-r">
+        <div class="eyebrow">
+          <div class="eyebrow-bar"></div>
+          <span class="eyebrow-text" data-en>Other Ways to Support</span>
+          <span class="eyebrow-text kn-font" data-kn>ಬೆಂಬಲಿಸಲು ಇತರ ಮಾರ್ಗ</span>
+        </div>
+        <h2 class="section-title" data-en>Beyond<br><em>Financial Support</em></h2>
+        <h2 class="section-title kn-font" data-kn><em>ಆರ್ಥಿಕ ಬೆಂಬಲ</em>ದ<br>ಆಚೆ</h2>
+        <p class="section-body" data-en>Money is not the only way to support the movement. Time, networks, skills, and civic presence all matter equally — sometimes more.</p>
+        <p class="section-body kn-font" data-kn>ಹಣ ಮಾತ್ರ ಚಳವಳಿ ಬೆಂಬಲಿಸುವ ಮಾರ್ಗ ಅಲ್ಲ. ಸಮಯ, ಜಾಲ, ಕೌಶಲ ಮತ್ತು ನಾಗರಿಕ ಉಪಸ್ಥಿತಿ — ಎಲ್ಲ ಸಮಾನ ಮಹತ್ವ.</p>
+        <div class="donate-ways">
+          <div class="donate-way">
+            <div class="donate-way-icon">📱</div>
+            <div>
+              <div class="donate-way-title" data-en>Share on Social Media</div>
+              <div class="donate-way-title kn-font" data-kn>ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ಹಂಚಿಕೊಳ್ಳಿ</div>
+              <div class="donate-way-desc" data-en>Share Srivatsa's work updates, press coverage, and constituency news with your network. Information spreads through people, not just money.</div>
+              <div class="donate-way-desc kn-font" data-kn>ಶ್ರೀವತ್ಸ ಕಾರ್ಯ ಅಪ್ಡೇಟ್, ಪ್ರೆಸ್ ಕವರೇಜ್ ಮತ್ತು ಕ್ಷೇತ್ರ ಸುದ್ದಿ ಹಂಚಿಕೊಳ್ಳಿ.</div>
+            </div>
+          </div>
+          <div class="donate-way">
+            <div class="donate-way-icon">🗣️</div>
+            <div>
+              <div class="donate-way-title" data-en>Speak to Your Neighbours</div>
+              <div class="donate-way-title kn-font" data-kn>ನೆರೆಹೊರೆಯವರಿಗೆ ಹೇಳಿ</div>
+              <div class="donate-way-desc" data-en>Tell your neighbours about Kartavya Bhavan and how to raise grievances. Word-of-mouth in a constituency is the most powerful form of outreach.</div>
+              <div class="donate-way-desc kn-font" data-kn>ನೆರೆಹೊರೆಯವರಿಗೆ ಕರ್ತವ್ಯ ಭವನ ಮತ್ತು ದೂರು ಸಲ್ಲಿಸುವ ರೀತಿ ತಿಳಿಸಿ.</div>
+            </div>
+          </div>
+          <div class="donate-way">
+            <div class="donate-way-icon">📝</div>
+            <div>
+              <div class="donate-way-title" data-en>Submit a Grievance — Even a Small One</div>
+              <div class="donate-way-title kn-font" data-kn>ದೂರು ಸಲ್ಲಿಸಿ — ಚಿಕ್ಕದಾದರೂ</div>
+              <div class="donate-way-desc" data-en>Every logged grievance creates a paper trail that strengthens accountability. Submitting an issue — even a small local one — builds the civic record of Krishnaraja's needs.</div>
+              <div class="donate-way-desc kn-font" data-kn>ಪ್ರತಿ ದಾಖಲಿತ ದೂರು ಜವಾಬ್ದಾರಿ ಬಲಪಡಿಸುವ ಕಾಗದ ಹಾದಿ ಸೃಷ್ಟಿಸುತ್ತದೆ.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+  CTA BAND
+══════════════════════════════════════ -->
+<div class="cta-band">
+  <div class="cta-band-inner">
+    <h2 data-en>Start Right Now.<br>No Registration Required.</h2>
+    <h2 class="kn-font" data-kn>ಈಗಲೇ ಪ್ರಾರಂಭಿಸಿ.<br>ನೋಂದಣಿ ಅಗತ್ಯ ಇಲ್ಲ.</h2>
+    <p data-en>Walk into Kartavya Bhavan on Shankar Mutt Road — or submit your issue online in 2 minutes. Krishnaraja's improvement starts with you speaking up.</p>
+    <p class="kn-font" data-kn>ಶಂಕರ ಮಠ ರಸ್ತೆ ಕರ್ತವ್ಯ ಭವನಕ್ಕೆ ಬನ್ನಿ — ಅಥವಾ 2 ನಿಮಿಷದಲ್ಲಿ ಆನ್‌ಲೈನ್ ಸಮಸ್ಯೆ ಸಲ್ಲಿಸಿ. ಕೃಷ್ಣರಾಜ ಸುಧಾರಣೆ ನಿಮ್ಮ ಮಾತಿನಿಂದ ಪ್ರಾರಂಭ.</p>
+    <div class="cta-btns">
+      <a href="#grievance" class="btn-white" data-en>Raise a Grievance →</a>
+      <a href="#grievance" class="btn-white kn-font" data-kn>ದೂರು ಸಲ್ಲಿಸಿ →</a>
+      <a href="#volunteer" class="btn-white-outline" data-en>Volunteer</a>
+      <a href="#volunteer" class="btn-white-outline kn-font" data-kn>ಸ್ವಯಂಸೇವಕ</a>
+      <a href="#join-bjp" class="btn-white-outline" data-en>Join BJP</a>
+      <a href="#join-bjp" class="btn-white-outline kn-font" data-kn>ಬಿಜೆಪಿ ಸೇರಿ</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  FOOTER
+══════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name" data-en>T. S. Srivatsa</div>
+        <div class="footer-brand-name kn-font" data-kn>ಟಿ. ಎಸ್. ಶ್ರೀವತ್ಸ</div>
+        <div class="footer-brand-role" data-en>MLA — Krishnaraja | BJP Mysuru City President</div>
+        <div class="footer-brand-role kn-font" data-kn>ಶಾಸಕರು — ಕೃಷ್ಣರಾಜ | ಬಿಜೆಪಿ ಮೈಸೂರು ನಗರ ಅಧ್ಯಕ್ಷ</div>
+        <p class="footer-brand-desc" data-en>Serving Krishnaraja with transparency, accountability, and an open door for every citizen.</p>
+        <p class="footer-brand-desc kn-font" data-kn>ಪಾರದರ್ಶಕತೆ, ಜವಾಬ್ದಾರಿ ಮತ್ತು ತೆರೆದ ಬಾಗಿಲಿನೊಂದಿಗೆ ಕೃಷ್ಣರಾಜ ಸೇವೆ.</p>
+        <div class="footer-tricolor"><span></span><span></span><span></span></div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-en>Pages</div>
+        <div class="footer-col-title kn-font" data-kn>ಪುಟಗಳು</div>
+        <ul class="footer-col-links">
+          <li><a href="index.html" data-en>→ Homepage</a><a href="index.html" class="kn-font" data-kn>→ ಮುಖಪುಟ</a></li>
+          <li><a href="about.html" data-en>→ About MLA</a><a href="about.html" class="kn-font" data-kn>→ ಶಾಸಕರ ಬಗ್ಗೆ</a></li>
+          <li><a href="constituency.html" data-en>→ Constituency</a><a href="constituency.html" class="kn-font" data-kn>→ ಕ್ಷೇತ್ರ</a></li>
+          <li><a href="work.html" data-en>→ Work Done</a><a href="work.html" class="kn-font" data-kn>→ ಕೆಲಸ</a></li>
+          <li><a href="news.html" data-en>→ News &amp; Media</a><a href="news.html" class="kn-font" data-kn>→ ಸುದ್ದಿ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-en>Get Involved</div>
+        <div class="footer-col-title kn-font" data-kn>ಭಾಗವಹಿಸಿ</div>
+        <ul class="footer-col-links">
+          <li><a href="#grievance" data-en>→ Raise Grievance</a><a href="#grievance" class="kn-font" data-kn>→ ದೂರು ಸಲ್ಲಿಸಿ</a></li>
+          <li><a href="#volunteer" data-en>→ Volunteer</a><a href="#volunteer" class="kn-font" data-kn>→ ಸ್ವಯಂಸೇವಕ</a></li>
+          <li><a href="#join-bjp" data-en>→ Join BJP</a><a href="#join-bjp" class="kn-font" data-kn>→ ಬಿಜೆಪಿ ಸೇರಿ</a></li>
+          <li><a href="#events" data-en>→ Events</a><a href="#events" class="kn-font" data-kn>→ ಕಾರ್ಯಕ್ರಮ</a></li>
+          <li><a href="#donate" data-en>→ Donate</a><a href="#donate" class="kn-font" data-kn>→ ದೇಣಿಗೆ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title" data-en>Connect</div>
+        <div class="footer-col-title kn-font" data-kn>ಸಂಪರ್ಕ</div>
+        <ul class="footer-col-links">
+          <li><a href="#" data-en>→ Facebook</a></li>
+          <li><a href="#" data-en>→ X / Twitter</a></li>
+          <li><a href="#" data-en>→ Instagram</a></li>
+          <li><a href="#" data-en>→ YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div data-en>© 2025 T. S. Srivatsa, MLA Krishnaraja. Official Website. | <a href="#">Privacy</a></div>
+      <div class="kn-font" data-kn>© 2025 ಟಿ. ಎಸ್. ಶ್ರೀವತ್ಸ, ಶಾಸಕರು ಕೃಷ್ಣರಾಜ. ಅಧಿಕೃತ ವೆಬ್‌ಸೈಟ್.</div>
+      <div class="footer-social">
+        <a class="social-btn" href="#">𝕗</a>
+        <a class="social-btn" href="#">𝕏</a>
+        <a class="social-btn" href="#">📸</a>
+        <a class="social-btn" href="#">▶</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="#top" class="back-top" id="back-top">↑</a>
+
+<script>
+/* Language toggle */
+function setLang(lang) {
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-kn').classList.toggle('active', lang === 'kn');
+  document.body.classList.toggle('kn', lang === 'kn');
+}
+
+/* Sticky nav + back to top */
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+  document.getElementById('back-top').classList.toggle('visible', window.scrollY > 400);
+});
+
+/* Scroll reveal */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(el => observer.observe(el));
+
+/* Grievance form submit */
+function submitGrievance() {
+  const name = document.getElementById('g-name').value.trim();
+  const phone = document.getElementById('g-phone').value.trim();
+  const desc  = document.getElementById('g-desc').value.trim();
+  if (!name || !phone || !desc) {
+    alert('Please fill in Name, Mobile Number and Issue Description.');
+    return;
+  }
+  document.getElementById('grievance-form-inner').style.display = 'none';
+  document.getElementById('grievance-success').style.display = 'block';
+}
+
+/* Volunteer submit */
+function submitVolunteer() {
+  const name  = document.getElementById('vol-name').value.trim();
+  const phone = document.getElementById('vol-phone').value.trim();
+  if (!name || !phone) { alert('Please enter your name and mobile number.'); return; }
+  const btn = event.target;
+  btn.textContent = '✓ Registered!';
+  btn.style.background = 'var(--green)';
+  btn.disabled = true;
+  document.getElementById('vol-name').value = '';
+  document.getElementById('vol-phone').value = '';
+}
+
+/* BJP form submit */
+function submitBJP(btn) {
+  btn.textContent = '✓ Application Submitted!';
+  btn.style.background = 'var(--green)';
+  btn.disabled = true;
+}
+
+/* Donate amount selector */
+function selectAmount(chip) {
+  document.querySelectorAll('.amount-chip').forEach(c => c.classList.remove('active'));
+  chip.classList.add('active');
+  const amt = chip.textContent.replace('₹ ', '').replace(',', '');
+  const btn = chip.closest('.donate-card').querySelector('.donate-btn');
+  if (btn) {
+    btn.setAttribute('data-en', 'Contribute ' + chip.textContent + ' →');
+    btn.textContent = 'Contribute ' + chip.textContent + ' →';
+  }
+}
+</script>
+</body>
+</html>
